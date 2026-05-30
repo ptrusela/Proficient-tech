@@ -1,6 +1,7 @@
 import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
 import { MarqueeStrip } from "@/components/MarqueeStrip";
+import { Services } from "@/components/Services";
 import { WhatWeBuild } from "@/components/WhatWeBuild";
 import { WhiteLabel } from "@/components/WhiteLabel";
 import { Industries } from "@/components/Industries";
@@ -17,6 +18,7 @@ export default function Page() {
       <NavBar />
       <Hero />
       <MarqueeStrip />
+      <Services />
       <WhatWeBuild />
       <WhiteLabel />
       <Industries />

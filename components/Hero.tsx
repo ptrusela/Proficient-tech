@@ -25,7 +25,7 @@ export function Hero() {
           </div>
         </div>
         <div className="hero-figure reveal">
-          <img src="/assets/astronaut.svg" alt="Proficient — built for hostile environments" />
+          <img src="/assets/astronaut.jpg" alt="Proficient — built for hostile environments" />
         </div>
       </div>
       <div className="hero-scroll">

@@ -42,7 +42,7 @@ export function Industries() {
             </div>
           </div>
           <div className="ind-aside reveal">
-            <img src="/assets/astronaut.svg" alt="" />
+            <img src="/assets/astronaut.jpg" alt="" />
             <div className="veil"></div>
             <div className="cap-txt">
               <p className="q">

@@ -19,7 +19,7 @@ export function NavBar() {
           <span className="word">PROFICIENT</span>
         </a>
         <nav className="nav-links">
-          <a className="link" href="#architect">Capabilities</a>
+          <a className="link" href="#services">Services</a>
           <a className="link" href="#industries">Industries</a>
           <a className="link" href="#partners">Partners</a>
         </nav>
