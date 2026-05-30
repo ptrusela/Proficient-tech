@@ -12,7 +12,7 @@ export function Footer() {
               Payment infrastructure for every merchant type &mdash; built, not resold.
             </p>
             <p className="foot-tag" style={{ marginTop: "8px" }}>
-              Los Angeles, CA &middot; Mon&ndash;Fri 8am&ndash;5pm
+              Los Angeles, CA
             </p>
           </div>
           <div className="foot-cols">
