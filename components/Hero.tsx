@@ -1,0 +1,36 @@
+import { Starfield } from "./Starfield";
+
+export function Hero() {
+  return (
+    <section className="hero" id="top">
+      <Starfield id="stars" count={220} opacity={0.9} />
+      <div className="wrap hero-grid">
+        <div className="hero-copy reveal">
+          <span className="eyebrow">Payment Processing Partner</span>
+          <h1>
+            We architect payments for the places others <em>won&rsquo;t go.</em>
+          </h1>
+          <p className="lead">
+            Proficient builds custom gateways, the software around them, and direct banking partner
+            lines &mdash; engineered for every merchant type. Standard, software, subscription, and
+            the high-risk accounts most processors decline.
+          </p>
+          <div className="hero-actions">
+            <a className="btn btn-primary" href="#contact">
+              Become a partner <span className="arr">→</span>
+            </a>
+            <a className="btn btn-ghost" href="#architect">
+              See what we build
+            </a>
+          </div>
+        </div>
+        <div className="hero-figure reveal">
+          <img src="/assets/astronaut.svg" alt="Proficient — built for hostile environments" />
+        </div>
+      </div>
+      <div className="hero-scroll">
+        <span className="line"></span> Scroll
+      </div>
+    </section>
+  );
+}

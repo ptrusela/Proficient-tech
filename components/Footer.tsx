@@ -1,0 +1,60 @@
+export function Footer() {
+  return (
+    <footer>
+      <div className="wrap">
+        <div className="foot-top">
+          <div>
+            <div className="foot-brand">
+              <img className="mark" src="/assets/pt-mark.svg" alt="Proficient mark" />
+              <span className="word">PROFICIENT</span>
+            </div>
+            <p className="foot-tag">
+              Payment infrastructure for every merchant type &mdash; built, not resold.
+            </p>
+            <p className="foot-tag" style={{ marginTop: "8px" }}>
+              Los Angeles, CA &middot; Mon&ndash;Fri 8am&ndash;5pm
+            </p>
+          </div>
+          <div className="foot-cols">
+            <div className="foot-col">
+              <h4>Build</h4>
+              <a href="#architect">Custom gateways</a>
+              <a href="#architect">Software &amp; tooling</a>
+              <a href="#whitelabel">White-label</a>
+              <a href="#architect">Banking lines</a>
+            </div>
+            <div className="foot-col">
+              <h4>Industries</h4>
+              <a href="#industries">Software &amp; SaaS</a>
+              <a href="#industries">High-risk</a>
+              <a href="#industries">E-commerce</a>
+            </div>
+            <div className="foot-col">
+              <h4>Contact</h4>
+              <a href="mailto:info@proficient.tech">info@proficient.tech</a>
+              <a href="tel:2134781185">(213) 478-1185</a>
+              <a
+                href="https://www.linkedin.com/company/proficient-tech-965656195"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://instagram.com/proficient.tech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="foot-bottom">
+          <span className="mono">&copy; 2026 Proficient &middot; proficient.tech</span>
+          <span className="mono">Built for hostile environments</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
