@@ -1064,6 +1064,16 @@ footer {
   }
 }
 
+/* ---------- redo brand name in card ---------- */
+.redo-brand {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+.redo-brand span {
+  color: var(--ink-3);
+}
+
 /* ---------- reveal ---------- */
 .reveal {
   opacity: 0;
