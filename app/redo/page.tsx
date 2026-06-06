@@ -148,6 +148,9 @@ export default function RedoPage() {
             <a className="btn btn-primary" href="mailto:info@proficient.tech">
               Start the conversation <span className="arr">→</span>
             </a>
+            <a className="btn btn-ghost" href="mailto:info@proficient.tech">
+              info@proficient.tech
+            </a>
             <a className="btn btn-ghost" href="tel:2139733525">
               (213) 973-3525
             </a>
