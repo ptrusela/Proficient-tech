@@ -32,7 +32,7 @@ export function Footer() {
             <div className="foot-col">
               <h4>Contact</h4>
               <a href="mailto:info@proficient.tech">info@proficient.tech</a>
-              <a href="tel:2134781185">(213) 478-1185</a>
+              <a href="tel:2139733525">(213) 973-3525</a>
               <a
                 href="https://www.linkedin.com/company/proficient-tech-965656195"
                 target="_blank"

@@ -17,8 +17,8 @@ export function CTA() {
           <a className="btn btn-primary" href="mailto:info@proficient.tech">
             Become a partner <span className="arr">→</span>
           </a>
-          <a className="btn btn-ghost" href="tel:2134781185">
-            (213) 478-1185
+          <a className="btn btn-ghost" href="tel:2139733525">
+            (213) 973-3525
           </a>
         </div>
       </div>
