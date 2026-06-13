@@ -17,6 +17,14 @@ export function CTA() {
           <a className="btn btn-primary" href="mailto:info@proficient.tech">
             Become a partner <span className="arr">→</span>
           </a>
+          <a
+            className="btn btn-secondary"
+            href="https://kadimapayments.com/apply/proficient"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Apply for processing <span className="arr">→</span>
+          </a>
           <a className="btn btn-ghost" href="mailto:info@proficient.tech">
             info@proficient.tech
           </a>

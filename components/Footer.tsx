@@ -30,6 +30,16 @@ export function Footer() {
               <a href="#industries">E-commerce</a>
             </div>
             <div className="foot-col">
+              <h4>Merchants</h4>
+              <a
+                href="https://kadimapayments.com/apply/proficient"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Apply for processing
+              </a>
+            </div>
+            <div className="foot-col">
               <h4>Contact</h4>
               <a href="mailto:info@proficient.tech">info@proficient.tech</a>
               <a href="tel:2139733525">(213) 973-3525</a>

@@ -145,6 +145,18 @@ img {
 .btn-ghost:active {
   transform: translateY(1px);
 }
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  border-color: var(--line-2);
+}
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.btn-secondary:active {
+  transform: translateY(1px);
+}
 
 /* ---------- nav ---------- */
 header.nav {
