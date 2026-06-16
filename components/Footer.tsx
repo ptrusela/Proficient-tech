@@ -29,7 +29,11 @@ export function Footer() {
               <a href="#industries">High-risk</a>
               <a href="#industries">E-commerce</a>
             </div>
-<div className="foot-col">
+            <div className="foot-col">
+              <h4>Resources</h4>
+              <a href="/blog">Blog</a>
+            </div>
+            <div className="foot-col">
               <h4>Contact</h4>
               <a href="mailto:info@proficient.tech">info@proficient.tech</a>
               <a href="tel:2139733525">(213) 973-3525</a>
