@@ -15,6 +15,75 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "medusa-js-direct-integration-no-middle-gateway",
+    title: "Proficient integrates directly with Medusa.js — no middle gateway",
+    excerpt:
+      "Most Medusa.js payment plugins route transactions through a third-party gateway before they reach a processor. Proficient connects directly to Medusa — one fewer layer, one fewer point of failure, and no extra fee in the middle.",
+    date: "2026-06-17",
+    readTime: "4 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Medusa.js has become the go-to headless commerce framework for teams that want full control over their stack. You own the storefront, the admin, and the data — but the moment a customer clicks pay, most setups quietly route that transaction through a third-party gateway before it ever reaches a processor. That middle layer adds latency, introduces another failure point, and almost always costs something.",
+      },
+      {
+        type: "p",
+        text: "Proficient built a direct Medusa payment plugin that eliminates that layer entirely.",
+      },
+      {
+        type: "h3",
+        text: "How most Medusa payment setups work",
+      },
+      {
+        type: "p",
+        text: "The typical integration looks like this: Medusa talks to Stripe (or Braintree, or Adyen), which talks to a card network, which talks to the issuing bank. Every hop in that chain is a place where the transaction can time out, get declined for the wrong reason, or cost you basis points you never agreed to.",
+      },
+      {
+        type: "p",
+        text: "For standard merchants, the convenience of that model is usually worth the tradeoff. For merchants with higher volume, complex product categories, or elevated chargeback exposure, the middle gateway becomes the weakest link — and the one you have the least visibility into.",
+      },
+      {
+        type: "h3",
+        text: "What a direct integration changes",
+      },
+      {
+        type: "list",
+        items: [
+          "Transactions go from Medusa directly to our processing infrastructure — no third-party gateway in the middle",
+          "Authorization decisions happen at the processor level, not filtered through a gateway's own risk rules",
+          "Routing logic is configurable — you can optimize for approval rate, cost, or both depending on the transaction",
+          "Chargebacks and disputes surface directly in your Medusa admin, not buried in a separate gateway dashboard",
+          "No per-transaction gateway fee stacked on top of interchange and processor margin",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Built for merchants Stripe declines",
+      },
+      {
+        type: "p",
+        text: "One of the main reasons teams come to us is that their product category gets flagged by consumer-facing gateways. Nutraceuticals, telehealth, subscription boxes with free-trial structures, high-ticket coaching — these are not unprocessable categories. They are categories that need a direct underwriting relationship and a processor that is not applying a consumer-gateway risk filter on top of card network rules.",
+      },
+      {
+        type: "p",
+        text: "Because our Medusa plugin connects to our own infrastructure, the underwriting conversation happens with us — not with a gateway that will pass the merchant through to a processor they do not know and cannot talk to.",
+      },
+      {
+        type: "h3",
+        text: "Drop-in, not a rebuild",
+      },
+      {
+        type: "p",
+        text: "The integration is a standard Medusa payment provider. It installs via npm, registers in your Medusa config, and handles the full transaction lifecycle: authorization, capture, void, and refund. Your storefront does not change. Your checkout flow does not change. The only thing that changes is what is behind it.",
+      },
+      {
+        type: "p",
+        text: "If you are already on Medusa and hitting a wall with your current payment setup — declined applications, gateway-level risk flags, or per-transaction costs that do not scale — reach out. We will walk through what a direct integration would look like for your specific setup.",
+      },
+    ],
+  },
+  {
     slug: "protecting-revenue-before-during-after-the-sale",
     title: "Protecting Revenue Before the Sale, During the Sale, and After the Sale",
     excerpt:
