@@ -15,6 +15,105 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "protecting-revenue-before-during-after-the-sale",
+    title: "Protecting Revenue Before the Sale, During the Sale, and After the Sale",
+    excerpt:
+      "Most businesses think about payment processing only when a customer clicks Buy Now. The reality is that revenue protection begins long before the transaction occurs and continues long after.",
+    date: "2026-06-17",
+    readTime: "5 min read",
+    category: "Strategy",
+    body: [
+      {
+        type: "p",
+        text: "Most businesses think about payment processing only when a customer clicks Buy Now. The reality is that revenue protection begins long before the transaction occurs and continues long after the payment is approved.",
+      },
+      {
+        type: "p",
+        text: "At Proficient.tech, we believe that payments are only one component of a larger revenue protection strategy. Every business faces threats to profitability from fraudulent transactions, declining authorization rates, unnecessary processing costs, chargebacks, return abuse, and customer attrition. Addressing only one part of the equation leaves revenue exposed.",
+      },
+      {
+        type: "h3",
+        text: "Before the Sale: Preventing Bad Transactions",
+      },
+      {
+        type: "p",
+        text: "Revenue protection starts before an order is ever placed.",
+      },
+      {
+        type: "p",
+        text: "Fraudulent purchases, account takeovers, card testing attacks, and high-risk transactions can create costly chargebacks, increase operational burden, and jeopardize processor relationships. Proficient helps businesses implement intelligent risk controls designed to identify suspicious activity before it becomes a problem.",
+      },
+      {
+        type: "p",
+        text: "By reducing fraudulent transactions before authorization, merchants can protect margins, preserve customer trust, and maintain healthier processing environments.",
+      },
+      {
+        type: "h3",
+        text: "During the Sale: Optimizing Payment Performance",
+      },
+      {
+        type: "p",
+        text: "Every approved transaction matters.",
+      },
+      {
+        type: "p",
+        text: "Many businesses unknowingly lose revenue through excessive processing costs, poor authorization performance, outdated payment infrastructure, or unnecessary friction during checkout. Even small improvements in acceptance rates and transaction costs can have a significant impact on profitability over time.",
+      },
+      {
+        type: "p",
+        text: "Proficient works with merchants to optimize payment infrastructure, improve transaction routing, increase approval rates, and reduce unnecessary costs. The goal is simple: maximize legitimate sales while minimizing payment-related friction and expense.",
+      },
+      {
+        type: "p",
+        text: "When payments work efficiently, businesses capture more revenue from customers who are already ready to buy.",
+      },
+      {
+        type: "h3",
+        text: "After the Sale: Defending Revenue and Increasing Retention",
+      },
+      {
+        type: "p",
+        text: "The customer journey does not end after payment approval.",
+      },
+      {
+        type: "p",
+        text: "Returns, claims, friendly fraud, chargebacks, and customer dissatisfaction can quickly erode margins if not managed properly. Many merchants focus heavily on acquiring customers while overlooking the revenue leakage that occurs after fulfillment.",
+      },
+      {
+        type: "p",
+        text: "Proficient helps businesses implement post-purchase strategies that reduce losses from claims, disputes, and abuse while creating opportunities to retain customers through improved service experiences. The result is stronger customer relationships, increased lifetime value, and greater revenue retention.",
+      },
+      {
+        type: "h3",
+        text: "The Revenue Protection Mindset",
+      },
+      {
+        type: "p",
+        text: "The most successful businesses do not view payments as a standalone function. They view revenue protection as a continuous process that spans the entire customer lifecycle.",
+      },
+      {
+        type: "list",
+        items: [
+          "Before the sale, stop bad transactions.",
+          "During the sale, optimize acceptance and reduce costs.",
+          "After the sale, protect revenue and strengthen customer retention.",
+        ],
+      },
+      {
+        type: "p",
+        text: "This holistic approach allows merchants to keep more of what they earn while creating better experiences for legitimate customers.",
+      },
+      {
+        type: "p",
+        text: "At Proficient.tech, our mission is simple: help businesses protect, optimize, and grow revenue at every stage of the transaction lifecycle.",
+      },
+      {
+        type: "p",
+        text: "Because the best revenue is not just the revenue you generate—it's the revenue you keep.",
+      },
+    ],
+  },
+  {
     slug: "why-most-isos-cant-save-high-risk-merchants",
     title: "Why most ISOs can't save high-risk merchants",
     excerpt:
