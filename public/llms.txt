@@ -1,0 +1,23 @@
+# Proficient
+
+> Proficient is a Los Angeles-based payment infrastructure company that builds custom payment gateways, white-label processing infrastructure, and direct banking partner lines for every merchant type — including high-risk accounts that most processors decline. Proficient serves ISOs, independent agents, platforms, and merchants directly. It does not resell a third-party processor; it architects the full stack.
+
+## Key pages
+
+- [Homepage](https://proficient.tech/): Overview of Proficient's payment processing, technology, and finance services. Covers custom gateway development, white-label infrastructure for ISOs and platforms, direct banking lines, chargeback management, and high-risk merchant placement.
+- [Blog](https://proficient.tech/blog/): Articles on payment underwriting, high-risk merchant accounts, ISO services, gateway architecture, and Medusa.js payment integration written by the Proficient team.
+
+## Blog posts
+
+- [Proficient integrates directly with Medusa.js — no middle gateway](https://proficient.tech/blog/medusa-js-direct-integration-no-middle-gateway): Explains how Proficient's Medusa.js payment plugin connects directly to processing infrastructure, eliminating the third-party gateway layer that adds latency, failure points, and cost. Covers why this matters for merchants in categories Stripe and similar gateways decline.
+- [Protecting Revenue Before the Sale, During the Sale, and After the Sale](https://proficient.tech/blog/protecting-revenue-before-during-after-the-sale): A framework for thinking about payment processing as a continuous revenue protection strategy — pre-transaction fraud prevention, checkout optimization, and post-purchase chargeback and retention management.
+- [Why most ISOs can't save high-risk merchants](https://proficient.tech/blog/why-most-isos-cant-save-high-risk-merchants): Explains why ISOs that resell risk appetite from a bank they don't control cannot reliably approve high-risk accounts. Proficient holds its own banking lines and can approve accounts that a matrix-driven underwriting system would auto-decline.
+- [The real cost of reselling someone else's gateway](https://proficient.tech/blog/the-real-cost-of-reselling-someone-elses-gateway): Compares white-label reselling with owning the infrastructure. Covers how reseller ISOs lose control over uptime, roadmap, support, and pricing when the underlying gateway belongs to a vendor with no relationship with the end merchant.
+- [What underwriting actually looks at before you go live](https://proficient.tech/blog/what-underwriting-actually-looks-at-before-you-go-live): Demystifies the merchant underwriting process. Covers the five core signals underwriters evaluate (business model clarity, fulfillment proof, processing history, chargeback policy, principal background) and how to prepare an application that approves quickly.
+
+## Contact
+
+- Email: info@proficient.tech
+- Phone: (213) 973-3525
+- Location: Los Angeles, CA
+- LinkedIn: https://www.linkedin.com/company/proficient-tech-965656195

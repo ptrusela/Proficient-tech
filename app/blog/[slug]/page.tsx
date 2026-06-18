@@ -38,8 +38,47 @@ export default async function BlogPostPage({
   const post = getPostBySlug(slug);
   if (!post) notFound();
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Organization",
+      name: "Proficient",
+      url: "https://proficient.tech",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Proficient",
+      url: "https://proficient.tech",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://proficient.tech/assets/pt-mark.svg",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://proficient.tech/blog/${post.slug}`,
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://proficient.tech" },
+      { "@type": "ListItem", position: 2, name: "Blog", item: "https://proficient.tech/blog" },
+      { "@type": "ListItem", position: 3, name: post.title, item: `https://proficient.tech/blog/${post.slug}` },
+    ],
+  };
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <RevealObserver />
       <NavBar />
 
