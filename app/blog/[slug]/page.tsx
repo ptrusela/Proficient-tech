@@ -25,6 +25,14 @@ export async function generateMetadata({
       title: post.title,
       description: post.excerpt,
       type: "article",
+      publishedTime: post.date,
+      tags: [post.category],
+      url: `https://proficient.tech/blog/${post.slug}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
     },
   };
 }
@@ -112,6 +120,25 @@ export default async function BlogPostPage({
               }
               return <p key={i}>{block.text}</p>;
             })}
+          </div>
+          <div className="post-share reveal">
+            <span className="mono">Share</span>
+            <a
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`https://proficient.tech/blog/${post.slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="share-link"
+            >
+              LinkedIn →
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://proficient.tech/blog/${post.slug}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="share-link"
+            >
+              X →
+            </a>
           </div>
           <div className="post-cta reveal">
             <p className="lead">Have a merchant we should look at?</p>

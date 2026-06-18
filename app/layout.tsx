@@ -94,6 +94,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <link rel="alternate" type="application/rss+xml" title="Proficient Blog" href="/feed" />
       </head>
       <body className={`${archivo.variable} ${geistMono.variable}`}>
         {children}
