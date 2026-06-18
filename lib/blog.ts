@@ -15,6 +15,185 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "commercial-finance-capital-lending-fuel-your-business",
+    title: "Adding Fuel to Growth: Capital Lending in Many Forms for the Businesses We Process",
+    excerpt:
+      "Access to capital is not a separate conversation from payment processing — it is a natural extension of it. Proficient connects businesses to commercial finance partners across every lending category, because growth requires more than a gateway.",
+    date: "2026-06-18",
+    readTime: "5 min read",
+    category: "Finance",
+    body: [
+      {
+        type: "p",
+        text: "Every business that processes payments has a cash flow story. Revenue comes in, expenses go out, and somewhere in between sits the capital needed to hire, expand, purchase equipment, manage inventory, or bridge a slow season. Most businesses treat the payment processor and the lending conversation as two entirely separate relationships. They do not have to be.",
+      },
+      {
+        type: "p",
+        text: "Proficient works with a network of commercial finance lenders across every major lending category. Because we see the cash flow directly through processing, the businesses we work with are positioned to access capital faster, with better context behind the application, and in the form that actually fits how their business operates.",
+      },
+      {
+        type: "h3",
+        text: "Why payment processors and capital belong in the same conversation",
+      },
+      {
+        type: "p",
+        text: "A lender evaluating a business application is trying to answer one question: can this business repay? Processing data answers that question more directly than a tax return or a balance sheet. Revenue volume, transaction consistency, seasonality patterns, and chargeback ratios tell a complete story about how a business actually performs — not just how it looked at year-end.",
+      },
+      {
+        type: "p",
+        text: "When the processor and the lender are working from the same data, the underwriting conversation is faster and the approval is more accurately sized to what the business can actually support. That is the advantage of sourcing capital through a relationship that already knows your numbers.",
+      },
+      {
+        type: "h3",
+        text: "The forms capital takes",
+      },
+      {
+        type: "p",
+        text: "Different business needs call for different capital structures. Proficient connects businesses to lenders across all of the following:",
+      },
+      {
+        type: "list",
+        items: [
+          "Working capital loans — short-term funding for payroll, inventory, and operational gaps between revenue cycles",
+          "Revenue-based financing — capital repaid as a percentage of monthly revenue, sized to cash flow rather than a fixed schedule",
+          "Equipment financing and leasing — dedicated funding for machinery, technology, vehicles, or infrastructure with the asset itself as collateral",
+          "Merchant cash advances — lump-sum advances repaid through a portion of daily card volume, available quickly with minimal documentation",
+          "Business lines of credit — revolving access to capital drawn as needed, ideal for businesses with variable or seasonal cash flow",
+          "Invoice factoring — immediate liquidity against outstanding receivables, converting unpaid invoices into working capital without waiting on customer payment cycles",
+          "SBA-backed programs — government-supported lending for qualified businesses seeking longer terms and lower rates for expansion or acquisition",
+          "Commercial real estate financing — purchase, refinance, or construction funding for businesses investing in their physical footprint",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Matching the capital to the need",
+      },
+      {
+        type: "p",
+        text: "The wrong type of capital is expensive even when the rate looks right. A business that takes a 24-month term loan to solve a 90-day cash flow gap is paying interest on money it does not need for most of the loan period. A business that uses a revolving line to fund equipment it will use for seven years is refinancing that equipment every year.",
+      },
+      {
+        type: "p",
+        text: "Proficient's role is to match the structure to the actual need. We look at what the capital is for, how long it needs to last, how the repayment will interact with cash flow, and which lending partners have the appetite and the product for that specific situation. The goal is not to find any capital — it is to find the right capital.",
+      },
+      {
+        type: "h3",
+        text: "Capital for businesses that processing relationships already support",
+      },
+      {
+        type: "p",
+        text: "High-risk merchants, newer businesses, and operators in specialized industries are often told they do not qualify for conventional financing. The same factors that make a business harder to place with a standard processor — product category, revenue concentration, chargeback history — can create friction in a standard lending application.",
+      },
+      {
+        type: "p",
+        text: "Because Proficient already works in these categories on the processing side, our lending relationships extend into them as well. A merchant we process for has a documented cash flow history, a cleared underwriting relationship, and a processor that can speak to their business model. That context opens doors that a standalone lending application often cannot.",
+      },
+      {
+        type: "p",
+        text: "If you are a business that processes with Proficient — or one that is looking to — the capital conversation is available alongside the processing conversation. Growth requires more than a gateway. We can help with both.",
+      },
+    ],
+  },
+  {
+    slug: "custom-payment-system-built-around-your-business",
+    title: "Your Payment System Should Be Built for Your Business, Not Borrowed from Someone Else's",
+    excerpt:
+      "Off-the-shelf processors are built for the average merchant. If your business is not average — different pricing models, complex routing needs, high-risk categories, or platform-scale volume — the average solution will cost you.",
+    date: "2026-06-18",
+    readTime: "5 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "The default payment stack most businesses inherit was designed to onboard as many merchants as possible with as little friction as possible. That is not the same as being designed for your business. When your revenue model is subscription-based, your checkout is embedded in a platform you built, your customer base operates internationally, or your product category sits outside the standard risk matrix — the default stack starts showing its edges.",
+      },
+      {
+        type: "p",
+        text: "Proficient designs payment systems from the infrastructure up, built around what your business actually does rather than adapted from what a standard processor already offers.",
+      },
+      {
+        type: "h3",
+        text: "What off-the-shelf costs you",
+      },
+      {
+        type: "p",
+        text: "An off-the-shelf processor charges what it charges and routes how it routes. You get a merchant account, an API, and a rate schedule that was built for their margin, not yours. If you want a different routing path, a custom risk tolerance, a specific settlement window, or a gateway that integrates directly with software you built — you are working against the product instead of with it.",
+      },
+      {
+        type: "p",
+        text: "The cost shows up in basis points you cannot negotiate, authorization rates lower than they should be, development time spent working around API limitations, and eventual termination risk when your volume or category no longer fits the processor's appetite. A payment system that was never designed for your business will eventually make that clear.",
+      },
+      {
+        type: "h3",
+        text: "What designing for your business actually looks like",
+      },
+      {
+        type: "p",
+        text: "Building a payment system around a specific business starts with understanding what the business does — not at the product level, but at the transaction level. How does money move? Who initiates the payment? What triggers a refund? What does a dispute pattern look like for this category? What volume is expected in month one versus month twelve? What happens at peak?",
+      },
+      {
+        type: "p",
+        text: "From that picture, the architecture follows. Proficient builds across four layers that are configured specifically for each business relationship:",
+      },
+      {
+        type: "list",
+        items: [
+          "Gateway architecture — custom routing logic, failover paths, and network selection based on your transaction profile and volume",
+          "Underwriting parameters — risk tolerance and approval criteria set around your actual business model, not a category average",
+          "Software and tooling — APIs, webhooks, dashboards, and reporting built to connect with your existing stack rather than requiring you to adapt to ours",
+          "Banking lines — direct relationships with acquiring banks selected for your category, volume tier, and geographic footprint",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Business models that standard processors handle poorly",
+      },
+      {
+        type: "p",
+        text: "Some business models are structurally difficult for off-the-shelf processors to support well. Not because the businesses are problematic, but because the standard product was not designed with them in mind.",
+      },
+      {
+        type: "list",
+        items: [
+          "Subscription and recurring billing businesses with trial-to-paid conversion structures and high cancellation rates",
+          "Marketplaces and platforms that split payments across multiple sellers with variable payout timing",
+          "High-ticket merchants in services, coaching, or professional categories where individual transaction size is well above standard averages",
+          "High-risk verticals — nutraceuticals, telehealth, adult, travel, firearms accessories — where the standard processor relationship ends at the first chargeback spike",
+          "Software platforms embedding payments as a feature inside a product they built and own",
+          "International merchants processing in multiple currencies with cross-border settlement complexity",
+        ],
+      },
+      {
+        type: "p",
+        text: "Each of these situations benefits from a payment system designed with the business model in mind from the start — not retrofitted into one that was built for someone else.",
+      },
+      {
+        type: "h3",
+        text: "The difference between configuration and architecture",
+      },
+      {
+        type: "p",
+        text: "Most processors offer some degree of configuration: you can adjust retry logic, set velocity limits, add descriptor text. Configuration works within the boundaries of the existing system. Architecture sets the boundaries.",
+      },
+      {
+        type: "p",
+        text: "When Proficient builds a payment system for a specific business, the routing decisions, the risk parameters, the settlement structure, and the software layer are all built for that business from the start. If the business changes — new product line, new geography, new volume tier — the system can change with it, because the team that built it is still running it.",
+      },
+      {
+        type: "h3",
+        text: "Starting the conversation",
+      },
+      {
+        type: "p",
+        text: "The starting point is not a form or a rate quote. It is a conversation about what your business does, where it is going, and what the current payment setup is costing you — in fees, in declined transactions, in development time, or in risk.",
+      },
+      {
+        type: "p",
+        text: "If you have outgrown the processor you started with, or if you are building something new and want the payment infrastructure designed correctly from the beginning, that is the conversation Proficient is built for.",
+      },
+    ],
+  },
+  {
     slug: "intelligent-returns-claims-portal-retain-revenue",
     title: "Intelligent Returns and Claims: Turning Post-Purchase Costs into Revenue",
     excerpt:
