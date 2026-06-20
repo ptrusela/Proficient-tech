@@ -15,6 +15,252 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle",
+    title: "Fraud Doesn't End at Checkout",
+    excerpt:
+      "For many merchants, fraud prevention begins and ends at checkout. In reality, that is often where a different kind of fraud begins — and why revenue protection has to extend before, during, and after the sale.",
+    date: "2026-06-20",
+    readTime: "7 min read",
+    category: "Strategy",
+    body: [
+      {
+        type: "p",
+        text: "For many merchants, fraud prevention still begins and ends at checkout. The transaction is approved, the order ships, and the assumption is that the risk has passed. In reality, that is often where a different kind of fraud begins.",
+      },
+      {
+        type: "p",
+        text: "Modern commerce fraud is no longer limited to stolen cards and fake identities. It now extends into returns abuse, false claims, chargebacks, friendly fraud, refund manipulation, reseller abuse, and policy exploitation. In other words, a merchant can win the transaction and still lose the revenue.",
+      },
+      {
+        type: "p",
+        text: "That is why revenue protection cannot be viewed as a single fraud tool at checkout. It has to be approached as a full lifecycle strategy — one that protects the business before the sale, during the sale, and after the sale.",
+      },
+      {
+        type: "h3",
+        text: "The Old View of Fraud Is Too Narrow",
+      },
+      {
+        type: "p",
+        text: "Traditional fraud prevention has focused almost entirely on the payment event itself:",
+      },
+      {
+        type: "list",
+        items: [
+          "Is the card stolen?",
+          "Does AVS match?",
+          "Does the billing address look risky?",
+          "Is the transaction likely to chargeback immediately?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Those checks still matter, but they only address one part of the problem. Fraud today often shows up after the order has already been accepted and fulfilled. Merchants are increasingly dealing with customers — or organized bad actors — who know how to exploit return policies, file false item-not-received claims, abuse warranties, or dispute legitimate purchases with their bank.",
+      },
+      {
+        type: "p",
+        text: "This creates a dangerous blind spot. A merchant may believe they have strong fraud controls because they are blocking suspicious orders, while margin is quietly being lost through post-purchase abuse.",
+      },
+      {
+        type: "h3",
+        text: "Fraud Has Moved Beyond the Checkout Page",
+      },
+      {
+        type: "p",
+        text: "The ecommerce and retail landscape has changed. Fraud is no longer just about preventing unauthorized transactions. It is also about identifying and limiting behavior that erodes revenue after the payment clears. Common examples include:",
+      },
+      {
+        type: "h3",
+        text: "Friendly Fraud and Chargeback Abuse",
+      },
+      {
+        type: "p",
+        text: "A legitimate customer receives the product, keeps it, and then disputes the charge anyway. Sometimes it is confusion. Sometimes it is opportunistic abuse. Either way, the merchant can lose the product, the revenue, the shipping cost, and incur chargeback fees on top of it.",
+      },
+      {
+        type: "h3",
+        text: "Return and Refund Abuse",
+      },
+      {
+        type: "p",
+        text: "Customers may wear, use, or resell products and then return them outside the spirit of the policy. Others repeatedly buy multiple versions of an item with the intent to send most of them back, creating significant operational and margin drag. In higher-risk cases, merchants face empty-box returns, item swaps, or false damage claims.",
+      },
+      {
+        type: "h3",
+        text: "Policy Gaming",
+      },
+      {
+        type: "p",
+        text: "Bad actors often learn exactly how a merchant's support, warranty, exchange, or refund process works and then exploit it. If a business has generous policies but no visibility into repeat abuse patterns, those policies can become a liability rather than a growth lever.",
+      },
+      {
+        type: "h3",
+        text: "False Claims After Fulfillment",
+      },
+      {
+        type: "p",
+        text: "Item never arrived. The box was empty. The product was damaged. Some of these claims are legitimate and need to be handled well. Some are not. The problem is that merchants who lack post-purchase risk intelligence are often forced to make expensive decisions with incomplete information.",
+      },
+      {
+        type: "h3",
+        text: "The Real Cost of Fraud Is Larger Than the Chargeback",
+      },
+      {
+        type: "p",
+        text: "When merchants think about fraud, they often focus on direct payment loss. But the real cost is much broader. Fraud and abuse create downstream damage across the business:",
+      },
+      {
+        type: "list",
+        items: [
+          "Lost product and lost revenue",
+          "Chargeback fees and dispute overhead",
+          "Increased refund volume",
+          "Shipping and restocking costs",
+          "Higher customer support burden",
+          "Lower team efficiency",
+          "Increased processor scrutiny and risk exposure",
+          "Reduced margins and weaker retention economics",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is why fraud prevention should not be isolated inside a checkout tool or treated as a narrow risk function. It directly affects profitability, customer experience, operational workload, and long-term merchant health.",
+      },
+      {
+        type: "h3",
+        text: "Revenue Protection Requires a Full Lifecycle Approach",
+      },
+      {
+        type: "p",
+        text: "At Proficient, we believe merchants need to think about fraud and revenue protection as a connected system rather than a one-time event. The strongest strategy protects revenue across three stages.",
+      },
+      {
+        type: "h3",
+        text: "Before the Sale: Prevent Bad Transactions Before They Happen",
+      },
+      {
+        type: "p",
+        text: "Revenue protection starts before an order is ever placed. This is where the foundation matters most: merchant setup, payment infrastructure, underwriting alignment, fraud controls, and clear operational policies. The goal is to reduce preventable risk without damaging conversion. That includes:",
+      },
+      {
+        type: "list",
+        items: [
+          "Structuring payment flows correctly",
+          "Using fraud tools and rules that fit the business model",
+          "Reducing unnecessary false declines",
+          "Building clear policies around shipping, returns, and exchanges",
+          "Making sure the merchant account and acquiring setup can support the business long term",
+        ],
+      },
+      {
+        type: "p",
+        text: "This stage is about creating the right operating environment. A merchant with poor payment infrastructure or weak pre-transaction controls will often feel the effects later in the form of disputes, losses, and processor pressure.",
+      },
+      {
+        type: "h3",
+        text: "During the Sale: Optimize Approval, Detect Risk, and Preserve Good Orders",
+      },
+      {
+        type: "p",
+        text: "The checkout moment is still critical. Merchants need to identify truly bad transactions while preserving legitimate sales. Overly aggressive fraud settings block good customers; overly permissive settings let bad orders through. During the sale, revenue protection means:",
+      },
+      {
+        type: "list",
+        items: [
+          "Screening for fraud signals without killing conversion",
+          "Optimizing payment routing and acceptance",
+          "Reducing false declines",
+          "Using human review or layered decisioning where needed",
+          "Capturing the right transaction data for downstream dispute defense",
+        ],
+      },
+      {
+        type: "p",
+        text: "This is not just about stopping fraud. It is about maximizing good revenue while controlling avoidable loss.",
+      },
+      {
+        type: "h3",
+        text: "After the Sale: Protect Revenue from Returns Abuse, Claims, and Friendly Fraud",
+      },
+      {
+        type: "p",
+        text: "This is the stage too many merchants underinvest in — and where a growing amount of revenue is lost. Post-purchase revenue protection means watching what happens after the payment is approved:",
+      },
+      {
+        type: "list",
+        items: [
+          "Are there repeat refund abusers?",
+          "Are certain customers or order patterns tied to chargebacks?",
+          "Are false item-not-received claims increasing?",
+          "Are return policies being exploited by repeat offenders?",
+          "Are exchanges being used strategically to preserve revenue instead of defaulting to refunds?",
+        ],
+      },
+      {
+        type: "p",
+        text: "A merchant that lacks visibility here may think they have a fraud problem at checkout when the real issue is happening in returns, support, and disputes. The best merchants are now treating post-purchase operations as a core part of risk management. They understand that customer experience and fraud prevention are no longer separate functions. They overlap.",
+      },
+      {
+        type: "h3",
+        text: "Customer Experience and Fraud Prevention Are Now Connected",
+      },
+      {
+        type: "p",
+        text: "Fraud prevention used to be viewed as a gatekeeper function, while customer experience was viewed as a growth function. In reality, merchants need both working together.",
+      },
+      {
+        type: "p",
+        text: "A merchant that blocks too many legitimate customers creates friction and loses sales. A merchant that makes returns or support painful damages loyalty. But a merchant that gives away refunds, accepts abusive claims, and overlooks repeat policy abuse will slowly erode margin.",
+      },
+      {
+        type: "p",
+        text: "The answer is not to become more aggressive across the board. It is to become more intelligent. Merchants need better visibility into who they are serving, how customers behave over time, and where abuse is actually occurring. That means connecting payment performance, fraud signals, chargeback patterns, support behavior, returns data, and operational policies into a more complete picture.",
+      },
+      {
+        type: "h3",
+        text: "The Future of Fraud Prevention Is Revenue Protection",
+      },
+      {
+        type: "p",
+        text: "The merchants that win over the next several years will not be the ones that simply add another checkout fraud filter. They will be the ones that understand revenue protection as an operating discipline. That means asking bigger questions:",
+      },
+      {
+        type: "list",
+        items: [
+          "How do we stop bad transactions before they happen?",
+          "How do we increase approval rates without increasing fraud?",
+          "How do we reduce false declines and preserve legitimate revenue?",
+          "How do we limit chargebacks and friendly fraud?",
+          "How do we prevent returns, claims, and refund abuse from draining margin?",
+          "How do we create a better customer experience while still protecting the business?",
+        ],
+      },
+      {
+        type: "p",
+        text: "Those questions cannot be answered by one tool alone. They require the right payment infrastructure, the right risk controls, the right post-purchase processes, and the right strategic partner.",
+      },
+      {
+        type: "h3",
+        text: "Final Thoughts",
+      },
+      {
+        type: "p",
+        text: "Fraud does not end when a payment is approved. In many cases, it has only changed form.",
+      },
+      {
+        type: "p",
+        text: "If merchants want to protect revenue in today's environment, they need to stop viewing fraud as a checkout problem and start treating it as a full customer-lifecycle challenge. That means protecting the business before the sale, during the sale, and after the sale.",
+      },
+      {
+        type: "p",
+        text: "At Proficient, that is how we think about revenue protection. It is not just about blocking bad transactions. It is about helping merchants build stronger payment infrastructure, improve approval performance, reduce losses, and keep more of the revenue they earn.",
+      },
+      {
+        type: "p",
+        text: "Because in modern commerce, the sale is only the beginning of the risk — and protecting revenue requires seeing the full picture.",
+      },
+    ],
+  },
+  {
     slug: "commercial-finance-capital-lending-fuel-your-business",
     title: "Adding Fuel to Growth: Capital Lending in Many Forms for the Businesses We Process",
     excerpt:
