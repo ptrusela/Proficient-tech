@@ -15,6 +15,131 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "medusa-js-payment-partner-proficient",
+    title: "Medusa.js Commerce Deserves a Payment Partner That Builds Too",
+    excerpt:
+      "Medusa.js gives merchants full ownership of their commerce stack. But the payment layer is where that control usually ends. Proficient changes that — with a direct plugin, in-house underwriting, and infrastructure that scales with what merchants are actually building.",
+    date: "2026-06-20",
+    readTime: "5 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Medusa.js gives merchants something most commerce platforms do not: genuine ownership of the stack. Custom storefront, custom admin, custom data, custom workflows. The platform is built for teams that do not want to be constrained by what someone else decided commerce should look like.",
+      },
+      {
+        type: "p",
+        text: "But payment infrastructure has historically been the exception to that ownership. Even on a fully custom Medusa build, most merchants end up routing through Stripe — which means accepting Stripe's risk filters, Stripe's pricing, Stripe's approval logic, and Stripe's definition of which businesses are allowed to process.",
+      },
+      {
+        type: "p",
+        text: "Proficient changes that. A direct Medusa.js payment provider plugin connects to Proficient's own processing infrastructure, and the merchant's payment layer becomes as configurable and controllable as the rest of their stack.",
+      },
+      {
+        type: "h3",
+        text: "Who the Proficient and Medusa.js Partnership Is Built For",
+      },
+      {
+        type: "p",
+        text: "Not every Medusa merchant needs to move off Stripe. But several categories consistently hit friction that a direct processing relationship resolves:",
+      },
+      {
+        type: "list",
+        items: [
+          "High-risk product categories — nutraceuticals, telehealth, supplements, adult content, travel, and others that Stripe flags or terminates without warning",
+          "High-volume merchants whose interchange costs warrant direct rate negotiation rather than standard gateway markup",
+          "Subscription and recurring businesses with trial-to-paid structures and elevated cancellation or refund rates",
+          "Marketplaces and multi-vendor platforms that need split payment logic and per-seller risk tracking",
+          "B2B merchants running invoice-based or net-terms payment workflows",
+          "International merchants needing multi-currency routing and cross-border settlement optimization",
+          "Agencies and platform builders creating white-label commerce experiences for clients who need their own payment identity",
+        ],
+      },
+      {
+        type: "h3",
+        text: "What a Direct Integration Unlocks",
+      },
+      {
+        type: "p",
+        text: "When Proficient is the payment provider in a Medusa build, the merchant gets more than a working checkout. They get a processing relationship that is aligned to their actual business:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transactions route directly to Proficient's processing infrastructure — no third-party gateway layer adding latency, cost, or its own risk filters",
+          "Authorization decisions are made by underwriters who know the business model, not by an automated matrix calibrated for low-risk averages",
+          "Routing logic is configurable at the processor level — optimized for approval rate, cost, or category-specific performance",
+          "The full transaction lifecycle (authorization, capture, void, refund) is handled by the same relationship — not split across a gateway and a processor",
+          "No per-transaction gateway fee on top of interchange and processing margin",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Approval Rates Are a Revenue Problem",
+      },
+      {
+        type: "p",
+        text: "One of the fastest places the Proficient integration pays for itself is authorization rate improvement. Gateway-layer processors apply their own approval filters before the transaction reaches the card network — which means a legitimate order can fail not because the customer's bank declined it, but because the processor's risk layer flagged the transaction type.",
+      },
+      {
+        type: "p",
+        text: "With Proficient, routing decisions are made at the processor level with direct acquiring relationships calibrated to the merchant's specific transaction profile. Higher approval rates on legitimate orders translate directly to revenue — and for high-volume Medusa merchants, even small percentage improvements compound quickly.",
+      },
+      {
+        type: "h3",
+        text: "Chargeback Defense Connected to the Transaction",
+      },
+      {
+        type: "p",
+        text: "When chargebacks happen on a Stripe integration, the dispute data lives in Stripe. The merchant has to pull it manually and build their defense from a system that is separate from their Medusa order data. When Proficient is the processor, chargeback data connects directly to the transaction record — the processing relationship owns both the authorization and the dispute.",
+      },
+      {
+        type: "p",
+        text: "That connection matters for merchants in categories with elevated chargeback exposure, for Medusa merchants running subscription businesses, and for anyone building a multi-vendor marketplace where dispute patterns need to be tracked at the seller level and fed back into underwriting decisions.",
+      },
+      {
+        type: "h3",
+        text: "Capital Access for Medusa Merchants That Are Scaling",
+      },
+      {
+        type: "p",
+        text: "Merchants running meaningful volume through Proficient have access to commercial finance relationships that come with the processing partnership. Revenue-based financing, working capital, equipment lending, and lines of credit can be structured around actual processing data rather than backward-looking financials.",
+      },
+      {
+        type: "p",
+        text: "For Medusa merchants that are scaling — adding product categories, entering new markets, building out fulfillment infrastructure, or acquiring inventory ahead of a peak season — having capital access through the same relationship as payment infrastructure removes a friction point that usually requires starting an entirely separate conversation with an unrelated lender.",
+      },
+      {
+        type: "h3",
+        text: "White-Label for Agencies Building on Medusa",
+      },
+      {
+        type: "p",
+        text: "Medusa.js is a common foundation for agencies and platform builders creating commerce experiences under a client's brand. Proficient's white-label processing works the same way: the client's checkout, the client's domain, the client's brand — with Proficient operating the gateway and banking infrastructure behind it.",
+      },
+      {
+        type: "p",
+        text: "For agencies building on Medusa, this means offering clients a complete commerce stack that includes payment infrastructure — without depending on a consumer-facing gateway that can terminate the account without notice, without explanation, and without regard for the agency's relationship with the client.",
+      },
+      {
+        type: "h3",
+        text: "The Plugin Is the Starting Point",
+      },
+      {
+        type: "p",
+        text: "The Proficient Medusa payment provider installs via npm, registers in the Medusa config, and handles authorization, capture, void, and refund without requiring changes to the storefront or checkout UI. It is designed to drop into an existing Medusa build with minimal friction.",
+      },
+      {
+        type: "p",
+        text: "But the plugin is just the entry point. What comes with it — the underwriting relationship, the processing infrastructure, the capital access, the chargeback defense, and the white-label capability — is the part that makes Medusa commerce genuinely ownable at every layer.",
+      },
+      {
+        type: "p",
+        text: "If you are building on Medusa and want payment infrastructure that matches the quality of the rest of your stack, that is the conversation Proficient is built for.",
+      },
+    ],
+  },
+  {
     slug: "protecting-your-business-proficients-holistic-view",
     title: "Protection Isn't a Product. It's a System.",
     excerpt:
