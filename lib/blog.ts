@@ -15,6 +15,126 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "medusa-2-17-2-async-payments-pending-authorization",
+    title: "Medusa 2.17.2 Just Made Async Payment Methods First-Class. Here's Why Marketplace Builders Should Care.",
+    excerpt:
+      "Medusa's 2.17.2 release shipped native support for asynchronous payment methods built around a new pending_authorization status. If you're building a marketplace, selling B2B, or serving markets where bank-based payments dominate — this is the release that removes a wall people have been climbing over for two years.",
+    date: "2026-07-08",
+    readTime: "6 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Medusa's 2.17.2 release (July 1, 2026) shipped something that looks like a small changelog line and is actually a structural change to how money can move through a Medusa store: native support for asynchronous payment methods, built around a new pending_authorization payment status.",
+      },
+      {
+        type: "p",
+        text: "If you only ever take cards, you can skip this one. If you're building a marketplace, selling B2B, or serving customers in markets where bank-based payments dominate — this is the release that removes a wall people have been climbing over for two years.",
+      },
+      {
+        type: "h3",
+        text: "The Problem It Solves",
+      },
+      {
+        type: "p",
+        text: "Card payments are synchronous. The customer confirms, the processor answers in about two seconds, and the checkout knows immediately whether it can place the order. Medusa's payment lifecycle was built around that assumption: a payment session moves from pending to authorized in one request, and the order is created on the far side of authorization.",
+      },
+      {
+        type: "p",
+        text: "A large share of real-world payment methods do not work that way. ACH debits in the US take one to three business days to settle and can fail days after they are initiated. SEPA Direct Debit in Europe behaves similarly. Bank transfers, Pix-style push payments, boleto-style vouchers, and payment links all share the same shape: the customer commits at checkout, but confirmation arrives later, out-of-band, via a webhook from the provider.",
+      },
+      {
+        type: "p",
+        text: "Until now, Medusa had no intermediate state between processing and authorized. There was no sanctioned way to say this payment is legitimately in flight — create the order and confirm it later. Teams that needed async methods ended up forking the payment workflows, abusing manual-capture semantics, or building shadow order states outside the core — all of which meant every Medusa upgrade became a merge-conflict negotiation.",
+      },
+      {
+        type: "h3",
+        text: "What Actually Changed",
+      },
+      {
+        type: "p",
+        text: "2.17.2 introduces a pending_authorization status that a payment provider can return during authorization. When it does, Medusa allows the order to be created before the payment is authorized, and the authorization confirmation flows in later through the provider's webhook handling. The support runs through the Payment module, the core checkout workflows, the first-party Stripe provider, the JS SDK, and the admin dashboard — so the deferred state is visible and handled consistently everywhere an order's payment status matters.",
+      },
+      {
+        type: "p",
+        text: "Two design choices are worth appreciating. First, it is opt-in at the provider level: a payment provider that never returns pending_authorization behaves exactly as before, so nothing breaks for existing integrations. Second, it puts the async decision where it belongs — in the provider, which is the only component that actually knows whether a given payment method confirms synchronously or not.",
+      },
+      {
+        type: "h3",
+        text: "It Unlocks the High-Ticket Segment",
+      },
+      {
+        type: "p",
+        text: "The economics of async rails are the whole point. Card processing costs roughly 2.9% plus 30 cents; ACH typically costs a fraction of a percent, often capped at a few dollars. On an $80 consumer order, nobody cares. On a $12,000 B2B wholesale order, the difference is real margin — and B2B buyers frequently prefer bank debit because it maps to how their accounts-payable process already works. B2B commerce on headless platforms has been growing fast; the payment rail that segment wants was the one Medusa could not cleanly support until this release.",
+      },
+      {
+        type: "h3",
+        text: "It Changes the Risk Model — and That's an Operations Problem",
+      },
+      {
+        type: "p",
+        text: "With cards, payment failure happens before the order exists. With async methods, failure happens after — an ACH debit can return unpaid (insufficient funds, closed account, disputed authorization) days later, when the order is already in your fulfillment pipeline. Supporting pending_authorization at the platform level is necessary but not sufficient: you still need policy.",
+      },
+      {
+        type: "list",
+        items: [
+          "When do you reserve inventory — on authorization or on capture?",
+          "Do you gate fulfillment on capture, or ship on pending authorization?",
+          "What is your dunning flow when a debit bounces?",
+          "Who eats the loss on a marketplace — the platform or the vendor?",
+        ],
+      },
+      {
+        type: "p",
+        text: "These are underwriting and treasury questions wearing an engineering costume, and they are exactly the questions that separate we integrated a gateway from we built a payments operation.",
+      },
+      {
+        type: "h3",
+        text: "For Marketplaces, It Compounds",
+      },
+      {
+        type: "p",
+        text: "Marketplace payments already involve split funds, platform fees, and vendor payout timing. Add async methods and you get a new question: when a $10,000 ACH order is pending authorization, when does the vendor's share become payable? The safe answer — hold transfers until the debit clears — requires your split-payment logic and your payment-status logic to talk to each other.",
+      },
+      {
+        type: "p",
+        text: "Platforms that get this right can offer vendors something genuinely differentiated: low-fee, high-ticket bank payments without eating the return risk blindly. That is a meaningful competitive advantage in B2B and wholesale marketplace categories where payment cost is a real line item.",
+      },
+      {
+        type: "h3",
+        text: "If You Maintain a Payment Provider (or Plan To)",
+      },
+      {
+        type: "p",
+        text: "The upgrade path for provider authors is pleasantly small. Your authorization path returns pending_authorization for payment method types that confirm out-of-band, and your webhook handler maps the provider's confirmation event to the authorized action when it lands. Card-only providers can ignore the feature entirely.",
+      },
+      {
+        type: "p",
+        text: "If you are building against the release, note one adjacent detail: 2.17.0 shipped a worker-mode startup regression, so target 2.17.1 or later — practically, just go straight to 2.17.2.",
+      },
+      {
+        type: "p",
+        text: "We are building in this space ourselves: our open-source Stripe Connect onboarding and split-payments plugin for Medusa v2 targets 2.17.2, with async method support (ACH and SEPA via pending_authorization) on the near-term roadmap precisely because of this release.",
+      },
+      {
+        type: "h3",
+        text: "The Bigger Signal",
+      },
+      {
+        type: "p",
+        text: "Platform maturity in commerce tends to follow the same arc: first the catalog, then the checkout, then the money movement — and the money movement is always last because it is the hardest to abstract. Medusa adding a deferred authorization state to its core is a signal that the platform is graduating from cards work to payments infrastructure, the layer where marketplaces, B2B, and regional payment methods live.",
+      },
+      {
+        type: "p",
+        text: "That layer is also where most teams underestimate the work. The status enum is the easy part; the underwriting, onboarding, fee logic, and failure handling around it are where projects stall.",
+      },
+      {
+        type: "p",
+        text: "Proficient builds payment infrastructure for headless commerce — gateway integrations, merchant underwriting and KYB onboarding, split payments, and PayFac architecture on Medusa and adjacent platforms. If you are wrestling with async payments, marketplace splits, or vendor onboarding, reach out at proficient.tech.",
+      },
+    ],
+  },
+  {
     slug: "medusa-js-payment-partner-proficient",
     title: "Medusa.js Commerce Deserves a Payment Partner That Builds Too",
     excerpt:
