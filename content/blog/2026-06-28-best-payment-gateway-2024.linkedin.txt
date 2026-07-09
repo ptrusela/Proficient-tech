@@ -1,0 +1,13 @@
+Most payment gateway comparisons will cost you more than they save.
+
+The standard comparison table ranks on headline fees, then lists features. That framework works for a simple store selling to one country. For a growth-stage startup, it will lead you to a migration you did not budget for — one that can cost hundreds of thousands in engineering time alone.
+
+The right question is total cost of ownership over two to three years. That means modelling fees at your projected volume, not your current one. It means accounting for engineering time to integrate and maintain. It means understanding how settlement timing affects your working capital and whether your dispute workflow is automated or quietly eating your team's hours.
+
+It also means choosing the right category of gateway for your model — fully integrated platform, direct acquiring, orchestration layer, or vertical specialist. That decision alone narrows your shortlist from ten options to two or three.
+
+If you are expanding internationally, the stakes are higher. Local payment method coverage, FX handling, and regulatory compliance are not secondary considerations. In many markets, they determine whether you convert at all.
+
+The full framework — including technical criteria, red flags to probe in vendor conversations, and questions on contract terms — is on the Proficient blog at proficient.tech.
+
+#payments #fintech #startups #paymentinfrastructure #CTO
