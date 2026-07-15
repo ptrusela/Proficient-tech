@@ -22,6 +22,7 @@ export function NavBar() {
           <a className="link" href="#services">Services</a>
           <a className="link" href="#industries">Industries</a>
           <a className="link" href="#partners">Partners</a>
+          <a className="link" href="/medusa">Medusa.js</a>
           <a className="link" href="/blog">Blog</a>
         </nav>
         <div className="nav-cta">

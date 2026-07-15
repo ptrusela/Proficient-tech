@@ -1154,6 +1154,9 @@ footer {
 .blog-hero .lead {
   margin-top: 18px;
 }
+.medusa-hero .hero-actions {
+  margin-top: 32px;
+}
 .blog-list {
   padding-top: 0;
 }

@@ -15,6 +15,153 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "commercial-finance-full-suite-proficient-lending-partners",
+    title: "The Full Spectrum of Commercial Finance: What Proficient's Lending Partners Can Do",
+    excerpt:
+      "Most businesses know about bank loans. Far fewer know about the non-bank commercial financing options that cover the gaps — asset-based lines, factoring, purchase-order funding, equipment capital, and growth financing up to $40 million. Proficient's lending partners offer all of it.",
+    date: "2026-07-08",
+    readTime: "6 min read",
+    category: "Finance",
+    body: [
+      {
+        type: "p",
+        text: "Bank financing is designed for businesses that already look like they do not need it: strong balance sheets, clean credit, predictable cash flow, and assets that fit a conventional underwriting box. The businesses that most need capital are often the ones that do not fit that profile.",
+      },
+      {
+        type: "p",
+        text: "Proficient's commercial finance partner network operates outside the bank model. Non-bank lenders with facilities ranging from $50,000 to $40 million, advance rates of 75% to 95% on eligible assets, same-day funding in certain cases, and no monthly minimums — structured around how businesses actually operate rather than how a bank wants them to look on paper.",
+      },
+      {
+        type: "p",
+        text: "Here is the full suite of what is available through our lending relationships.",
+      },
+      {
+        type: "h3",
+        text: "Asset-Based Revolving Lines of Credit",
+      },
+      {
+        type: "p",
+        text: "Senior-secured revolving facilities backed primarily by accounts receivable and inventory. Unlike a traditional term loan, a revolving line scales with the business — as receivables and inventory grow, the available credit grows with them. This is one of the most flexible structures available for businesses with strong asset bases but variable or seasonal revenue cycles.",
+      },
+      {
+        type: "p",
+        text: "Asset-based lending extends this further: flexible credit secured by a combination of receivables, inventory, and equipment. Businesses that carry multiple asset types can borrow against the full collateral pool rather than being limited to one category.",
+      },
+      {
+        type: "h3",
+        text: "Factoring",
+      },
+      {
+        type: "p",
+        text: "Factoring converts unpaid invoices into immediate working capital without taking on debt. A business sells its receivables to a lender at a discount and receives cash now rather than waiting 30, 60, or 90 days for customers to pay.",
+      },
+      {
+        type: "p",
+        text: "Proficient's lending partners offer the full range of factoring structures:",
+      },
+      {
+        type: "list",
+        items: [
+          "Recourse factoring: the business retains credit risk if the customer does not pay",
+          "Non-recourse factoring: the lender absorbs the credit risk on approved invoices",
+          "International factoring: cross-border receivables financing for businesses with overseas customers",
+          "Receivables management: collections, credit protection, and ongoing receivables administration as part of the facility",
+        ],
+      },
+      {
+        type: "p",
+        text: "For businesses that invoice other businesses and carry significant outstanding receivables at any given time, factoring can replace a working capital loan entirely — turning the receivables ledger itself into a liquidity facility.",
+      },
+      {
+        type: "h3",
+        text: "Inventory Financing",
+      },
+      {
+        type: "p",
+        text: "For businesses where the asset is inventory rather than receivables, inventory financing uses eligible stock as collateral to fund operations. Retailers, distributors, and manufacturers that carry significant inventory between purchase and sale can borrow against that inventory rather than waiting for it to convert to cash through sales.",
+      },
+      {
+        type: "h3",
+        text: "Purchase-Order Financing",
+      },
+      {
+        type: "p",
+        text: "Purchase-order financing solves a specific problem: a business has a firm order from a creditworthy customer but does not have the cash to produce or source the product to fulfill it. The lender finances the cost of goods or production tied directly to the confirmed order, the order is fulfilled, and the lender is repaid when the customer pays.",
+      },
+      {
+        type: "p",
+        text: "This structure is purpose-built for businesses that win orders larger than their current working capital can support — manufacturers, importers, distributors, and product companies that need to close the gap between receiving an order and receiving payment.",
+      },
+      {
+        type: "h3",
+        text: "Equipment Financing",
+      },
+      {
+        type: "p",
+        text: "Equipment financing covers both directions: acquiring new assets and extracting capital from assets already owned. Structures include equipment leases and equipment-finance agreements for purchasing machinery, vehicles, technology, or other essential business equipment.",
+      },
+      {
+        type: "p",
+        text: "For businesses that own unencumbered equipment, sale-leaseback structures allow the business to monetize existing assets while retaining use of the equipment — converting a fixed asset into immediate working capital without disrupting operations.",
+      },
+      {
+        type: "h3",
+        text: "CPG+ Growth Capital",
+      },
+      {
+        type: "p",
+        text: "Consumer-product brands have specific capital needs that general commercial lenders often underserve: inventory-heavy balance sheets, long cash conversion cycles, seasonal demand patterns, and retail payment terms that can stretch 60 to 90 days. CPG+ growth capital is non-dilutive financing designed specifically for established consumer brands navigating exactly these dynamics.",
+      },
+      {
+        type: "p",
+        text: "This structure allows brands to fund growth — new SKUs, retail expansion, seasonal inventory builds — without giving up equity or taking on debt that does not fit the seasonality of the business.",
+      },
+      {
+        type: "h3",
+        text: "Industries Our Partners Work In",
+      },
+      {
+        type: "p",
+        text: "Non-bank commercial lenders are specifically suited to industries that conventional banks approach cautiously. Proficient's lending partners actively serve:",
+      },
+      {
+        type: "list",
+        items: [
+          "Construction and contracting",
+          "Staffing and professional employer organizations",
+          "Transportation and logistics",
+          "Manufacturing and distribution",
+          "Ammunition and firearms accessories",
+          "Cannabis and ancillary cannabis businesses",
+          "Oilfield services and energy",
+          "Professional services",
+          "Consumer packaged goods",
+          "Importers and exporters with international receivables",
+        ],
+      },
+      {
+        type: "p",
+        text: "Many of these industries are either underserved or explicitly excluded by traditional bank underwriting. Non-bank commercial finance was built for this territory.",
+      },
+      {
+        type: "h3",
+        text: "What the Structure Looks Like",
+      },
+      {
+        type: "p",
+        text: "Facilities range from $50,000 for smaller working-capital needs up to $40 million for established middle-market businesses. Advance rates on eligible receivables typically run from 75% to 95%, depending on the quality of the receivables and the structure of the facility. Factoring rates generally fall between 1.5% and 3% per 30 days depending on the transaction. Same-day funding is available in qualifying situations, and facilities are structured without monthly minimums that penalize businesses for variable draw patterns.",
+      },
+      {
+        type: "p",
+        text: "The right structure depends on what the business needs the capital for, what assets it has to secure the facility, and how the repayment interacts with actual cash flow timing. Proficient's role is to match the business to the right structure and the right lender — not to fit every situation into the same product.",
+      },
+      {
+        type: "p",
+        text: "If your business has been told it does not qualify for conventional financing, or if the products a bank offers simply do not fit how your business operates, that is exactly the situation our commercial finance network is designed for. Reach out to start the conversation.",
+      },
+    ],
+  },
+  {
     slug: "medusa-2-17-2-async-payments-pending-authorization",
     title: "Medusa 2.17.2 Just Made Async Payment Methods First-Class. Here's Why Marketplace Builders Should Care.",
     excerpt:
