@@ -31,6 +31,7 @@ export function Footer() {
             </div>
             <div className="foot-col">
               <h4>Resources</h4>
+              <a href="/high-risk">High-Risk Accounts</a>
               <a href="/medusa">Medusa.js</a>
               <a href="/blog">Blog</a>
             </div>

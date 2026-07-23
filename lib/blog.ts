@@ -1471,6 +1471,77 @@ export function getAllPosts(): BlogPost[] {
   );
 }
 
+export const relatedPostsMap: Record<string, string[]> = {
+  "business-capital-for-payment-processing-merchants": [
+    "commercial-finance-full-suite-proficient-lending-partners",
+    "commercial-finance-capital-lending-fuel-your-business",
+    "what-underwriting-actually-looks-at-before-you-go-live",
+  ],
+  "commercial-finance-full-suite-proficient-lending-partners": [
+    "business-capital-for-payment-processing-merchants",
+    "commercial-finance-capital-lending-fuel-your-business",
+    "why-most-isos-cant-save-high-risk-merchants",
+  ],
+  "medusa-2-17-2-async-payments-pending-authorization": [
+    "medusa-js-payment-partner-proficient",
+    "medusa-js-direct-integration-no-middle-gateway",
+  ],
+  "medusa-js-payment-partner-proficient": [
+    "medusa-2-17-2-async-payments-pending-authorization",
+    "medusa-js-direct-integration-no-middle-gateway",
+    "custom-payment-system-built-around-your-business",
+  ],
+  "protecting-your-business-proficients-holistic-view": [
+    "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle",
+    "protecting-revenue-before-during-after-the-sale",
+    "intelligent-returns-claims-portal-retain-revenue",
+  ],
+  "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle": [
+    "protecting-revenue-before-during-after-the-sale",
+    "intelligent-returns-claims-portal-retain-revenue",
+    "protecting-your-business-proficients-holistic-view",
+  ],
+  "commercial-finance-capital-lending-fuel-your-business": [
+    "business-capital-for-payment-processing-merchants",
+    "commercial-finance-full-suite-proficient-lending-partners",
+  ],
+  "custom-payment-system-built-around-your-business": [
+    "the-real-cost-of-reselling-someone-elses-gateway",
+    "why-most-isos-cant-save-high-risk-merchants",
+    "medusa-js-direct-integration-no-middle-gateway",
+  ],
+  "intelligent-returns-claims-portal-retain-revenue": [
+    "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle",
+    "protecting-revenue-before-during-after-the-sale",
+    "protecting-your-business-proficients-holistic-view",
+  ],
+  "medusa-js-direct-integration-no-middle-gateway": [
+    "medusa-js-payment-partner-proficient",
+    "custom-payment-system-built-around-your-business",
+    "medusa-2-17-2-async-payments-pending-authorization",
+  ],
+  "protecting-revenue-before-during-after-the-sale": [
+    "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle",
+    "intelligent-returns-claims-portal-retain-revenue",
+    "protecting-your-business-proficients-holistic-view",
+  ],
+  "why-most-isos-cant-save-high-risk-merchants": [
+    "what-underwriting-actually-looks-at-before-you-go-live",
+    "the-real-cost-of-reselling-someone-elses-gateway",
+    "custom-payment-system-built-around-your-business",
+  ],
+  "the-real-cost-of-reselling-someone-elses-gateway": [
+    "why-most-isos-cant-save-high-risk-merchants",
+    "custom-payment-system-built-around-your-business",
+    "what-underwriting-actually-looks-at-before-you-go-live",
+  ],
+  "what-underwriting-actually-looks-at-before-you-go-live": [
+    "why-most-isos-cant-save-high-risk-merchants",
+    "the-real-cost-of-reselling-someone-elses-gateway",
+    "business-capital-for-payment-processing-merchants",
+  ],
+};
+
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return posts.find((post) => post.slug === slug);
 }

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { NavBar } from "@/components/NavBar";
 import { Footer } from "@/components/Footer";
 import { RevealObserver } from "@/components/RevealObserver";
-import { getAllPosts, getPostBySlug, formatDate } from "@/lib/blog";
+import { getAllPosts, getPostBySlug, formatDate, relatedPostsMap } from "@/lib/blog";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -45,6 +45,12 @@ export default async function BlogPostPage({
   const { slug } = await params;
   const post = getPostBySlug(slug);
   if (!post) notFound();
+
+  const allPosts = getAllPosts();
+  const relatedSlugs = relatedPostsMap[post.slug] ?? [];
+  const relatedPosts = relatedSlugs
+    .map((s) => allPosts.find((p) => p.slug === s))
+    .filter(Boolean) as NonNullable<ReturnType<typeof getPostBySlug>>[];
 
   const articleJsonLd = {
     "@context": "https://schema.org",
@@ -121,6 +127,20 @@ export default async function BlogPostPage({
               return <p key={i}>{block.text}</p>;
             })}
           </div>
+          {relatedPosts.length > 0 && (
+            <div className="post-related reveal">
+              <span className="post-related-label mono">Related reading</span>
+              <div className="post-related-grid">
+                {relatedPosts.map((rp) => (
+                  <Link key={rp.slug} href={`/blog/${rp.slug}`} className="post-related-card">
+                    <span className="eyebrow dim">{rp.category}</span>
+                    <h4>{rp.title}</h4>
+                    <span className="mono post-related-meta">{formatDate(rp.date)}</span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
           <div className="post-share reveal">
             <span className="mono">Share</span>
             <a

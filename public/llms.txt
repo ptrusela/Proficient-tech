@@ -5,6 +5,7 @@
 ## Key pages
 
 - [Homepage](https://proficient.tech/): Overview of Proficient's payment processing, technology, and finance services. Covers custom gateway development, white-label infrastructure for ISOs and platforms, direct banking lines, chargeback management, and high-risk merchant placement.
+- [High-Risk Merchant Accounts](https://proficient.tech/high-risk): Landing page targeting merchants declined by Stripe, Square, and conventional processors. Covers Proficient's underwriting for nutraceuticals, telehealth, adult content, travel, firearms, cannabis, gambling, cryptocurrency, prior terminations, and other restricted categories. Explains why high-risk merchants get declined and how direct banking lines change the approval outcome.
 - [Medusa.js Payments + Underwriting](https://proficient.tech/medusa): Dedicated landing page for Proficient's Medusa.js integration services — direct payment provider plugin, merchant underwriting and onboarding, custom gateway architecture, and AI-assisted development for headless commerce platforms.
 - [Blog](https://proficient.tech/blog/): Articles on payment underwriting, high-risk merchant accounts, ISO services, gateway architecture, and Medusa.js payment integration written by the Proficient team.
 
