@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import Script from "next/script";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -92,6 +91,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Ads tag */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-802453507" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-802453507');`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -101,18 +107,6 @@ export default function RootLayout({
       <body className={`${archivo.variable} ${geistMono.variable}`}>
         {children}
         <Analytics />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-802453507"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads-tag" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-802453507');
-          `}
-        </Script>
       </body>
     </html>
   );
