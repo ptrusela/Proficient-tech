@@ -8,7 +8,7 @@ export function Hero() {
         <div className="hero-copy reveal">
           <span className="eyebrow">Payment Processing Partner</span>
           <h1>
-            We architect payments for the places others <em>won&rsquo;t go.</em>
+            We architect payment and lending solutions for markets <em>others won&rsquo;t serve.</em>
           </h1>
           <p className="lead">
             Proficient builds custom gateways, the software around them, and direct banking partner
