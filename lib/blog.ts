@@ -15,6 +15,132 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "shopify-to-medusa-migration-case-proficient",
+    title: "The Case for Leaving Shopify: Why Medusa.js and Proficient Change the Math",
+    excerpt:
+      "Shopify works until it doesn't — transaction fees on every sale, Shopify Payments rejecting entire product categories, checkout you cannot touch, and a platform that owns your customer relationship as much as you do. Medusa.js gives you the stack back. Proficient handles payments, underwriting, and the migration.",
+    date: "2026-07-23",
+    readTime: "7 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Shopify is an excellent product for a specific merchant: one selling physical goods in a conventional category, processing through Shopify Payments, and growing at a pace where platform constraints have not yet become a ceiling. For that merchant, the tradeoffs are invisible. The fees are a cost of doing business. The restrictions on checkout customization are somebody else's problem.",
+      },
+      {
+        type: "p",
+        text: "For every other merchant — the one in a restricted category, the one paying 0.5 to 2 percent transaction fees because Shopify Payments won't approve them, the one whose checkout flow is limited by what Shopify exposes through its APIs, the one building a brand that needs to own its customer experience end to end — the platform is a ceiling, not a foundation.",
+      },
+      {
+        type: "p",
+        text: "This is the conversation Proficient has regularly with merchants who have outgrown the platform they started on. It is not a case against Shopify. It is a case for understanding exactly what you are paying for — and whether the cost still makes sense.",
+      },
+      {
+        type: "h3",
+        text: "What Shopify Actually Costs",
+      },
+      {
+        type: "p",
+        text: "The advertised monthly plan cost is the smallest part of the bill. The real Shopify cost structure for a merchant not using Shopify Payments looks like this:",
+      },
+      {
+        type: "list",
+        items: [
+          "Transaction fees: 0.5 to 2 percent on every sale, every month, forever — on top of whatever your payment processor charges",
+          "App fees: the functionality Shopify does not include out of the box is sold back to you through its app marketplace, often at $50 to $200 per month per app",
+          "Theme and storefront constraints: meaningful design and UX control requires either a developer working within Shopify's Liquid templating system or a costly headless Shopify setup that still keeps you on Shopify's infrastructure",
+          "Checkout lock-in: Shopify controls the checkout page. Custom checkout flows, branded experiences, and non-standard purchase structures require Shopify Plus at $2,000 per month minimum",
+          "Category restrictions: Shopify Payments does not support nutraceuticals, certain supplements, adult products, firearms accessories, high-ticket coaching, certain travel products, and dozens of other legitimate categories — forcing merchants into third-party processors and the transaction fee penalty that comes with them",
+        ],
+      },
+      {
+        type: "p",
+        text: "For a merchant doing $500,000 per year in revenue, a 1.5 percent transaction fee is $7,500 annually paid directly to Shopify for the privilege of using a non-Shopify processor — before processing fees, app fees, or plan costs. At $2 million in revenue, that number is $30,000. It does not compound into anything. It just leaves.",
+      },
+      {
+        type: "h3",
+        text: "What Medusa.js Is",
+      },
+      {
+        type: "p",
+        text: "Medusa.js is an open-source headless commerce engine. It handles the backend of an e-commerce operation — product catalog, inventory, orders, fulfillment, customer data, promotions — through a set of APIs that any frontend can connect to. The storefront, the checkout, the customer account experience: all of it is yours to build however you want.",
+      },
+      {
+        type: "p",
+        text: "There are no transaction fees. There is no app marketplace where core functionality is sold back to you. There is no checkout page that Medusa controls. You own the infrastructure, the data, and the customer relationship in a way that a SaaS platform structurally cannot allow.",
+      },
+      {
+        type: "p",
+        text: "Medusa 2.0 introduced a modular architecture that makes the platform genuinely production-grade for complex merchant operations — multi-region pricing, advanced inventory management, flexible fulfillment, and a plugin ecosystem built around open standards rather than a proprietary marketplace.",
+      },
+      {
+        type: "h3",
+        text: "The Payment Problem — and Why Proficient Solves It",
+      },
+      {
+        type: "p",
+        text: "The most common objection to leaving Shopify is payments. Shopify Payments, for all its restrictions, is simple: it is already there, it is already set up, and the merchant does not have to think about it. Moving to Medusa means choosing a payment provider, integrating it, and getting the merchant account set up separately.",
+      },
+      {
+        type: "p",
+        text: "Proficient built a native Medusa.js payment provider plugin that routes transactions directly to Proficient's processing infrastructure — no Stripe, no Braintree, no middleware gateway sitting between the checkout and the bank. It installs via npm, handles the full transaction lifecycle, and requires no changes to the storefront or checkout UI.",
+      },
+      {
+        type: "p",
+        text: "More importantly: Proficient underwrites merchant accounts in-house, with direct banking lines. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments eliminates the transaction fee, eliminates the category restriction, and gives the merchant a processing infrastructure they actually own.",
+      },
+      {
+        type: "h3",
+        text: "The Benefits of Making the Move",
+      },
+      {
+        type: "list",
+        items: [
+          "No platform transaction fees — 0.5 to 2 percent saved on every sale, compounding at scale",
+          "Full checkout ownership — design, copy, flow, upsells, and purchase structure are entirely yours",
+          "No category restrictions — Proficient underwrites the product categories Shopify Payments declines",
+          "Storefront freedom — build in Next.js, Nuxt, Remix, or any frontend framework without a theme system imposing structure",
+          "Direct payment infrastructure — one npm install connects Medusa to Proficient's banking lines with no third-party gateway",
+          "Better data ownership — customer, order, and transaction data lives in your infrastructure, not a platform you are renting",
+          "Lower total cost at scale — Medusa is open source; the cost of infrastructure replaces the cost of platform fees rather than adding to them",
+          "Access to business capital — Proficient's merchant accounts include access to capital tied directly to processing history, available to Medusa merchants on the same terms",
+        ],
+      },
+      {
+        type: "h3",
+        text: "What the Migration Actually Looks Like",
+      },
+      {
+        type: "p",
+        text: "A Shopify-to-Medusa migration is a technical project, not a copy-paste. The backend data — products, customers, orders, inventory — migrates through standard export and import processes. The storefront is rebuilt in whatever frontend framework the merchant or their development team prefers. The payment integration is a single Proficient provider plugin.",
+      },
+      {
+        type: "p",
+        text: "The realistic scope for a mid-size merchant with an established catalog and customer base is four to twelve weeks of development work, depending on the complexity of the storefront and any custom functionality that was handled by Shopify apps. Proficient consults on the payment and infrastructure side of the migration — scoping the gateway architecture, setting up the merchant account, and ensuring the payment layer is live and tested before the storefront goes public.",
+      },
+      {
+        type: "p",
+        text: "The merchants for whom this makes the most sense are those who are already feeling the platform constraints: paying transaction fees, hitting checkout customization limits, operating in a restricted category, or approaching the revenue scale where the platform fees are a line item worth examining.",
+      },
+      {
+        type: "h3",
+        text: "When to Have This Conversation",
+      },
+      {
+        type: "p",
+        text: "The right time to evaluate a platform migration is before the cost of staying is obvious — not after years of transaction fees that could have funded the development work several times over. Merchants who do the math at $500,000 in annual revenue find the decision much easier than those who wait until $3 million and are calculating how much they have already paid.",
+      },
+      {
+        type: "p",
+        text: "Proficient offers a free consultation for merchants evaluating the move. We scope the payment infrastructure, advise on merchant account structure, and give an honest assessment of whether the migration economics make sense for the specific business — without selling a project that is not justified.",
+      },
+      {
+        type: "p",
+        text: "If you are processing on Shopify and want to understand what leaving the platform would actually cost and save, that is the conversation to start at info@proficient.tech.",
+      },
+    ],
+  },
+  {
     slug: "business-capital-for-payment-processing-merchants",
     title: "Your Sales History Is Already an Approval. You Just Haven't Used It Yet.",
     excerpt:
@@ -1472,6 +1598,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "shopify-to-medusa-migration-case-proficient": [
+    "medusa-js-direct-integration-no-middle-gateway",
+    "medusa-js-payment-partner-proficient",
+    "custom-payment-system-built-around-your-business",
+  ],
   "business-capital-for-payment-processing-merchants": [
     "commercial-finance-full-suite-proficient-lending-partners",
     "commercial-finance-capital-lending-fuel-your-business",
