@@ -15,6 +15,116 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "business-capital-for-payment-processing-merchants",
+    title: "Your Sales History Is Already an Approval. You Just Haven't Used It Yet.",
+    excerpt:
+      "Cash flow gaps, equipment needs, inventory timing, hiring — the same problems slow every growing business down. If you are already processing payments with Proficient, you have something most borrowers spend months trying to prove: a live record of what your business actually earns.",
+    date: "2026-07-23",
+    readTime: "5 min read",
+    category: "Finance",
+    body: [
+      {
+        type: "p",
+        text: "Every merchant hits the same walls. A seasonal spike is coming and inventory needs to be bought now. A piece of equipment breaks and the replacement cannot wait for a bank to schedule an underwriting call. A marketing campaign that would double customer acquisition is sitting on hold because the cash is not there yet. A new hire that would free up 20 hours a week goes unfilled because payroll is already tight.",
+      },
+      {
+        type: "p",
+        text: "These are not signs of a failing business. They are signs of a growing one. The problem is that traditional financing was not built for the way merchants actually operate — it was built for businesses that can wait weeks for an approval, survive a credit pull, and produce two years of audited financials on demand.",
+      },
+      {
+        type: "p",
+        text: "Proficient Business Capital is different because it starts from a different place entirely.",
+      },
+      {
+        type: "h3",
+        text: "The Problems Merchants Face Every Day",
+      },
+      {
+        type: "p",
+        text: "Before talking about capital, it helps to name what actually stops merchants from growing:",
+      },
+      {
+        type: "list",
+        items: [
+          "Cash flow gaps between when expenses hit and when revenue arrives",
+          "Equipment failures or upgrades that cannot wait for a slow approval process",
+          "Marketing and customer acquisition campaigns that require upfront spend",
+          "Inventory that needs to be purchased ahead of demand — before the sales exist to fund it",
+          "Hiring and expansion that is ready to happen but the cash is not",
+          "Bank timelines that turn a two-week opportunity into a missed one",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of these problems are signs of poor management. They are the normal friction of building a business in real time. The merchants who solve them faster grow faster.",
+      },
+      {
+        type: "h3",
+        text: "You Are Already Processing. That Data Already Exists.",
+      },
+      {
+        type: "p",
+        text: "If you are processing payments through Proficient, you are already generating the data that most lenders spend months trying to verify. Your sales volume, consistency, seasonality, and trajectory are not things you need to prove — they are things we can already see.",
+      },
+      {
+        type: "p",
+        text: "Business Capital uses that processing history to unlock funding without the paperwork, credit checks, or waiting periods that make bank loans impractical for merchants operating on real business timelines. The approval is not based on what a credit bureau says about you from three years ago. It is based on what your business is actually doing right now.",
+      },
+      {
+        type: "h3",
+        text: "How It Works",
+      },
+      {
+        type: "p",
+        text: "The process is designed to stay out of the way of running your business:",
+      },
+      {
+        type: "list",
+        items: [
+          "Pre-approved offer in your portal — your loan amount is calculated from your actual sales history, not a generic formula",
+          "Simple application — complete in just a few clicks, no credit checks, no lengthy paperwork",
+          "Fast funding — accepted offers typically fund within 1 to 2 business days",
+          "Automatic repayment — paid back as a percentage of your daily sales, so payments scale with revenue instead of hitting at a fixed date regardless of how business is going",
+          "One simple fixed fee — no interest, no late fees, no compounding surprises",
+        ],
+      },
+      {
+        type: "h3",
+        text: "When Merchants Use It",
+      },
+      {
+        type: "p",
+        text: "Business Capital tends to be most useful at specific moments in the business cycle:",
+      },
+      {
+        type: "list",
+        items: [
+          "Seasonal peaks — buying inventory, staffing up, or running promotions before the revenue wave arrives",
+          "Growth phases — opening a second location, adding a product line, or scaling a channel that is already working",
+          "Equipment or infrastructure needs — replacing or upgrading tools that the business runs on",
+          "After onboarding — new merchants who see early traction and want to move faster",
+          "During account reviews — when expansion conversations naturally surface the capital question",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Capital That Fits How You Actually Run a Business",
+      },
+      {
+        type: "p",
+        text: "Traditional financing asks you to slow down so it can catch up. It requires documentation of what you have already done, evaluated through a process that takes longer than most business decisions have to wait.",
+      },
+      {
+        type: "p",
+        text: "Business Capital through Proficient is the opposite. Because the payment relationship already exists, the data already exists, and the underwriting can move at the speed the business actually requires. No disruption to operations. No invasive process. Just access to capital that is already tied to how well your business is performing.",
+      },
+      {
+        type: "p",
+        text: "If you are processing payments with Proficient and want to know what your pre-approved offer looks like, the conversation starts with your account team — or reach us directly at info@proficient.tech.",
+      },
+    ],
+  },
+  {
     slug: "commercial-finance-full-suite-proficient-lending-partners",
     title: "The Full Spectrum of Commercial Finance: What Proficient's Lending Partners Can Do",
     excerpt:
