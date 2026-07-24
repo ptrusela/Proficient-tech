@@ -1,4 +1,5 @@
 import { Starfield } from "./Starfield";
+import { ContactForm } from "./ContactForm";
 
 export function CTA() {
   return (
@@ -13,16 +14,11 @@ export function CTA() {
           Bring the merchant others turned away. We&rsquo;ll architect the processing system that
           takes them live &mdash; and keeps them there.
         </p>
-        <div className="cta-actions">
-          <a className="btn btn-primary" href="mailto:info@proficient.tech">
-            Become a partner <span className="arr">→</span>
-          </a>
-<a className="btn btn-ghost" href="mailto:info@proficient.tech">
-            info@proficient.tech
-          </a>
-          <a className="btn btn-ghost" href="tel:2139733525">
-            (213) 973-3525
-          </a>
+        <ContactForm />
+        <div className="cta-contact-line">
+          <a href="mailto:info@proficient.tech">info@proficient.tech</a>
+          <span className="sep">&middot;</span>
+          <a href="tel:2139733525">(213) 973-3525</a>
         </div>
       </div>
     </section>
