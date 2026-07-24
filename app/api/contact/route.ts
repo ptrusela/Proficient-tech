@@ -10,7 +10,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Missing required fields." }, { status: 400 });
     }
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: "Proficient Contact Form <contact@proficient.tech>",
       to: "info@proficient.tech",
       replyTo: email,
@@ -26,9 +26,13 @@ export async function POST(request: Request) {
       ].join("\n"),
     });
 
+    if (sendError) {
+      return NextResponse.json({ error: sendError.message }, { status: 500 });
+    }
+
     return NextResponse.json({ success: true });
   } catch (err) {
-    const msg = err instanceof Error ? err.message : "Unknown error";
+    const msg = err instanceof Error ? err.message : String(err);
     return NextResponse.json({ error: msg }, { status: 500 });
   }
 }
