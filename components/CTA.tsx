@@ -10,10 +10,6 @@ export function CTA() {
         <h2>
           Let&rsquo;s build something <em>that doesn&rsquo;t get declined.</em>
         </h2>
-        <p className="lead">
-          Bring the merchant others turned away. We&rsquo;ll architect the processing system that
-          takes them live &mdash; and keeps them there.
-        </p>
         <ContactForm />
         <div className="cta-contact-line">
           <a href="mailto:info@proficient.tech">info@proficient.tech</a>
