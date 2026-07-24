@@ -38,7 +38,8 @@ export function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
       });
-      const data = await res.json();
+      let data: { error?: string; success?: boolean } = {};
+      try { data = await res.json(); } catch { /* empty body */ }
       if (!res.ok) throw new Error(data.error || "Something went wrong.");
       setStatus("success");
     } catch (err) {
