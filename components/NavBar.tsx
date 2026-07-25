@@ -24,12 +24,8 @@ export function NavBar() {
           <a className="link" href="#partners">Partners</a>
           <a className="link" href="/medusa">Medusa.js</a>
           <a className="link" href="/blog">Blog</a>
+          <a className="link" href="/about">About</a>
         </nav>
-        <div className="nav-cta">
-          <a className="btn btn-primary" href="#contact">
-            Become a partner <span className="arr">→</span>
-          </a>
-        </div>
       </div>
     </header>
   );

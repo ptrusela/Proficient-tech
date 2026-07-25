@@ -1556,6 +1556,96 @@ footer {
   }
 }
 
+/* ── About page ───────────────────────────────────────────── */
+.about-hero {
+  min-height: 60vh;
+}
+.about-why {
+  background: var(--surface);
+}
+.about-why-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.about-why-copy p {
+  color: var(--muted);
+  line-height: 1.75;
+  margin-top: 16px;
+}
+.about-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 8px;
+}
+.about-pillar .idx {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 8px;
+}
+.about-pillar h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.about-pillar p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.about-founder-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 72px;
+  align-items: start;
+}
+.about-founder-photo img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  filter: grayscale(100%);
+}
+@media (max-width: 760px) {
+  .about-founder-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-founder-photo img {
+    max-width: 260px;
+  }
+}
+.about-founder-copy p {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 18px;
+}
+.about-founder-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-top: 4px !important;
+  text-transform: uppercase;
+}
+.about-linkedin {
+  margin-top: 32px;
+  display: inline-flex;
+}
+@media (max-width: 860px) {
+  .about-why-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
 /* ── Medusa apply iframe ──────────────────────────────────── */
 .medusa-apply-wrap {
   width: 100%;
