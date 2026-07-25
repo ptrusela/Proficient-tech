@@ -58,7 +58,11 @@ export function Footer() {
         </div>
         <div className="foot-bottom">
           <span className="mono">&copy; 2026 Proficient &middot; proficient.tech</span>
-          <span className="mono">Built for hostile environments</span>
+          <span className="mono foot-legal">
+            <a href="/privacy">Privacy Policy</a>
+            <span>&middot;</span>
+            <a href="/terms">Terms of Service</a>
+          </span>
         </div>
       </div>
     </footer>
