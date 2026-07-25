@@ -28,7 +28,7 @@ const capabilities = [
   {
     idx: "01",
     title: "Direct Payment Provider",
-    body: "A native Medusa.js payment provider plugin that routes transactions straight to Proficient's processing infrastructure — no third-party gateway, no middleware, no added latency. Installs via npm and handles the full transaction lifecycle.",
+    body: "A native Medusa.js payment provider plugin that routes transactions straight to Proficient's processing infrastructure. Installs via npm and handles the full transaction lifecycle — authorization, capture, void, and refund.",
   },
   {
     idx: "02",
@@ -38,7 +38,7 @@ const capabilities = [
   {
     idx: "03",
     title: "Custom Gateway Architecture",
-    body: "For merchants that need routing logic, multi-acquirer failover, or a branded processing layer, we architect the gateway infrastructure directly — built and operated by Proficient, not resold from another processor.",
+    body: "For merchants that need routing logic, multi-acquirer failover, or a branded processing layer, we architect the gateway infrastructure to fit — built around your business model and operated end-to-end.",
   },
   {
     idx: "04",
@@ -152,8 +152,8 @@ export default function MedusaPage() {
           </h2>
           <p className="lead">
             Tell us about your Medusa.js project. We will scope the integration, advise on merchant
-            account structure, and get you to live payments without a middle gateway between your
-            storefront and the bank.
+            account structure, and get you to live payments on infrastructure built around your
+            storefront.
           </p>
           <div className="cta-actions">
             <a className="btn btn-primary" href="mailto:info@proficient.tech">

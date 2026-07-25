@@ -5,7 +5,7 @@ export function WhatWeBuild() {
         <div className="sec-head reveal">
           <span className="eyebrow dim">What we build</span>
           <h2>
-            We don&rsquo;t resell a processor. <em>We architect the system.</em>
+            We architect the full stack. <em>From infrastructure to approval.</em>
           </h2>
           <p className="lead">
             Most ISOs hand a merchant a template and hope it sticks. We engineer the full stack

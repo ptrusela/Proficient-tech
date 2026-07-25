@@ -18,7 +18,7 @@ export function FAQ() {
     },
     {
       q: "How does Proficient integrate with Medusa.js?",
-      a: "Proficient built a direct Medusa.js payment provider plugin that routes transactions from the Medusa storefront straight to Proficient's processing infrastructure — no third-party gateway in the middle. The plugin handles authorization, capture, void, and refund. It installs via npm and registers in the Medusa config without requiring changes to the storefront or checkout UI, and eliminates the per-transaction gateway fee and the risk-filter layer a middle gateway adds.",
+      a: "Proficient built a direct Medusa.js payment provider plugin that routes transactions from the Medusa storefront straight to Proficient's processing infrastructure. The plugin handles authorization, capture, void, and refund. It installs via npm and registers in the Medusa config without requiring changes to the storefront or checkout UI.",
     },
     {
       q: "What do underwriters look at when evaluating a merchant account application?",

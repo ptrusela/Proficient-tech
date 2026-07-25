@@ -9,7 +9,7 @@ import { getAllPosts, formatDate } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Blog — Proficient",
   description:
-    "Notes on underwriting, payment infrastructure, and building instead of reselling — from the team at Proficient.",
+    "Notes on underwriting, payment infrastructure, and building for every merchant type — from the team at Proficient.",
 };
 
 export default function BlogIndexPage() {

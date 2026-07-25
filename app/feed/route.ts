@@ -25,7 +25,7 @@ export function GET() {
   <channel>
     <title>Proficient Blog</title>
     <link>https://proficient.tech/blog</link>
-    <description>Notes on payments, built from the inside. Underwriting, infrastructure, and the difference between reselling a platform and owning one.</description>
+    <description>Notes on payments, built from the inside. Underwriting, infrastructure, and building payment systems for every merchant type.</description>
     <language>en-us</language>
     <atom:link href="https://proficient.tech/feed" rel="self" type="application/rss+xml" />
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>

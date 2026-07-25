@@ -53,7 +53,7 @@ const faqJsonLd = {
       name: "How does Proficient integrate with Medusa.js?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Proficient built a direct Medusa.js payment provider plugin that routes transactions straight to Proficient's processing infrastructure with no third-party gateway in the middle. It installs via npm, handles the full transaction lifecycle, and requires no changes to the storefront or checkout UI.",
+        text: "Proficient built a direct Medusa.js payment provider plugin that routes transactions straight to Proficient's processing infrastructure. It installs via npm, handles the full transaction lifecycle, and requires no changes to the storefront or checkout UI.",
       },
     },
     {

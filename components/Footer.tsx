@@ -9,7 +9,7 @@ export function Footer() {
               <span className="word">PROFICIENT</span>
             </div>
             <p className="foot-tag">
-              Payment infrastructure for every merchant type &mdash; built, not resold.
+              Payment infrastructure built for every merchant type.
             </p>
             <p className="foot-tag" style={{ marginTop: "8px" }}>
               Los Angeles, CA

@@ -83,11 +83,11 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Proficient built a native Medusa.js payment provider plugin that routes transactions directly to Proficient's processing infrastructure — no Stripe, no Braintree, no middleware gateway sitting between the checkout and the bank. It installs via npm, handles the full transaction lifecycle, and requires no changes to the storefront or checkout UI.",
+        text: "Proficient built a native Medusa.js payment provider plugin that routes transactions directly to Proficient's processing infrastructure. It installs via npm, handles the full transaction lifecycle, and requires no changes to the storefront or checkout UI.",
       },
       {
         type: "p",
-        text: "More importantly: Proficient underwrites merchant accounts in-house, with direct banking lines. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments eliminates the transaction fee, eliminates the category restriction, and gives the merchant a processing infrastructure they actually own.",
+        text: "More importantly: Proficient underwrites merchant accounts in-house, with direct banking lines. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments removes the transaction fee, removes the category restriction, and gives the merchant a processing infrastructure built around their business.",
       },
       {
         type: "h3",
@@ -100,7 +100,7 @@ export const posts: BlogPost[] = [
           "Full checkout ownership — design, copy, flow, upsells, and purchase structure are entirely yours",
           "No category restrictions — Proficient underwrites the product categories Shopify Payments declines",
           "Storefront freedom — build in Next.js, Nuxt, Remix, or any frontend framework without a theme system imposing structure",
-          "Direct payment infrastructure — one npm install connects Medusa to Proficient's banking lines with no third-party gateway",
+          "Direct payment infrastructure — one npm install connects Medusa to Proficient's banking lines",
           "Better data ownership — customer, order, and transaction data lives in your infrastructure, not a platform you are renting",
           "Lower total cost at scale — Medusa is open source; the cost of infrastructure replaces the cost of platform fees rather than adding to them",
           "Access to business capital — Proficient's merchant accounts include access to capital tied directly to processing history, available to Medusa merchants on the same terms",
@@ -569,7 +569,7 @@ export const posts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Transactions route directly to Proficient's processing infrastructure — no third-party gateway layer adding latency, cost, or its own risk filters",
+          "Transactions route directly to Proficient's processing infrastructure — built for low latency and in-house risk evaluation",
           "Authorization decisions are made by underwriters who know the business model, not by an automated matrix calibrated for low-risk averages",
           "Routing logic is configurable at the processor level — optimized for approval rate, cost, or category-specific performance",
           "The full transaction lifecycle (authorization, capture, void, refund) is handled by the same relationship — not split across a gateway and a processor",
@@ -1311,7 +1311,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Proficient built a direct Medusa payment plugin that eliminates that layer entirely.",
+        text: "Proficient built a direct Medusa payment plugin that connects straight to Proficient's processing infrastructure.",
       },
       {
         type: "h3",
@@ -1332,7 +1332,7 @@ export const posts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Transactions go from Medusa directly to our processing infrastructure — no third-party gateway in the middle",
+          "Transactions go from Medusa directly to our processing infrastructure",
           "Authorization decisions happen at the processor level, not filtered through a gateway's own risk rules",
           "Routing logic is configurable — you can optimize for approval rate, cost, or both depending on the transaction",
           "Chargebacks and disputes surface directly in your Medusa admin, not buried in a separate gateway dashboard",

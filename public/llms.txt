@@ -1,6 +1,6 @@
 # Proficient
 
-> Proficient is a Los Angeles-based payment infrastructure company that builds custom payment gateways, white-label processing infrastructure, and direct banking partner lines for every merchant type — including high-risk accounts that most processors decline. Proficient serves ISOs, independent agents, platforms, and merchants directly. It does not resell a third-party processor; it architects the full stack.
+> Proficient is a Los Angeles-based payment infrastructure company that builds custom payment gateways, white-label processing infrastructure, and direct banking partner lines for every merchant type — including high-risk accounts that most processors decline. Proficient serves ISOs, independent agents, platforms, and merchants directly.
 
 ## Key pages
 

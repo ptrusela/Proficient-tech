@@ -183,10 +183,10 @@ export default function HighRiskPage() {
               <span className="idx">01</span>
               <h3>Direct Banking Lines</h3>
               <p>
-                Proficient holds its own banking relationships — not resold risk from an upstream
-                processor. When we approve a merchant account, the underwriting decision comes from
-                here. That means higher approval rates for difficult categories and more stable
-                accounts that do not get pulled without warning.
+                Proficient holds its own banking relationships and makes underwriting decisions
+                in-house. When we approve a merchant account, the decision comes from here — not
+                deferred upstream. That means higher approval rates for difficult categories and
+                more stable accounts that do not get pulled without warning.
               </p>
             </div>
             <div className="cap">
