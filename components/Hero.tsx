@@ -8,12 +8,11 @@ export function Hero() {
         <div className="hero-copy reveal">
           <span className="eyebrow">Payment Processing Partner</span>
           <h1>
-            We architect payment and lending solutions for markets <em>others won&rsquo;t serve.</em>
+            We architect financial infrastructure <em>for complex markets.</em>
           </h1>
           <p className="lead">
-            Proficient builds custom gateways, the software around them, and direct banking partner
-            lines &mdash; engineered for every merchant type. Standard, software, subscription, and
-            the high-risk accounts most processors decline.
+            Payments, technology, and capital &mdash; built around how your business actually
+            operates.
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">
