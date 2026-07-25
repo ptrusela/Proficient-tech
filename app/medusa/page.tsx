@@ -155,13 +155,13 @@ export default function MedusaPage() {
             account structure, and get you to live payments on infrastructure built around your
             storefront.
           </p>
-          <div className="cta-actions">
-            <a className="btn btn-primary" href="mailto:info@proficient.tech">
-              Start the conversation <span className="arr">→</span>
-            </a>
-            <a className="btn btn-ghost" href="tel:2139733525">
-              (213) 973-3525
-            </a>
+          <div className="medusa-apply-wrap">
+            <iframe
+              src="https://kadimapayments.com/apply/proficient"
+              title="Apply for merchant account"
+              className="medusa-apply-frame"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>

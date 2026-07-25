@@ -1556,6 +1556,28 @@ footer {
   }
 }
 
+/* ── Medusa apply iframe ──────────────────────────────────── */
+.medusa-apply-wrap {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+.medusa-apply-frame {
+  width: 100%;
+  height: 780px;
+  border: none;
+  display: block;
+  background: #fff;
+}
+@media (max-width: 600px) {
+  .medusa-apply-frame {
+    height: 900px;
+  }
+}
+
 /* ── Legal pages ──────────────────────────────────────────── */
 .legal-page {
   padding: 80px 0 120px;
