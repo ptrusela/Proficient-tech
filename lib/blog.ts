@@ -15,6 +15,159 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "medusa-proficient-vs-shopify-plus-headless",
+    title: "Medusa + Proficient vs. Shopify Plus Headless: A Straight Comparison for Operators Who Need Payment Control",
+    excerpt:
+      "Shopify Headless and Medusa solve the same surface-level problem — custom commerce — but they represent fundamentally different ownership models. For most merchants who need control over payments, categories, or checkout, the distinction is the entire decision.",
+    date: "2026-07-29",
+    readTime: "8 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "The pitch for headless commerce sounds the same regardless of which platform it comes from: own your storefront, build what you want, decouple the frontend from the backend. Shopify Plus Headless and Medusa both make that promise. The difference is which parts of the promise they actually keep.",
+      },
+      {
+        type: "p",
+        text: "Shopify Headless gives merchants a custom storefront on top of Shopify's commerce engine — one that Shopify hosts, controls, and sets the rules for. Medusa gives merchants a customizable storefront and a customizable commerce engine. The merchant controls both. That distinction looks small on a feature comparison slide. In practice, it determines whether a merchant can use the processor they need, build the checkout they designed, and operate in the product categories their business actually serves.",
+      },
+      {
+        type: "h3",
+        text: "What Shopify Plus Headless Actually Is",
+      },
+      {
+        type: "p",
+        text: "Shopify describes Hydrogen as its headless toolkit and Oxygen as its global storefront hosting layer. Merchants can also build on Next.js or another frontend framework. But the commerce engine — products, orders, customers, inventory, checkout — runs on Shopify's infrastructure, under Shopify's policies, through Shopify's checkout architecture.",
+      },
+      {
+        type: "p",
+        text: "What that means operationally: the storefront is yours. The commerce engine is not. Checkout customization is still gated by what Shopify exposes through its APIs, and the checkout page itself remains under Shopify's control. Payment processing runs through Shopify's ecosystem — third-party processors are permitted, but Shopify's rules and transaction fees apply. The merchant has decoupled the presentation layer. Everything underneath it belongs to Shopify.",
+      },
+      {
+        type: "h3",
+        text: "What Medusa Actually Is",
+      },
+      {
+        type: "p",
+        text: "Medusa is an open-source headless commerce engine. It handles the backend of a commerce operation — product catalog, inventory, orders, fulfillment, promotions, customer data — through APIs that any frontend can connect to. The storefront, the checkout, the admin interface, the data model: all of it is the merchant's to build, host, and modify.",
+      },
+      {
+        type: "p",
+        text: "Medusa's payment architecture is built around modular provider plugins. A payment provider manages authorization, capture, voids, refunds, and saved methods — and any provider can be swapped in without changing the storefront or the checkout flow. That modular design is specifically what makes Medusa structurally compatible with a processor-direct integration like Proficient's, rather than requiring the merchant to route through a consumer-facing gateway.",
+      },
+      {
+        type: "p",
+        text: "Medusa Cloud reduces the operational burden significantly by providing managed deployment, databases, Redis, storage, scaling, and storefront hosting — while keeping the code and data exportable. Medusa currently advertises a 0% GMV platform fee. Hosting and development still cost money, but the merchant is not paying a percentage of every sale to the platform.",
+      },
+      {
+        type: "h3",
+        text: "The Direct Comparison",
+      },
+      {
+        type: "p",
+        text: "Across the dimensions that matter most for merchants evaluating the two platforms:",
+      },
+      {
+        type: "list",
+        items: [
+          "Commerce backend — Shopify Plus Headless: Shopify-hosted and controlled. Medusa: open-source, extensible, merchant-owned.",
+          "Checkout — Shopify Plus Headless: primarily Shopify's checkout, limited by what its APIs expose. Medusa: fully customizable, built and owned by the merchant.",
+          "Payments — Shopify Plus Headless: closely tied to Shopify's payment ecosystem; third-party processors permitted but subject to transaction fees. Medusa: processor-agnostic payment modules; integrate NMI or any other provider without a platform fee.",
+          "Source code ownership — Shopify Plus Headless: merchant owns the storefront code, not Shopify's core platform. Medusa: merchant owns storefront and backend code.",
+          "Hosting — Shopify Plus Headless: Shopify hosts the backend; Oxygen can host Hydrogen. Medusa: Medusa Cloud or self-hosted.",
+          "Platform fee — Shopify Plus Headless: subscription plus payment and transaction-related costs. Medusa: 0% GMV platform fee; hosting and development costs apply.",
+          "Vendor lock-in — Shopify Plus Headless: moderate to high. Medusa: low.",
+          "Custom business logic — Shopify Plus Headless: limited to Shopify's extension model. Medusa: deep backend, workflow, and data-model customization.",
+          "Specialized industries — Shopify Plus Headless: subject to Shopify and processor policies. Medusa: greater freedom, subject to the chosen bank and processor.",
+          "Deployment speed — Shopify Plus Headless: generally faster. Medusa: more engineering work required.",
+          "Operational burden — Shopify Plus Headless: lower. Medusa: higher, especially when self-hosted.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Where Shopify Plus Wins",
+      },
+      {
+        type: "p",
+        text: "Shopify Plus is the stronger choice when the merchant wants proven enterprise infrastructure without the engineering investment to build and maintain it. The administrative experience is polished and merchant-friendly. International selling through Shopify Markets is mature and well-integrated. The app ecosystem, agency network, and third-party integrations are large enough that most standard functionality already exists. Shopify's checkout conversion is well-optimized.",
+      },
+      {
+        type: "p",
+        text: "For an established mainstream brand that processes through conventional channels, sells in standard categories, and wants a custom storefront without rebuilding the entire commerce operation underneath it — Shopify Plus Headless delivers that outcome faster and with less infrastructure responsibility.",
+      },
+      {
+        type: "h3",
+        text: "Where Medusa Wins",
+      },
+      {
+        type: "p",
+        text: "Medusa is stronger when the merchant needs something Shopify's architecture structurally cannot provide:",
+      },
+      {
+        type: "list",
+        items: [
+          "Direct control over the checkout and payment layer — not limited to what Shopify exposes through its APIs",
+          "A specific acquiring relationship: NMI, a specialized processor, or a direct banking line that Shopify's transaction fee structure would penalize",
+          "Custom authorization and capture rules — subscription trial logic, B2B net terms, multi-vendor split payments, or anything outside the standard card-present model",
+          "Unique business workflows: B2B ordering, marketplace payouts, subscription management, or fulfillment logic that does not fit Shopify's extension model",
+          "Full ownership of the backend code and commerce data — not just the storefront",
+          "Freedom from Shopify's platform policies and the transaction fee penalty for not using Shopify Payments",
+          "A path for product categories that Shopify Payments or Stripe may not comfortably support: nutraceuticals, telehealth, high-ticket coaching, adult content, certain subscription structures",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The Payment Distinction — Why Headless Shopify Is Not Processor-Agnostic",
+      },
+      {
+        type: "p",
+        text: "This is the point most comparisons miss. Going headless on Shopify does not make a merchant processor-agnostic. The storefront is decoupled from the commerce engine — but the merchant is still operating through Shopify's checkout architecture, still subject to Shopify's payment policies, and still paying Shopify's transaction fees on third-party processors. A custom frontend changes what the customer sees. It does not change what happens when they click pay.",
+      },
+      {
+        type: "p",
+        text: "Medusa separates all three layers: the storefront, the commerce engine, and the payment provider. Each can be replaced independently. That architecture is what makes a processor-direct integration possible — and it is the reason Proficient built its integration on Medusa rather than on any Shopify surface.",
+      },
+      {
+        type: "h3",
+        text: "What Proficient Adds to the Medusa Stack",
+      },
+      {
+        type: "p",
+        text: "A Medusa storefront with Proficient as the payment provider connects directly to Proficient's processing infrastructure. There is no consumer-facing gateway in the middle, no Shopify transaction fee on top of processing costs, and no automated risk filter from a platform that does not know the merchant's business model.",
+      },
+      {
+        type: "list",
+        items: [
+          "Transactions route from Medusa directly to Proficient's acquiring relationships — authorization decisions happen at the processor level",
+          "In-house underwriting covers the categories Shopify Payments and Stripe routinely decline: nutraceuticals, telehealth, subscriptions with trial structures, high-ticket services, and others",
+          "Routing logic is configurable at the processor level — optimized for approval rate, cost, or category-specific performance",
+          "No per-transaction gateway fee stacked on top of interchange and processor margin",
+          "The merchant account and the commerce platform are owned by the same relationship — when the business changes, the payment infrastructure can change with it",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The Decision Framework",
+      },
+      {
+        type: "p",
+        text: "The right answer depends on what the business actually needs. If the primary goal is a custom-looking storefront with enterprise reliability and a fast implementation, Shopify Plus Headless achieves that. If the primary goal is control — over payments, checkout, product categories, or the infrastructure underneath the commerce operation — Shopify Headless does not solve the problem, because the constraint is not the storefront. It is the platform beneath it.",
+      },
+      {
+        type: "p",
+        text: "Merchants who have been declined by Shopify Payments, who are paying transaction fees on every sale as a penalty for using a different processor, who need a checkout flow that Shopify's APIs do not support, or who are building for a category that a consumer-facing gateway approaches cautiously — those are not problems a headless Shopify frontend solves. Those are problems that require a different commerce engine underneath, and a payment partner that was built for the merchant's specific business model.",
+      },
+      {
+        type: "p",
+        text: "If that is the situation, the Medusa and Proficient combination is the architecture worth evaluating. The storefront, the commerce engine, and the payment infrastructure are all owned by the merchant — not borrowed from a platform that can reprice, restrict, or terminate any of it.",
+      },
+      {
+        type: "p",
+        text: "Start that conversation at info@proficient.tech.",
+      },
+    ],
+  },
+  {
     slug: "shopify-to-medusa-migration-case-proficient",
     title: "The Case for Leaving Shopify: Why Medusa.js and Proficient Change the Math",
     excerpt:
@@ -1598,10 +1751,15 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "medusa-proficient-vs-shopify-plus-headless": [
+    "shopify-to-medusa-migration-case-proficient",
+    "medusa-js-payment-partner-proficient",
+    "medusa-js-direct-integration-no-middle-gateway",
+  ],
   "shopify-to-medusa-migration-case-proficient": [
+    "medusa-proficient-vs-shopify-plus-headless",
     "medusa-js-direct-integration-no-middle-gateway",
     "medusa-js-payment-partner-proficient",
-    "custom-payment-system-built-around-your-business",
   ],
   "business-capital-for-payment-processing-merchants": [
     "commercial-finance-full-suite-proficient-lending-partners",
