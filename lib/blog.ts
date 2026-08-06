@@ -15,6 +15,155 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "mca-vs-accounts-receivable-vs-factoring-comparison",
+    title: "MCA, Accounts Receivable Financing, and Factoring: What Each Is, When Each Fits, and Why Most Businesses End Up in the Wrong One",
+    excerpt:
+      "Merchant cash advances, AR lines, and factoring are three distinct capital structures that solve three distinct cash flow problems. The businesses that end up in the wrong product usually got there because the lender they talked to only offered one. Proficient offers all three.",
+    date: "2026-08-06",
+    readTime: "7 min read",
+    category: "Finance",
+    body: [
+      {
+        type: "p",
+        text: "When a business needs capital quickly, the first product it finds is usually the product it ends up with — not because it was the right fit, but because a lender pitched it and the business did not know to ask for something different. Merchant cash advances, accounts receivable financing, and factoring all solve cash flow problems. They solve different cash flow problems, through different structures, with different costs and tradeoffs.",
+      },
+      {
+        type: "p",
+        text: "Most lenders offer one. A merchant cash advance shop will structure everything as an MCA. A factoring company will structure everything as a factored receivable. Neither is wrong, exactly — but neither is necessarily right for the business in front of them.",
+      },
+      {
+        type: "p",
+        text: "Understanding the difference between these three structures is how a business avoids paying for the wrong product.",
+      },
+      {
+        type: "h3",
+        text: "Merchant Cash Advance (MCA)",
+      },
+      {
+        type: "p",
+        text: "An MCA is not a loan. It is a purchase of future revenue. A lender advances a lump sum today in exchange for a fixed amount of future sales, collected as a percentage of daily or weekly card volume — or, in some structures, total business revenue. There is no fixed term, no fixed monthly payment, and no interest rate in the traditional sense. The cost is expressed as a factor rate: a 1.3 factor rate on a $100,000 advance means the business repays $130,000 total, collected automatically as a percentage of sales until the total is reached.",
+      },
+      {
+        type: "p",
+        text: "Because repayment scales with revenue, slower months produce smaller payments and faster months produce larger ones. The advance does not require collateral in the traditional sense — the future revenue itself is the collateral. Approval is based primarily on processing volume and consistency, not credit score or financial statements.",
+      },
+      {
+        type: "p",
+        text: "MCAs fund quickly — often within one to two business days — with minimal documentation. That speed and accessibility make them the default product for businesses that need capital fast, have limited credit history, or operate in categories that traditional lenders approach cautiously.",
+      },
+      {
+        type: "p",
+        text: "The tradeoff is cost. Factor rates of 1.2 to 1.5 — sometimes higher for shorter-history or higher-risk profiles — translate to effective annual rates that are meaningfully higher than conventional debt. For a business that can qualify for an AR line or a factoring arrangement, an MCA is almost always the more expensive path. For a business that cannot, it may be the only available path.",
+      },
+      {
+        type: "h3",
+        text: "Accounts Receivable Financing",
+      },
+      {
+        type: "p",
+        text: "Accounts receivable financing is a revolving credit line secured by outstanding invoices. The business pledges its receivables as collateral and draws against an approved borrowing base — typically 75% to 90% of eligible invoices — as needed. It is debt: the business retains ownership of its receivables, continues to collect from customers directly, and repays the drawn balance as invoices are paid.",
+      },
+      {
+        type: "p",
+        text: "The structure is well-suited to B2B businesses with recurring, creditworthy customers and predictable invoice cycles. As receivables grow, the available credit grows with them. As invoices are collected, the balance is repaid and the capacity is restored. Unlike a term loan, an AR line is not sized to a specific need — it scales with the business.",
+      },
+      {
+        type: "p",
+        text: "The cost is interest on the outstanding drawn balance, which is typically lower than an MCA factor rate on an annualized basis. Setup involves an underwriting process — lenders evaluate receivables quality, customer creditworthiness, and business financials — so it is not as fast as an MCA. But for a business with strong receivables that qualifies, it is usually the most efficient revolving capital structure available.",
+      },
+      {
+        type: "p",
+        text: "The key requirement: the business needs to have real B2B receivables. AR financing does not work for consumer businesses, businesses paid immediately at point of sale, or businesses with a single customer who represents most of the receivables balance.",
+      },
+      {
+        type: "h3",
+        text: "Factoring",
+      },
+      {
+        type: "p",
+        text: "Factoring is the sale of receivables, not a loan against them. A business sells its outstanding invoices to a factor at a discount — typically receiving 75% to 95% of the invoice value immediately. The factor then owns the invoices, collects directly from the business's customers, and releases the remaining balance (minus fees) once the invoice is paid.",
+      },
+      {
+        type: "p",
+        text: "Because the business is selling an asset rather than borrowing against it, factoring does not create debt on the balance sheet. The cost is a discount rate — typically 1.5% to 3% per 30 days — applied to the invoice value. Funding is fast: same-day to 24 hours in most cases once the relationship is established.",
+      },
+      {
+        type: "p",
+        text: "The approval decision in factoring is based primarily on the creditworthiness of the business's customers, not the business itself. A company with a short history or imperfect credit can often factor invoices that its customers — large, creditworthy companies — are obligated to pay. That makes factoring available to younger businesses and industries where customer payment terms are long.",
+      },
+      {
+        type: "p",
+        text: "The structural difference from AR financing is important: in factoring, the factor collects directly from customers. The business's customer now knows their invoice was factored — in some structures, they pay the factor directly. For most B2B relationships, this is not a problem. For some, it matters. Businesses with sensitive customer relationships that need to remain confidential typically prefer an AR line, which keeps collections entirely in-house.",
+      },
+      {
+        type: "h3",
+        text: "The Direct Comparison",
+      },
+      {
+        type: "list",
+        items: [
+          "What secures it — MCA: future revenue stream. AR line: receivables pledged as collateral. Factoring: receivables sold outright.",
+          "Who holds the debt — MCA: the business (advance to be repaid). AR line: the business. Factoring: no debt — asset sold.",
+          "Repayment structure — MCA: automatic percentage of daily or weekly sales. AR line: as invoices are collected by the business. Factoring: factor collects from customers directly.",
+          "Typical cost — MCA: 1.2 to 1.5 factor rate. AR line: interest on drawn balance, generally lowest annualized cost. Factoring: 1.5% to 3% per 30 days on invoice value.",
+          "Speed to fund — MCA: 1 to 2 business days. AR line: 1 to 3 weeks to set up, then fast draws. Factoring: same-day to 24 hours once established.",
+          "Business type — MCA: any business with consistent revenue; strong fit for B2C and card-heavy operations. AR line: B2B businesses with recurring invoices. Factoring: B2B businesses with slow-paying customers.",
+          "Approval basis — MCA: processing volume and consistency. AR line: receivables quality and business financials. Factoring: customer creditworthiness.",
+          "Collections — MCA: business collects from customers normally. AR line: business collects from customers normally. Factoring: factor collects from customers.",
+          "Balance sheet treatment — MCA: liability. AR line: liability. Factoring: off-balance-sheet (sale of asset).",
+        ],
+      },
+      {
+        type: "h3",
+        text: "When to Use Each",
+      },
+      {
+        type: "p",
+        text: "An MCA makes sense when the business needs capital quickly, processes meaningful card volume or consistent revenue, and either does not qualify for an AR line or factoring or needs funding faster than those structures allow. It is also the right structure when repayment flexibility matters — a business with seasonal revenue cycles may prefer a repayment that moves with sales rather than a fixed obligation.",
+      },
+      {
+        type: "p",
+        text: "Accounts receivable financing makes sense for a B2B business with a steady flow of invoices, creditworthy customers, and a need for ongoing revolving access to capital. It is the most cost-efficient structure for businesses that qualify, and the revolving nature means it does not need to be re-underwritten every time the business needs to draw.",
+      },
+      {
+        type: "p",
+        text: "Factoring makes sense when the business has large invoices with long payment terms, customers who pay slowly but reliably, and a tolerance for the factor collecting directly. It is particularly valuable for younger businesses that cannot qualify for a conventional AR line but have strong customer relationships underlying their receivables — and for businesses that do not want to carry the debt on their balance sheet.",
+      },
+      {
+        type: "h3",
+        text: "The Reason Businesses End Up in the Wrong Product",
+      },
+      {
+        type: "p",
+        text: "The most common reason a business takes an MCA when it should have factored — or takes a factoring arrangement when an AR line would have been cheaper — is that the lender it talked to only offered one product. An MCA provider has no incentive to explain that a factoring relationship would be more efficient. A factoring company has no mechanism to offer a revolving AR line. The business does not know to shop differently because it does not know the products are different.",
+      },
+      {
+        type: "p",
+        text: "The result is predictable: businesses in expensive products they did not need to be in, paying factor rates on capital that could have been accessed through a revolving line at a fraction of the cost, or carrying unnecessary debt when a factoring sale would have kept the balance sheet cleaner.",
+      },
+      {
+        type: "h3",
+        text: "What Proficient Offers Across All Three",
+      },
+      {
+        type: "p",
+        text: "Proficient works with businesses on merchant cash advances, accounts receivable financing, and factoring — including recourse, non-recourse, and international factoring structures. The starting point is the business's actual situation: what it needs the capital for, what assets it has to work with, how repayment interacts with its cash flow cycle, and what the customers on the other side of the receivables look like.",
+      },
+      {
+        type: "p",
+        text: "For businesses that process payments through Proficient, that conversation is shorter — processing history, revenue consistency, and transaction patterns are already known, which accelerates underwriting across all three structures and typically results in better sizing.",
+      },
+      {
+        type: "p",
+        text: "For businesses approaching the conversation cold, the same framework applies: assess the situation, identify the right structure, match to the right lending relationship. Not every business needs an MCA. Not every business qualifies for an AR line. The goal is to find the structure that fits — not the one the lender happened to be selling that day.",
+      },
+      {
+        type: "p",
+        text: "If you are trying to understand which structure fits your business, that is the conversation to start at info@proficient.tech.",
+      },
+    ],
+  },
+  {
     slug: "medusa-proficient-vs-shopify-plus-headless",
     title: "Medusa + Proficient vs. Shopify Plus Headless: A Straight Comparison for Operators Who Need Payment Control",
     excerpt:
@@ -1751,6 +1900,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "mca-vs-accounts-receivable-vs-factoring-comparison": [
+    "commercial-finance-full-suite-proficient-lending-partners",
+    "business-capital-for-payment-processing-merchants",
+    "commercial-finance-capital-lending-fuel-your-business",
+  ],
   "medusa-proficient-vs-shopify-plus-headless": [
     "shopify-to-medusa-migration-case-proficient",
     "medusa-js-payment-partner-proficient",
