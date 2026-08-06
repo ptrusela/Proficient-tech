@@ -16,7 +16,7 @@ export function Hero() {
           </p>
           <div className="hero-actions">
             <a className="btn btn-primary" href="#contact">
-              Become a partner <span className="arr">→</span>
+              Contact <span className="arr">→</span>
             </a>
             <a className="btn btn-ghost" href="#architect">
               See what we build
