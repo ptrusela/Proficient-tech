@@ -91,11 +91,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Ads tag */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-802453507" />
+        {/* Google tag (GA4 + Ads) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-F0MJS2GL5C" />
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-802453507');`,
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-F0MJS2GL5C');gtag('config','AW-802453507');`,
           }}
         />
         <script
