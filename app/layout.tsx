@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Proficient — Payment Processing Partner | Los Angeles",
+    default: "Proficient — Payment, Tech & Finance Partner | Los Angeles",
     template: "%s | Proficient",
   },
   description:
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "chargeback management",
   ],
   openGraph: {
-    title: "Proficient — Payment Processing Partner",
+    title: "Proficient — Payment, Tech & Finance Partner",
     description:
       "Custom gateways, white-label processing, and banking lines for every merchant type — including high-risk. Built in Los Angeles.",
     url: "https://proficient.tech",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Proficient — Payment Processing Partner",
+    title: "Proficient — Payment, Tech & Finance Partner",
     description:
       "Custom gateways, white-label processing, and banking lines for every merchant type — including high-risk.",
   },

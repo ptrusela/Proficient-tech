@@ -30,7 +30,7 @@ export default function Image() {
               letterSpacing: "0.1em",
             }}
           >
-            Payment Processing Partner · Los Angeles
+            Payment, Tech & Finance Partner · Los Angeles
           </div>
           <div
             style={{

@@ -6,7 +6,7 @@ export function Hero() {
       <Starfield id="stars" count={220} opacity={0.9} />
       <div className="wrap hero-grid">
         <div className="hero-copy reveal">
-          <span className="eyebrow">Payment Processing Partner</span>
+          <span className="eyebrow">Payment, Tech &amp; Finance Partner</span>
           <h1>
             We architect financial infrastructure <em>for complex markets.</em>
           </h1>
