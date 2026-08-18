@@ -15,6 +15,121 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "medusa-shopify-migration-tool-proficient-payments",
+    title: "Medusa Just Made Leaving Shopify Dramatically Easier. Here's What Comes Next.",
+    excerpt:
+      "Medusa's new AI-powered migration tool transfers your Shopify catalog, inventory, and pricing automatically. The data moves in hours. The payment layer still needs to be built — and that's where the real cost savings live.",
+    date: "2026-08-18",
+    readTime: "6 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Medusa published a migration tool on August 6, 2026 that changes the calculus on leaving Shopify. The tool integrates directly into Medusa's MCP server and uses an AI agent to transfer ecommerce data — products, variants, pricing, images, inventory levels, and collections — from a Shopify store to a Medusa project, with minimal manual intervention. What used to take weeks of data mapping and custom scripting can now be handled in a single agent-driven workflow.",
+      },
+      {
+        type: "p",
+        text: "For merchants who have been waiting for the migration story to mature before making the move, this is the release worth paying attention to. But a clean data migration is only the first part of the equation. The payment layer — the part of the switch that actually changes what a merchant pays on every transaction — still needs to be handled separately, and it is where most of the long-term cost savings live.",
+      },
+      {
+        type: "h3",
+        text: "What the Migration Tool Actually Does",
+      },
+      {
+        type: "p",
+        text: "Medusa's migration tool supports two approaches. The first pulls data directly through Shopify's API — an idempotent, resumable process that can be triggered via CLI, scheduled, or run through the admin. It handles full inventory quantities and stores images natively. The second converts a Shopify product export CSV into Medusa's import format, which is faster for one-time migrations but does not include inventory quantities and references the original Shopify CDN URLs rather than re-hosting images.",
+      },
+      {
+        type: "p",
+        text: "By default, the agent migrates products, variants, pricing, product images, inventory levels, and collections and categories. Orders and customers can be added through extended configuration. The agent asks which approach to use if it is not specified, builds the necessary flows and customizations, and guides the merchant through verifying the import before going live.",
+      },
+      {
+        type: "p",
+        text: "For most mid-size merchants, the custom API method is the cleaner path: inventory quantities transfer correctly, images are re-hosted, and the import is resumable if something interrupts the process. For a merchant that wants to move quickly and can rebuild inventory separately, the CSV method gets catalog data into Medusa in a single pass.",
+      },
+      {
+        type: "h3",
+        text: "The Cost Argument Has Always Been Strong. Now the Migration Story Matches It.",
+      },
+      {
+        type: "p",
+        text: "Medusa Cloud is priced at approximately one-tenth the cost of Shopify Plus. There are no transaction fees. There are no GMV taxes. A merchant doing $2 million per year on Shopify Plus pays $24,000 annually in platform fees before a single transaction fee is counted. On Medusa Cloud, the equivalent hosting and infrastructure cost is a fraction of that — and the transaction fee structure is determined entirely by the payment processor the merchant chooses, not by the platform.",
+      },
+      {
+        type: "p",
+        text: "That last point is where the real money lives. Shopify's transaction fees — 0.5% to 2% on every sale processed outside of Shopify Payments — are a platform-level penalty that compounds with every dollar of revenue. At $2 million in annual volume, a 1% transaction fee is $20,000 per year paid to Shopify for the privilege of not using their payment processor. At $5 million, it is $50,000. None of that converts into anything. It simply leaves.",
+      },
+      {
+        type: "h3",
+        text: "Moving the Data Is the Easier Problem",
+      },
+      {
+        type: "p",
+        text: "The new migration tool solves the data problem efficiently. Products, variants, pricing, and inventory transfer in hours. What it does not solve is the payment layer — and for merchants paying Shopify transaction fees, or operating in categories where Shopify Payments applies restrictions, the payment layer is where the migration actually pays for itself.",
+      },
+      {
+        type: "p",
+        text: "Medusa's payment architecture is built around modular provider plugins. Any payment provider can be dropped in without changing the storefront or the checkout flow. That structure is specifically what allows a direct processor integration — one that routes transactions straight to the acquiring bank, with no consumer-facing gateway in the middle and no platform taking a cut of the volume.",
+      },
+      {
+        type: "h3",
+        text: "What Proficient Adds to a Medusa Migration",
+      },
+      {
+        type: "p",
+        text: "Proficient builds direct payment integrations for Medusa. A native provider plugin installs via npm, registers in the Medusa config, and handles the full transaction lifecycle — authorization, capture, void, and refund — connected to Proficient's own processing infrastructure. No Shopify checkout. No platform transaction fee. No consumer gateway deciding which product categories it is comfortable approving.",
+      },
+      {
+        type: "list",
+        items: [
+          "No transaction fees on top of processing costs — the fee structure is between the merchant and the processor, with no platform layer taking a percentage of volume",
+          "In-house underwriting for every merchant type — including the categories Shopify Payments and Stripe routinely decline: nutraceuticals, telehealth, subscriptions with trial structures, high-ticket services, adult, and others",
+          "Direct acquiring relationships — authorization decisions happen at the processor level, not filtered through a gateway applying its own risk layer on top of card network rules",
+          "Configurable routing logic — optimized for approval rate, cost, or category-specific performance depending on the merchant's transaction profile",
+          "Capital access wired to processing history — merchants processing through Proficient can access working capital, revenue-based financing, and equipment lending without starting a separate lender conversation from scratch",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The Sequence That Makes the Move Make Sense",
+      },
+      {
+        type: "p",
+        text: "The practical migration sequence for a merchant moving from Shopify to Medusa with Proficient handling payments is straightforward. Set up a Medusa Cloud project. Run the migration tool to transfer catalog and inventory. Integrate the Proficient payment provider plugin. Configure the merchant account with Proficient — which involves underwriting conversations that Shopify never required because Shopify Payments handled it in the background. Build or migrate the storefront. Go live.",
+      },
+      {
+        type: "p",
+        text: "The payment infrastructure conversation — underwriting, merchant account structure, gateway architecture — is the part that takes the most lead time, which is why it should start early in the migration process, not after the storefront is built. A merchant who starts the Proficient conversation at the same time they start the Medusa setup can have payment infrastructure ready before the migration is complete.",
+      },
+      {
+        type: "h3",
+        text: "Who This Migration Story Is Right For",
+      },
+      {
+        type: "p",
+        text: "The Medusa migration tool lowers the effort threshold for a move that was already financially justified for a significant share of Shopify merchants. The merchants for whom this makes the most immediate sense are those already feeling the constraints:",
+      },
+      {
+        type: "list",
+        items: [
+          "Merchants paying Shopify transaction fees every month because their category or volume structure does not fit Shopify Payments",
+          "Merchants who need checkout customization that Shopify's APIs do not support",
+          "Merchants in restricted categories who want a processing relationship built around their actual business model",
+          "Merchants approaching the revenue scale where platform fees are a visible line item on the P&L",
+          "Merchants building for B2B, marketplaces, subscriptions, or other workflows that Shopify's extension model handles poorly",
+        ],
+      },
+      {
+        type: "p",
+        text: "For those merchants, Medusa's migration tool removes the last significant friction point in the switch — the catalog transfer. The platform fee savings start on the day the merchant goes live on Medusa. The transaction fee savings start the moment the first order processes through Proficient instead of Shopify Payments.",
+      },
+      {
+        type: "p",
+        text: "If you are evaluating a Shopify migration and want to understand what the payment infrastructure looks like on the other side, that is the conversation to start at info@proficient.tech. We scope the merchant account structure, advise on the Medusa payment integration, and give an honest assessment of whether the migration economics make sense for the specific business.",
+      },
+    ],
+  },
+  {
     slug: "mca-vs-accounts-receivable-vs-factoring-comparison",
     title: "MCA, Accounts Receivable Financing, and Factoring: What Each Is, When Each Fits, and Why Most Businesses End Up in the Wrong One",
     excerpt:
@@ -1900,6 +2015,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "medusa-shopify-migration-tool-proficient-payments": [
+    "shopify-to-medusa-migration-case-proficient",
+    "medusa-proficient-vs-shopify-plus-headless",
+    "medusa-js-direct-integration-no-middle-gateway",
+  ],
   "mca-vs-accounts-receivable-vs-factoring-comparison": [
     "commercial-finance-full-suite-proficient-lending-partners",
     "business-capital-for-payment-processing-merchants",
