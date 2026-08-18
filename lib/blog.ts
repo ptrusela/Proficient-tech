@@ -15,6 +15,119 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "woocommerce-to-medusa-migration-proficient-payments",
+    title: "WooCommerce to Medusa: The Migration Just Got Easier — and the Payment Upgrade Comes With It",
+    excerpt:
+      "Medusa's new AI-powered migration tool moves WooCommerce products, inventory, and categories into a modern commerce backend in hours. For merchants who have been held back by plugin overhead and payment restrictions, the case for making the switch has never been cleaner.",
+    date: "2026-08-18",
+    readTime: "6 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Medusa released a WooCommerce migration tool that uses an AI agent to transfer store data — products, variants, pricing, images, inventory, categories, and tags — from a WooCommerce installation into a Medusa project. The process runs through Medusa's MCP server and requires little more than a prompt to start. What previously required custom scripts, manual data mapping, and days of engineering work can now be handled in a single agent-driven workflow.",
+      },
+      {
+        type: "p",
+        text: "For WooCommerce merchants who have been considering the move but waiting for the migration story to mature, this is the release that removes the last significant technical barrier. But data migration is only part of the case. The platform architecture that WooCommerce runs on has structural limitations that no migration tool fixes — and the payment layer, which most WooCommerce merchants have never had real control over, is where the long-term value of the switch actually lives.",
+      },
+      {
+        type: "h3",
+        text: "Why WooCommerce Merchants Are Looking for an Exit",
+      },
+      {
+        type: "p",
+        text: "WooCommerce was built as a commerce plugin on top of WordPress — a twenty-year-old CMS that was designed for publishing, not transaction processing. Product catalogs live in WordPress posts. Business logic is implemented through hooks and filters. Custom functionality requires plugins, and plugins require maintenance, compatibility testing, and the ongoing operational overhead of a stack that was never purpose-built for ecommerce.",
+      },
+      {
+        type: "p",
+        text: "For merchants who started on WooCommerce and grew into it, the friction is familiar: a payment plugin that conflicts with a shipping plugin, a theme update that breaks checkout, a security patch that requires four hours of testing. The platform works — until it doesn't, and when it doesn't, the root cause is almost always architectural.",
+      },
+      {
+        type: "p",
+        text: "The payment situation compounds it. Most WooCommerce merchants run on WooPayments — which is built on Stripe — or on the Stripe plugin directly. That means the same category restrictions, the same risk filters, the same automated account reviews, and the same approval logic that Stripe applies to every business regardless of industry, volume, or relationship. A merchant who has been processing successfully for three years is one algorithm update away from a hold.",
+      },
+      {
+        type: "h3",
+        text: "What the Migration Tool Actually Transfers",
+      },
+      {
+        type: "p",
+        text: "Medusa's migration tool connects to WooCommerce through its REST API and transfers the full product catalog: products, variants, pricing, product options, images, inventory levels, and category and tag structures. Images are re-hosted to Medusa's storage rather than referencing the original WordPress CDN. Category trees are migrated in full, including WooCommerce's global attribute system mapped to Medusa's options format.",
+      },
+      {
+        type: "p",
+        text: "The tool supports two approaches. The custom API method is idempotent and resumable — the migration can be triggered via CLI, scheduled, or run from the admin, and it picks up where it left off if interrupted. This is the right path for merchants with large catalogs, complex variant structures, or inventory that needs to transfer accurately. The CSV method converts a WooCommerce product export into Medusa's import format without requiring API credentials — faster for straightforward migrations, but it does not include inventory quantities and keeps images as external URLs.",
+      },
+      {
+        type: "p",
+        text: "Orders and customers can be added to the migration scope through extended configuration. The AI agent asks which approach to use if it is not specified, builds the necessary flows, executes the import, and verifies the migrated data before reporting any gaps.",
+      },
+      {
+        type: "h3",
+        text: "What Medusa Solves That WooCommerce Cannot",
+      },
+      {
+        type: "p",
+        text: "Medusa is a modern Node.js commerce backend built around modules, workflows, and a documented REST API. The architecture was designed for ecommerce from the ground up — not adapted from a publishing platform. Custom business logic lives in workflows, not WordPress hooks. Integrations connect through a headless API, not a plugin marketplace where compatibility is a constant variable. The platform is AI-native, with an MCP server, AI-friendly CLI, and the kind of structured extensibility that does not require workarounds.",
+      },
+      {
+        type: "p",
+        text: "Medusa Cloud adds managed hosting with preview environments, monitoring, and scaling — while keeping the code and data fully exportable. There are no GMV fees and no transaction taxes on top of whatever the merchant's payment processor charges. The platform cost is the platform cost, and it does not compound with revenue.",
+      },
+      {
+        type: "h3",
+        text: "The Payment Layer Is Where the Real Change Happens",
+      },
+      {
+        type: "p",
+        text: "Migrating from WooCommerce to Medusa replaces the platform. It does not automatically replace the payment infrastructure. A Medusa store with the Stripe plugin installed is still routing transactions through Stripe's risk layer, still subject to Stripe's category restrictions, and still paying Stripe's pricing structure. The commerce architecture improved. The payment situation did not.",
+      },
+      {
+        type: "p",
+        text: "Medusa's payment system is built around modular provider plugins — any processor can be integrated without touching the storefront or the checkout flow. That architecture is specifically what makes a processor-direct integration possible, and it is why the Medusa migration creates an opportunity to upgrade the payment layer at the same time as the platform.",
+      },
+      {
+        type: "h3",
+        text: "What Proficient Adds to a Medusa Migration",
+      },
+      {
+        type: "p",
+        text: "Proficient builds direct payment integrations for Medusa. A native provider plugin installs via npm and handles the full transaction lifecycle — authorization, capture, void, and refund — connected to Proficient's own processing infrastructure, with no Stripe layer in the middle and no platform taking a cut of the volume.",
+      },
+      {
+        type: "list",
+        items: [
+          "Processor-direct routing — transactions go from Medusa straight to Proficient's acquiring relationships, with no consumer-gateway risk filter applied on top of card network rules",
+          "In-house underwriting — approval decisions are made by underwriters who understand the merchant's business model, not by an automated matrix calibrated for low-risk averages. Categories that WooPayments and Stripe routinely flag — nutraceuticals, telehealth, subscriptions with trial structures, high-ticket services, adult, and others — are categories Proficient was built to approve",
+          "No transaction markup on top of interchange — the merchant's processing cost is the merchant's processing cost, without a consumer-gateway margin sitting between interchange and the rate",
+          "Configurable routing logic — optimized for approval rate, cost reduction, or category-specific performance depending on the transaction profile",
+          "Capital access through the processing relationship — merchants processing through Proficient can access working capital, revenue-based financing, and equipment lending without starting a separate lender conversation from scratch",
+        ],
+      },
+      {
+        type: "h3",
+        text: "How to Approach the Migration",
+      },
+      {
+        type: "p",
+        text: "The practical sequence for a WooCommerce merchant moving to Medusa with Proficient handling payments: set up a Medusa Cloud organization and project, run the migration tool to transfer catalog and inventory, integrate the Proficient payment provider plugin, work through merchant account underwriting with Proficient, build or adapt the storefront, and go live.",
+      },
+      {
+        type: "p",
+        text: "The underwriting conversation — merchant account structure, gateway architecture, category-specific requirements — is the step with the most lead time, and it should start at the same time as the Medusa setup, not after the storefront is complete. A merchant who begins the Proficient conversation early can have payment infrastructure ready before the migration finishes.",
+      },
+      {
+        type: "p",
+        text: "For WooCommerce merchants who have been running on plugin debt and Stripe-imposed restrictions, the combination of Medusa's migration tool and Proficient's payment infrastructure removes both problems at once. The platform migration is now a matter of hours. The payment upgrade happens at the same time.",
+      },
+      {
+        type: "p",
+        text: "If you are evaluating a WooCommerce migration and want to understand what the payment side looks like on the other side, reach out at info@proficient.tech. We scope the merchant account structure, advise on the Medusa payment integration, and give a straight assessment of whether the switch makes sense for your specific business.",
+      },
+    ],
+  },
+  {
     slug: "medusa-shopify-migration-tool-proficient-payments",
     title: "Medusa Just Made Leaving Shopify Dramatically Easier. Here's What Comes Next.",
     excerpt:
@@ -2015,6 +2128,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "woocommerce-to-medusa-migration-proficient-payments": [
+    "shopify-to-medusa-migration-case-proficient",
+    "medusa-js-direct-integration-no-middle-gateway",
+    "medusa-js-payment-partner-proficient",
+  ],
   "medusa-shopify-migration-tool-proficient-payments": [
     "shopify-to-medusa-migration-case-proficient",
     "medusa-proficient-vs-shopify-plus-headless",
