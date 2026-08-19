@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Proficient",
   },
   description:
-    "Proficient builds custom payment gateways, white-label processing infrastructure, and direct banking lines for every merchant type — including high-risk accounts most processors decline. Based in Los Angeles.",
+    "Proficient builds custom payment gateways, white-label processing infrastructure, and payment solutions for every merchant type — including high-risk accounts most processors decline. Based in Los Angeles.",
   metadataBase: new URL("https://proficient.tech"),
   keywords: [
     "payment processing partner",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Proficient — Payment, Tech & Finance Partner",
     description:
-      "Custom gateways, white-label processing, and banking lines for every merchant type — including high-risk. Built in Los Angeles.",
+      "Custom gateways, white-label processing, and payment infrastructure for every merchant type — including high-risk. Built in Los Angeles.",
     url: "https://proficient.tech",
     siteName: "Proficient",
     locale: "en_US",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Proficient — Payment, Tech & Finance Partner",
     description:
-      "Custom gateways, white-label processing, and banking lines for every merchant type — including high-risk.",
+      "Custom gateways, white-label processing, and payment infrastructure for every merchant type — including high-risk.",
   },
   alternates: {
     canonical: "https://proficient.tech",
@@ -62,7 +62,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Proficient",
   description:
-    "Custom payment gateways, white-label processing infrastructure, and direct banking lines for every merchant type — including high-risk accounts most processors decline.",
+    "Custom payment gateways, white-label processing infrastructure, and payment solutions for every merchant type — including high-risk accounts most processors decline.",
   url: "https://proficient.tech",
   telephone: "+12139733525",
   email: "info@proficient.tech",

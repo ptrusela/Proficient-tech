@@ -617,7 +617,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "More importantly: Proficient underwrites merchant accounts in-house, with direct banking lines. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments removes the transaction fee, removes the category restriction, and gives the merchant a processing infrastructure built around their business.",
+        text: "More importantly: Proficient underwrites merchant accounts directly. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments removes the transaction fee, removes the category restriction, and gives the merchant a processing infrastructure built around their business.",
       },
       {
         type: "h3",
@@ -630,7 +630,7 @@ export const posts: BlogPost[] = [
           "Full checkout ownership — design, copy, flow, upsells, and purchase structure are entirely yours",
           "No category restrictions — Proficient underwrites the product categories Shopify Payments declines",
           "Storefront freedom — build in Next.js, Nuxt, Remix, or any frontend framework without a theme system imposing structure",
-          "Direct payment infrastructure — one npm install connects Medusa to Proficient's banking lines",
+          "Direct payment infrastructure — one npm install connects Medusa to Proficient's processing infrastructure",
           "Better data ownership — customer, order, and transaction data lives in your infrastructure, not a platform you are renting",
           "Lower total cost at scale — Medusa is open source; the cost of infrastructure replaces the cost of platform fees rather than adding to them",
           "Access to business capital — Proficient's merchant accounts include access to capital tied directly to processing history, available to Medusa merchants on the same terms",
@@ -1051,7 +1051,7 @@ export const posts: BlogPost[] = [
     slug: "medusa-js-payment-partner-proficient",
     title: "Medusa.js Commerce Deserves a Payment Partner That Builds Too",
     excerpt:
-      "Medusa.js gives merchants full ownership of their commerce stack. But the payment layer is where that control usually ends. Proficient changes that — with a direct plugin, in-house underwriting, and infrastructure that scales with what merchants are actually building.",
+      "Medusa.js gives merchants full ownership of their commerce stack. But the payment layer is where that control usually ends. Proficient changes that — with a direct plugin, direct underwriting, and infrastructure that scales with what merchants are actually building.",
     date: "2026-06-20",
     readTime: "5 min read",
     category: "Platform",
@@ -1099,7 +1099,7 @@ export const posts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Transactions route directly to Proficient's processing infrastructure — built for low latency and in-house risk evaluation",
+          "Transactions route directly to Proficient's processing infrastructure — built for low latency and direct risk evaluation",
           "Authorization decisions are made by underwriters who know the business model, not by an automated matrix calibrated for low-risk averages",
           "Routing logic is configurable at the processor level — optimized for approval rate, cost, or category-specific performance",
           "The full transaction lifecycle (authorization, capture, void, refund) is handled by the same relationship — not split across a gateway and a processor",
@@ -1216,7 +1216,7 @@ export const posts: BlogPost[] = [
       {
         type: "list",
         items: [
-          "Payments — custom payment gateways, processing infrastructure, banking lines, and merchant account placement across every category including high-risk",
+          "Payments — custom payment gateways, processing infrastructure, and merchant account placement across every category including high-risk",
           "Technology — payment software, platform integrations, gateway architecture, routing logic, and the tooling built around the processing relationship",
           "Finance — commercial capital access across working capital, equipment financing, revenue-based lending, merchant cash advances, lines of credit, invoice factoring, and SBA programs",
         ],
@@ -1247,7 +1247,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Because Proficient holds direct banking relationships and does its own underwriting, account approval is based on how the business actually operates — not on how it fits into a risk matrix built for someone else. That alignment produces better approval rates, more stable accounts, and capital structures that fit the actual cash flow.",
+        text: "Because Proficient underwrites merchant accounts directly, account approval is based on how the business actually operates — not on how it fits into a risk matrix built for someone else. That alignment produces better approval rates, more stable accounts, and capital structures that fit the actual cash flow.",
       },
       {
         type: "h3",
@@ -2013,11 +2013,11 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "When a processor doesn't hold its own banking relationships, every file is judged against someone else's risk matrix. That matrix is built for the average merchant, not yours. CBD, nutraceuticals, travel, telehealth, adult, firearms accessories, high-ticket coaching — none of these are uninsurable categories. They're categories that require a direct underwriting conversation instead of an automated score.",
+        text: "When a processor can't underwrite directly, every file is judged against someone else's risk matrix. That matrix is built for the average merchant, not yours. CBD, nutraceuticals, travel, telehealth, adult, firearms accessories, high-ticket coaching — none of these are uninsurable categories. They're categories that require a direct underwriting conversation instead of an automated score.",
       },
       {
         type: "p",
-        text: "We hold our own banking lines, which means the underwriter reviewing your file can actually say yes to something a matrix would auto-reject — and back that decision with a real relationship instead of a policy document.",
+        text: "We underwrite directly, which means the underwriter reviewing your file can actually say yes to something a matrix would auto-reject — and back that decision with a real relationship instead of a policy document.",
       },
       {
         type: "h3",

@@ -65,7 +65,7 @@ export default function AboutPage() {
             <div className="about-pillar">
               <span className="idx">01</span>
               <h3>Payments</h3>
-              <p>Custom gateways, direct banking lines, merchant account placement, and chargeback management — across every category, including the ones most processors decline.</p>
+              <p>Custom gateways, payment infrastructure, merchant account placement, and chargeback management — across every category, including the ones most processors decline.</p>
             </div>
             <div className="about-pillar">
               <span className="idx">02</span>

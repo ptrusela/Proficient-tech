@@ -7,7 +7,7 @@ import { Starfield } from "@/components/Starfield";
 export const metadata: Metadata = {
   title: "Medusa.js Payments + Underwriting — Proficient",
   description:
-    "Proficient builds direct payment integrations for Medusa.js and headless commerce platforms — with in-house underwriting, merchant onboarding, and AI-driven development for every business type.",
+    "Proficient builds direct payment integrations for Medusa.js and headless commerce platforms — with direct underwriting, merchant onboarding, and AI-driven development for every business type.",
   alternates: { canonical: "https://proficient.tech/medusa" },
   openGraph: {
     title: "Medusa.js Payments + Underwriting — Proficient",
@@ -33,7 +33,7 @@ const capabilities = [
   {
     idx: "02",
     title: "Merchant Underwriting & Onboarding",
-    body: "In-house underwriting for every merchant type including the high-risk categories Medusa storefronts commonly serve — nutraceuticals, subscriptions, digital goods, high-ticket retail, and more. We hold the banking lines, so approval decisions are made here.",
+    body: "Direct underwriting for every merchant type including the high-risk categories Medusa storefronts commonly serve — nutraceuticals, subscriptions, digital goods, high-ticket retail, and more. Approval decisions are made based on the actual business model.",
   },
   {
     idx: "03",
@@ -132,10 +132,10 @@ export default function MedusaPage() {
               Medusa.js is an open-source headless commerce engine built for developers who want
               full control over their stack — without the constraints of Shopify, BigCommerce, or
               platform-locked checkout flows. Proficient is the payment and underwriting partner
-              built to match that philosophy. We write the payment provider, hold direct banking
-              relationships, underwrite the merchant account in-house, and handle the technical
-              integration from npm install to live transactions — so your Medusa.js build ships
-              with payment infrastructure that is owned, not rented.
+              built to match that philosophy. We write the payment provider, underwrite the merchant
+              account directly, and handle the technical integration from npm install to live
+              transactions — so your Medusa.js build ships with payment infrastructure built around
+              your business.
             </p>
           </div>
         </div>

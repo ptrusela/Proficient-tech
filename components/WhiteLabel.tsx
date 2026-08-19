@@ -11,7 +11,7 @@ export function WhiteLabel() {
             </h2>
             <p className="lead">
               Run payments under your own name. Proficient builds and operates the gateway, software,
-              and banking lines behind the scenes &mdash; your customers see your brand on every
+              and payment infrastructure behind the scenes &mdash; your customers see your brand on every
               checkout page, email, and statement.
             </p>
             <div className="wl-points">
@@ -26,7 +26,7 @@ export function WhiteLabel() {
                 <span className="pk mono">02</span>
                 <span>
                   <b>We carry the rails and the risk.</b> Gateway, underwriting, compliance, and
-                  banking lines run on our infrastructure.
+                  payment infrastructure run on our systems.
                 </span>
               </div>
               <div>

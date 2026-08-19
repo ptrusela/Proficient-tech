@@ -32,7 +32,7 @@ export default function RedoPage() {
             </h1>
             <p className="lead">
               REDO.com keeps its name on every checkout, dashboard, and statement. Proficient builds
-              and operates the gateway, software, and banking lines behind the scenes &mdash; so your
+              and operates the gateway, software, and payment infrastructure behind the scenes &mdash; so your
               customers never leave your ecosystem.
             </p>
             <div className="hero-actions">
@@ -83,7 +83,7 @@ export default function RedoPage() {
                   <span className="pk mono">02</span>
                   <span>
                     <b>We carry the rails and the risk.</b> Gateway, underwriting, compliance, and
-                    banking lines run on our infrastructure.
+                    payment infrastructure run on our systems.
                   </span>
                 </div>
                 <div>

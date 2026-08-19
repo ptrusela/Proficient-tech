@@ -17,7 +17,7 @@ export function WhyPartner() {
             <div className="k">A · Approvals</div>
             <h3>We approve what others decline</h3>
             <p>
-              Direct banking lines and in-house underwriting mean the deals that bounce elsewhere
+              Thorough underwriting and direct banking relationships mean the deals that bounce elsewhere
               find a home here.
             </p>
           </div>

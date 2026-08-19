@@ -9,7 +9,7 @@ import { getAllPosts, formatDate } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "High-Risk Merchant Accounts — Proficient",
   description:
-    "Proficient provides high-risk merchant accounts for businesses declined by Stripe, Square, and conventional processors. Custom payment gateways, in-house underwriting, and direct banking lines for every high-risk category.",
+    "Proficient provides high-risk merchant accounts for businesses declined by Stripe, Square, and conventional processors. Custom payment gateways, direct underwriting, and specialized payment infrastructure for every high-risk category.",
   alternates: { canonical: "https://proficient.tech/high-risk" },
   keywords: [
     "high risk merchant account",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "High-Risk Merchant Accounts — Proficient",
     description:
-      "Custom payment gateways and direct banking lines for businesses declined by conventional processors. In-house underwriting for every high-risk category.",
+      "Custom payment gateways and specialized payment infrastructure for businesses declined by conventional processors. Direct underwriting for every high-risk category.",
     url: "https://proficient.tech/high-risk",
     type: "website",
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "High-Risk Merchant Accounts — Proficient",
     description:
-      "Custom payment gateways and direct banking lines for businesses declined by conventional processors.",
+      "Custom payment gateways and specialized payment infrastructure for businesses declined by conventional processors.",
   },
 };
 
@@ -78,7 +78,7 @@ const serviceJsonLd = {
     url: "https://proficient.tech",
   },
   description:
-    "Custom payment gateway setup, in-house underwriting, and direct banking lines for high-risk merchants including nutraceuticals, telehealth, adult content, travel, firearms, cannabis, and businesses with prior terminations.",
+    "Custom payment gateway setup, direct underwriting, and specialized payment infrastructure for high-risk merchants including nutraceuticals, telehealth, adult content, travel, firearms, cannabis, and businesses with prior terminations.",
   areaServed: "US",
   url: "https://proficient.tech/high-risk",
 };
@@ -107,8 +107,8 @@ export default function HighRiskPage() {
             </h1>
             <p className="lead">
               Stripe declined you. Square terminated your account. Your ISO said the bank won&rsquo;t
-              approve it. Proficient holds direct banking lines and does its own underwriting —
-              which means approval decisions are made here, not by a matrix built for someone else&rsquo;s
+              approve it. Proficient underwrites merchant accounts directly —
+              approval decisions are made based on the actual business, not by a matrix built for someone else&rsquo;s
               risk tolerance.
             </p>
             <div className="hero-actions">
@@ -141,9 +141,9 @@ export default function HighRiskPage() {
             </p>
             <p className="lead" style={{ maxWidth: "68ch", marginTop: "16px" }}>
               Proficient is not a consumer-facing processor. It is a payment infrastructure
-              company with direct bank relationships and in-house underwriting teams that evaluate
-              merchants the way underwriting is supposed to work — by understanding the actual
-              business, not by running it through a risk score designed for someone else.
+              company with underwriting teams that evaluate merchants the way underwriting is
+              supposed to work — by understanding the actual business, not by running it through
+              a risk score designed for someone else.
             </p>
           </div>
         </div>
@@ -181,12 +181,12 @@ export default function HighRiskPage() {
           <div className="cap-grid reveal">
             <div className="cap">
               <span className="idx">01</span>
-              <h3>Direct Banking Lines</h3>
+              <h3>Direct Underwriting</h3>
               <p>
-                Proficient holds its own banking relationships and makes underwriting decisions
-                in-house. When we approve a merchant account, the decision comes from here — not
-                deferred upstream. That means higher approval rates for difficult categories and
-                more stable accounts that do not get pulled without warning.
+                Proficient underwrites merchant accounts directly. When we approve a merchant
+                account, the decision comes from here — not deferred upstream. That means higher
+                approval rates for difficult categories and more stable accounts that do not get
+                pulled without warning.
               </p>
             </div>
             <div className="cap">
@@ -200,7 +200,7 @@ export default function HighRiskPage() {
             </div>
             <div className="cap">
               <span className="idx">03</span>
-              <h3>In-House Underwriting</h3>
+              <h3>Merchant Underwriting</h3>
               <p>
                 Every merchant file is reviewed by underwriters who understand the category — not
                 a bank compliance team seeing the business type for the first time. Prior
