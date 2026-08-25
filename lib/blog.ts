@@ -15,6 +15,118 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "rapidpaylink-eliminate-card-processing-fees",
+    title: "Every Business Has a Card Processing Fee Problem. RapidPayLink Is How We Solve It.",
+    excerpt:
+      "Card processing fees are the most predictable expense most businesses never question. RapidPayLink — the payment software Proficient offers — gives businesses the tools to eliminate those fees, get paid faster, and automate the entire receivables process.",
+    date: "2026-08-25",
+    readTime: "6 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Every time a customer swipes a card, the business on the other side loses 2.5 to 3.5 percent of the sale. On a $50,000 revenue month, that is $1,250 to $1,750 gone before anything else happens. Most business owners treat this as a fixed cost — a toll you pay to accept payments. It does not have to be.",
+      },
+      {
+        type: "p",
+        text: "RapidPayLink is a payment software platform that Proficient deploys for businesses that want to stop absorbing card fees, get paid faster, and automate the receivables process without overhauling how they work. It handles the full payment workflow — invoicing, recurring billing, payment links, virtual terminals, and a customer-facing portal — while giving businesses the tools to offset or eliminate what card networks charge.",
+      },
+      {
+        type: "h3",
+        text: "How the Fee Problem Gets Solved",
+      },
+      {
+        type: "p",
+        text: "RapidPayLink approaches card fee elimination through two compliant mechanisms: dual pricing and surcharging.",
+      },
+      {
+        type: "p",
+        text: "Dual pricing gives customers a choice at checkout — pay the standard price with a card, or pay a lower price with cash or ACH (bank transfer). The difference covers the card fee. The customer opts into a card payment knowingly; the business keeps full margin either way. For businesses with any volume of ACH-eligible customers — service businesses, B2B companies, healthcare providers, nonprofits — dual pricing has a measurable and immediate impact on net revenue.",
+      },
+      {
+        type: "p",
+        text: "Surcharging passes card processing costs to the customer transparently, keeping the business's advertised price intact while moving the fee to those who choose to pay by card. Both approaches are fully disclosed, compliant with card network rules, and built into the RapidPayLink checkout flow — so there is no workaround logic to maintain and no liability exposure for the business.",
+      },
+      {
+        type: "h3",
+        text: "What the Platform Actually Does",
+      },
+      {
+        type: "p",
+        text: "Fee strategy is the headline, but the operational software underneath it is what makes RapidPayLink practical for businesses running real receivables volume.",
+      },
+      {
+        type: "list",
+        items: [
+          "Smart Invoicing — create invoices with installment schedules, automated payment reminders, late fees, and early-payment discounts; send via email, text, or WhatsApp so customers can pay in a few clicks",
+          "Recurring Payments — set up retainers, memberships, or payment plans with a single customer authorization; revenue arrives on schedule without chasing",
+          "Payment Links and QR Codes — generate a payment link or QR code in minutes and share it anywhere, or embed it directly on a website with an HTML snippet — no checkout page to build",
+          "Client Portal — give customers a branded portal to view invoices, make payments, and store preferred payment methods for faster repeat checkout",
+          "Virtual Terminal — take payments in person, over the phone, or at a desk; automatic past-due balance calculation surfaces what is owed without manual lookup",
+          "Donation Pages — branded, flexible donation pages for nonprofits and faith-based organizations, with one-time and recurring giving options",
+          "QuickBooks Online Integration — two-way sync keeps invoices, payments, and customer records aligned in both systems with no manual entry or reconciliation",
+          "Stored Payment Methods — securely store cards and bank accounts on file for instant repeat billing and faster checkout",
+          "Payments API — embed RapidPayLink's payment capabilities into any software, kiosk, or POS system through a developer-friendly API",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The Numbers Behind It",
+      },
+      {
+        type: "p",
+        text: "RapidPayLink is used by more than 4,600 businesses that have collectively processed over $4.5 billion through the platform and saved more than $22.1 million in processing fees. Those numbers are not marketing projections — they are the outcome of a dual-pricing and surcharging model applied consistently across real volume.",
+      },
+      {
+        type: "p",
+        text: "The math works at any scale. A business processing $30,000 per month in card volume at a 3 percent effective rate is paying $900 a month — $10,800 a year — to accept cards. Shifting even 40 percent of that volume to ACH and applying dual pricing to the rest can cut the effective rate to well under one percent. For most businesses, the software pays for itself in the first month.",
+      },
+      {
+        type: "h3",
+        text: "Why the Processing Relationship Matters",
+      },
+      {
+        type: "p",
+        text: "RapidPayLink is software. The payment infrastructure behind it — the merchant account, the banking relationship, the category underwriting — is what Proficient brings to the table. The two pieces have to work together.",
+      },
+      {
+        type: "p",
+        text: "Most businesses that come to Proficient have a payment problem that is either a cost problem (fees too high), a capability problem (can't get approved elsewhere, need more than a basic gateway), or both. RapidPayLink addresses the cost side. Proficient's merchant account placement and underwriting address the approval and infrastructure side. For high-risk categories — nutraceuticals, telehealth, subscriptions, high-ticket services — Proficient's ability to underwrite the account directly means the business actually gets live, not just gets software.",
+      },
+      {
+        type: "p",
+        text: "A dual-pricing platform on top of a fragile or category-restricted merchant account solves the wrong problem. Getting RapidPayLink deployed through Proficient means the processing relationship underneath the software is built to match — stable, appropriate to the business model, and structured to last.",
+      },
+      {
+        type: "h3",
+        text: "Who This Is Built For",
+      },
+      {
+        type: "list",
+        items: [
+          "Service businesses billing clients on invoice — contractors, agencies, consultants, professional services firms running high per-transaction averages",
+          "Healthcare and wellness providers — medical practices, physical therapists, wellness clinics processing recurring patient billing",
+          "B2B companies with ACH-eligible customers — where dual pricing naturally migrates a portion of volume away from card fees",
+          "Nonprofits and faith-based organizations — where donation page flexibility and fee reduction directly increase net proceeds",
+          "Subscription and membership businesses — where recurring payment automation and stored credentials reduce churn from failed charges",
+          "High-ticket retail and coaching — where per-transaction fees on large sales are the most expensive line item in the business",
+        ],
+      },
+      {
+        type: "h3",
+        text: "Getting Started",
+      },
+      {
+        type: "p",
+        text: "Getting RapidPayLink deployed through Proficient starts with a conversation about the business's current processing setup — volume, category, current fees, and any prior account issues. From there, Proficient handles the merchant account structuring and onboarding, and RapidPayLink is configured to the business's specific billing workflow.",
+      },
+      {
+        type: "p",
+        text: "If your business is paying card processing fees it does not have to pay, or running receivables through a manual process that software could automate, reach out to Proficient and ask about RapidPayLink. The savings math is concrete — and the platform is built to show you exactly what it is before you commit to anything.",
+      },
+    ],
+  },
+  {
     slug: "woocommerce-to-medusa-migration-proficient-payments",
     title: "WooCommerce to Medusa: The Migration Just Got Easier — and the Payment Upgrade Comes With It",
     excerpt:
@@ -2128,6 +2240,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "rapidpaylink-eliminate-card-processing-fees": [
+    "mca-vs-accounts-receivable-vs-factoring-comparison",
+    "business-capital-for-payment-processing-merchants",
+    "protecting-your-business-proficients-holistic-view",
+  ],
   "woocommerce-to-medusa-migration-proficient-payments": [
     "shopify-to-medusa-migration-case-proficient",
     "medusa-js-direct-integration-no-middle-gateway",
