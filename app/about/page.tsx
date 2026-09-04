@@ -34,6 +34,16 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Mission statement */}
+      <section className="block about-mission">
+        <div className="wrap">
+          <p className="about-mission-text reveal">
+            Proficient is an independent financial infrastructure advisor connecting businesses,
+            banks, capital providers and technology partners through one accountable relationship.
+          </p>
+        </div>
+      </section>
+
       {/* Why we exist */}
       <section className="block about-why">
         <div className="wrap about-why-inner">

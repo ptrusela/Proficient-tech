@@ -1560,6 +1560,21 @@ footer {
 .about-hero {
   min-height: 60vh;
 }
+.about-mission {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 56px 0;
+}
+.about-mission-text {
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--fg);
+  max-width: 72ch;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+}
 .about-why {
   background: var(--surface);
 }

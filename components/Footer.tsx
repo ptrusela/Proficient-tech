@@ -9,7 +9,8 @@ export function Footer() {
               <span className="word">PROFICIENT</span>
             </div>
             <p className="foot-tag">
-              Payment infrastructure built for every merchant type.
+              An independent financial infrastructure advisor connecting businesses,
+              banks, capital providers and technology partners through one accountable relationship.
             </p>
             <p className="foot-tag" style={{ marginTop: "8px" }}>
               Los Angeles, CA
