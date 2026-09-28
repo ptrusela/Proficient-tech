@@ -1,0 +1,42 @@
+--- EMAIL 1 (Awareness) ---
+Subject: The payment gateway decision most startups get wrong
+
+Most gateway comparisons rank options by processing fees, then show you a feature table. For a simple e-commerce store, that's fine. For a growth-stage company, it's almost useless.
+
+The real issue is total cost of ownership over two to three years — not the headline rate. A 0.1% fee advantage can evaporate quickly when you're re-tokenizing stored cards, rebuilding webhooks, and absorbing hundreds of thousands in engineering hours during a forced migration.
+
+We put together a framework for evaluating payment infrastructure the way technical founders actually should — before you're six months into production with the wrong choice.
+
+Worth a read if this decision is on your roadmap.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 2 (Consideration, send 4 days later) ---
+Subject: Why your payment gateway choice gets harder as you scale
+
+There's a pattern we see repeatedly: a startup picks a fully integrated platform because it was fast to ship, then hits a wall at scale — authorization rates nobody benchmarked, 3DS2 flows killing conversion in European markets, manual dispute handling eating engineering time.
+
+The problem usually isn't the original decision. It's that the decision wasn't made with 18-month volume and geography in mind.
+
+At Proficient, when we work through payment infrastructure with growth-stage teams, we start by identifying which category of gateway actually fits the business model — integrated platform, direct acquiring, orchestration, or vertical-specific. That narrows a field of ten options to two or three real candidates.
+
+The category fit question is the one most evaluation processes skip entirely.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 3 (Decision, send 3 days after email 2) ---
+Subject: A second set of eyes on your payments stack
+
+If a payment infrastructure decision is live for your team right now — whether that's an initial selection, a scaling inflection point, or a migration you're trying to avoid — it's worth pressure-testing your thinking before you sign anything.
+
+Contract terms, tokenization portability, authorization rate benchmarks, support escalation paths: these details matter enormously and rarely get enough scrutiny until something goes wrong.
+
+Proficient has helped dozens of growth-stage companies work through exactly this. If a 30-minute conversation would be useful, you can book time directly at proficient.tech.
+
+No pitch — just a straight conversation about your situation.
+
+— The Proficient Team
