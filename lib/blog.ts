@@ -115,6 +115,30 @@ export const posts: BlogPost[] = [
       },
       {
         type: "h3",
+        text: "The Platforms We Build With",
+      },
+      {
+        type: "p",
+        text: "Proficient builds internal AI solutions on the platforms that are actually leading the field — not legacy automation tools rebranded with an AI label. The three we rely on most heavily are Claude (Anthropic), ChatGPT (OpenAI), and devs.ai.",
+      },
+      {
+        type: "p",
+        text: "Claude powers the reasoning-heavy work: document analysis, structured data extraction, underwriting file review, and any workflow where nuanced judgment and long-context accuracy matter. Its ability to read and reason across large documents without losing context makes it the right choice when the task involves complexity rather than speed.",
+      },
+      {
+        type: "p",
+        text: "ChatGPT handles conversational interfaces, agent workflows that require broad general knowledge, and integration tasks where the OpenAI ecosystem's tooling (function calling, assistants API, fine-tuning) offers a direct path to the outcome. For businesses already invested in OpenAI's infrastructure, this is the natural fit.",
+      },
+      {
+        type: "p",
+        text: "devs.ai is where a significant portion of the development and orchestration work happens. It provides the collaborative AI development environment — a space where Proficient's team and the client's team can build, test, and iterate on AI workflows together, with the models and tools available in one place rather than scattered across separate environments. For teams that want visibility into how their internal AI is being built, devs.ai makes the process transparent and collaborative rather than a black box.",
+      },
+      {
+        type: "p",
+        text: "The right platform for a given workflow depends on the task, the data, and how the output needs to be delivered. Proficient selects and configures the stack for each build — the client gets the outcome, not a preference fight about which model to use.",
+      },
+      {
+        type: "h3",
         text: "Who This Is For",
       },
       {
