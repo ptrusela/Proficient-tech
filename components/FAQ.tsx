@@ -10,7 +10,7 @@ export function FAQ() {
     },
     {
       q: "What does an ISO do in payment processing?",
-      a: "An ISO (Independent Sales Organization) is authorized by card networks and acquiring banks to resell payment processing services. Most ISOs do not own the underlying processing infrastructure — they defer underwriting decisions to the bank behind them, which limits their ability to approve difficult accounts. Proficient underwrites merchant accounts directly, which means approval decisions are based on the actual business model rather than a third-party risk matrix.",
+      a: "An ISO (Independent Sales Organization) is authorized by card networks and acquiring banks to resell payment processing services. Most ISOs do not own the underlying processing infrastructure — they defer underwriting decisions to the bank behind them, which limits their ability to approve difficult accounts. Proficient works with banking partners who make approval decisions based on the actual business model rather than a generic risk matrix.",
     },
     {
       q: "What is white-label payment processing?",
@@ -30,7 +30,7 @@ export function FAQ() {
     },
     {
       q: "Can Proficient approve merchants that have been terminated by another processor?",
-      a: "Yes, in many cases. Prior terminations are evaluated case-by-case: what caused the termination, whether the underlying issue has been resolved, and whether the current business model is sustainable. Merchants terminated because a prior processor had no appetite for the category are a very different file from those terminated for fraud or card network violations. Proficient's underwriting process allows this evaluation rather than auto-declining any file with a prior termination on record.",
+      a: "Yes, in many cases. Prior terminations are evaluated case-by-case: what caused the termination, whether the underlying issue has been resolved, and whether the current business model is sustainable. Merchants terminated because a prior processor had no appetite for the category are a very different file from those terminated for fraud or card network violations. Working with Proficient allows this evaluation rather than auto-declining any file with a prior termination on record.",
     },
   ];
 

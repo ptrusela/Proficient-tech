@@ -82,7 +82,7 @@ export default function RedoPage() {
                 <div>
                   <span className="pk mono">02</span>
                   <span>
-                    <b>We carry the rails and the risk.</b> Gateway, underwriting, compliance, and
+                    <b>We manage the full stack.</b> Gateway, compliance, and
                     payment infrastructure run on our systems.
                   </span>
                 </div>

@@ -107,8 +107,8 @@ export default function HighRiskPage() {
             </h1>
             <p className="lead">
               Stripe declined you. Square terminated your account. Your ISO said the bank won&rsquo;t
-              approve it. Proficient underwrites merchant accounts directly —
-              approval decisions are made based on the actual business, not by a matrix built for someone else&rsquo;s
+              approve it. Proficient connects merchants with banking partners who make approval
+              decisions based on the actual business — not by a matrix built for someone else&rsquo;s
               risk tolerance.
             </p>
             <div className="hero-actions">
@@ -181,12 +181,12 @@ export default function HighRiskPage() {
           <div className="cap-grid reveal">
             <div className="cap">
               <span className="idx">01</span>
-              <h3>Direct Underwriting</h3>
+              <h3>Banking Partner Network</h3>
               <p>
-                Proficient underwrites merchant accounts directly. When we approve a merchant
-                account, the decision comes from here — not deferred upstream. That means higher
-                approval rates for difficult categories and more stable accounts that do not get
-                pulled without warning.
+                Proficient connects merchants with banking partners positioned to approve accounts
+                in difficult categories. Decisions are based on the actual business model, not a
+                generic risk matrix. That means higher approval rates and more stable accounts that
+                do not get pulled without warning.
               </p>
             </div>
             <div className="cap">

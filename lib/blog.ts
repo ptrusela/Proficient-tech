@@ -1278,7 +1278,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "More importantly: Proficient underwrites merchant accounts directly. The merchants Shopify Payments rejects — the ones paying transaction fees every month as a penalty — are the merchants Proficient was built to approve. Moving from Shopify to Medusa with Proficient handling payments removes the transaction fee, removes the category restriction, and gives the merchant a processing infrastructure built around their business.",
+        text: "More importantly: Proficient works with banking partners who can approve the merchant accounts Shopify Payments rejects — the ones paying transaction fees every month as a penalty. Moving from Shopify to Medusa with Proficient handling payments removes the transaction fee, removes the category restriction, and gives the merchant a processing infrastructure built around their business.",
       },
       {
         type: "h3",
@@ -1908,7 +1908,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Because Proficient underwrites merchant accounts directly, account approval is based on how the business actually operates — not on how it fits into a risk matrix built for someone else. That alignment produces better approval rates, more stable accounts, and capital structures that fit the actual cash flow.",
+        text: "Because Proficient connects merchants with banking partners whose decisions are based on how the business actually operates — not on how it fits into a risk matrix built for someone else — the alignment produces better approval rates, more stable accounts, and capital structures that fit the actual cash flow.",
       },
       {
         type: "h3",
@@ -2674,11 +2674,11 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "When a processor can't underwrite directly, every file is judged against someone else's risk matrix. That matrix is built for the average merchant, not yours. CBD, nutraceuticals, travel, telehealth, adult, firearms accessories, high-ticket coaching — none of these are uninsurable categories. They're categories that require a direct underwriting conversation instead of an automated score.",
+        text: "When a processor routes every file through a third-party risk matrix, the decision is made by someone who has never seen the business. That matrix is built for the average merchant, not yours. CBD, nutraceuticals, travel, telehealth, adult, firearms accessories, high-ticket coaching — none of these are uninsurable categories. They're categories that require a real conversation with the right banking partner instead of an automated score.",
       },
       {
         type: "p",
-        text: "We underwrite directly, which means the underwriter reviewing your file can actually say yes to something a matrix would auto-reject — and back that decision with a real relationship instead of a policy document.",
+        text: "Proficient works with banking partners who can actually say yes to something a matrix would auto-reject — and back that decision with a real relationship instead of a policy document.",
       },
       {
         type: "h3",

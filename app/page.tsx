@@ -37,7 +37,7 @@ const faqJsonLd = {
       name: "What does an ISO do in payment processing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "An ISO (Independent Sales Organization) is authorized to resell payment processing services but typically does not own the underlying infrastructure. Most ISOs defer underwriting decisions to the bank behind them, limiting their ability to approve difficult accounts. Proficient underwrites merchant accounts directly, which means approval decisions are based on the actual business rather than a third-party risk matrix.",
+        text: "An ISO (Independent Sales Organization) is authorized to resell payment processing services but typically does not own the underlying infrastructure. Most ISOs defer underwriting decisions to the bank behind them, limiting their ability to approve difficult accounts. Proficient works with banking partners who make approval decisions based on the actual business rather than a generic risk matrix.",
       },
     },
     {
@@ -77,7 +77,7 @@ const faqJsonLd = {
       name: "Can Proficient approve merchants that have been terminated by another processor?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, in many cases. Prior terminations are evaluated case-by-case: what caused the termination, whether the underlying issue has been resolved, and whether the current model is sustainable. Merchants terminated for category mismatch are different from those terminated for fraud. Proficient's underwriting process allows this evaluation rather than auto-declining any file with a prior termination.",
+        text: "Yes, in many cases. Prior terminations are evaluated case-by-case: what caused the termination, whether the underlying issue has been resolved, and whether the current model is sustainable. Merchants terminated for category mismatch are different from those terminated for fraud. Working with Proficient allows this evaluation rather than auto-declining any file with a prior termination.",
       },
     },
   ],
