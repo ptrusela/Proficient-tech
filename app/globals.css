@@ -1721,3 +1721,97 @@ footer {
 .foot-legal a:hover {
   opacity: 1;
 }
+
+/* ─── Savings Audit ─────────────────────────────────────────────────── */
+.audit-hero {
+  min-height: 60vh;
+}
+.audit-form-section {
+  padding: 80px 0 100px;
+}
+.audit-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: start;
+}
+@media (max-width: 860px) {
+  .audit-wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.audit-intro h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  margin-bottom: 16px;
+}
+.audit-intro p {
+  color: var(--fg-dim);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.audit-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.audit-checklist li {
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+.audit-checklist li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+.audit-form {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 36px;
+}
+@media (max-width: 600px) {
+  .audit-form {
+    padding: 24px 16px;
+  }
+}
+.cf-file-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--fg);
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+.cf-hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--fg-dim);
+  margin-top: 6px;
+  opacity: 0.75;
+}
+.audit-success {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 40px 36px;
+}
+.audit-success-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--fg);
+}
+.audit-success p {
+  color: var(--fg-dim);
+  line-height: 1.7;
+}
