@@ -8,17 +8,32 @@ const MAX_BYTES = 4 * 1024 * 1024; // 4 MB — Vercel function body limit is ~4.
 async function verifyTurnstile(token: string | null): Promise<boolean> {
   if (!token) return false;
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true; // skip in dev if not configured
-  const res = await fetch("https://challenges.cloudflare.com/turnstile/v1/siteverify", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams({ secret, response: token }),
-  });
-  const data = (await res.json()) as { success: boolean };
-  return data.success === true;
+  if (!secret) return true; // skip if not configured
+  try {
+    const res = await fetch("https://challenges.cloudflare.com/turnstile/v1/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({ secret, response: token }),
+    });
+    const data = (await res.json()) as { success: boolean };
+    return data.success === true;
+  } catch (err) {
+    console.error("[audit] Turnstile verify error:", err);
+    return false;
+  }
 }
 
 export async function POST(req: Request) {
+  try {
+    return await handleAudit(req);
+  } catch (err) {
+    console.error("[audit] Unhandled error:", err);
+    const msg = err instanceof Error ? err.message : "Unexpected server error.";
+    return NextResponse.json({ error: msg }, { status: 500 });
+  }
+}
+
+async function handleAudit(req: Request) {
   let formData: FormData;
   try {
     formData = await req.formData();
