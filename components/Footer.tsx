@@ -35,6 +35,7 @@ export function Footer() {
               <a href="/high-risk">High-Risk Accounts</a>
               <a href="/medusa">Medusa.js</a>
               <a href="/blog">Blog</a>
+              <a href="/savings-audit">Free Statement Audit</a>
             </div>
             <div className="foot-col">
               <h4>Contact</h4>
