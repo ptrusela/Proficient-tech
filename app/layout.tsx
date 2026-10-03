@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Archivo, Geist_Mono } from "next/font/google";
+import { Archivo } from "next/font/google";
+import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -11,12 +12,6 @@ const archivo = Archivo({
   display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-geist-mono",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -104,7 +99,7 @@ export default function RootLayout({
         />
         <link rel="alternate" type="application/rss+xml" title="Proficient Blog" href="/feed" />
       </head>
-      <body className={`${archivo.variable} ${geistMono.variable}`}>
+      <body className={`${archivo.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />
       </body>
