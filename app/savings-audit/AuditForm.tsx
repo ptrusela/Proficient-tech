@@ -34,9 +34,10 @@ export function AuditForm() {
 
     try {
       const res = await fetch("/api/audit", { method: "POST", body: data });
-      const json = await res.json();
       if (!res.ok) {
-        setErrorMsg(json?.error ?? "Something went wrong. Please try again.");
+        let msg = "Something went wrong. Please try again.";
+        try { msg = (await res.json())?.error ?? msg; } catch { /* non-JSON error body */ }
+        setErrorMsg(msg);
         setState("error");
         return;
       }

@@ -79,8 +79,14 @@ export async function POST(req: Request) {
   const key = `statements/${ts}-${safeCompany}.${ext}`;
 
   // Upload to R2
-  await putStatement(key, buf, contentType);
-  const fileUrl = await signedStatementUrl(key);
+  let fileUrl: string;
+  try {
+    await putStatement(key, buf, contentType);
+    fileUrl = await signedStatementUrl(key);
+  } catch (err) {
+    console.error("[audit] R2 upload failed:", err);
+    return NextResponse.json({ error: "File storage error. Please try again." }, { status: 500 });
+  }
 
   // Close CRM — best-effort, never block the response
   let closeLeadId = "";
