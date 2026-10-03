@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type State = "idle" | "submitting" | "success" | "error";
 
@@ -8,6 +8,15 @@ export function AuditForm() {
   const [state, setState] = useState<State>("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
+    script.async = true;
+    script.defer = true;
+    document.head.appendChild(script);
+    return () => { document.head.removeChild(script); };
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -162,6 +171,12 @@ export function AuditForm() {
         />
         <span className="cf-hint">Your file is stored securely and used only for your audit.</span>
       </div>
+
+      <div
+        className="cf-turnstile"
+        data-sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+        data-theme="dark"
+      />
 
       {state === "error" && <p className="cf-error">{errorMsg}</p>}
 
