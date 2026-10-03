@@ -104,8 +104,8 @@ export async function POST(req: Request) {
   // Resend alert email — always send even if Close failed
   const resend = new Resend(process.env.RESEND_API_KEY);
   const alertTo = process.env.AUDIT_ALERT_EMAIL ?? "info@proficient.tech";
-  await resend.emails.send({
-    from: "Proficient <noreply@proficient.tech>",
+  const { error: sendError } = await resend.emails.send({
+    from: "Proficient Contact Form <contact@proficient.tech>",
     to: alertTo,
     subject: `New statement audit: ${company}`,
     html: [
@@ -123,6 +123,11 @@ export async function POST(req: Request) {
       .filter(Boolean)
       .join("\n"),
   });
+
+  if (sendError) {
+    console.error("[audit] Resend failed:", sendError);
+    return NextResponse.json({ error: sendError.message }, { status: 500 });
+  }
 
   return NextResponse.json({ ok: true });
 }
