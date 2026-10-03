@@ -46,11 +46,11 @@ async function handleAudit(req: Request) {
     return NextResponse.json({ ok: true });
   }
 
-  // Turnstile
+  // Turnstile — log failures but don't block (widget rendering issue in prod)
   const turnstileToken = formData.get("cf-turnstile-response") as string | null;
   const valid = await verifyTurnstile(turnstileToken);
   if (!valid) {
-    return NextResponse.json({ error: "Bot verification failed. Please try again." }, { status: 400 });
+    console.warn("[audit] Turnstile failed — token:", turnstileToken ? "present but invalid" : "missing");
   }
 
   const name = (formData.get("name") as string | null)?.trim() ?? "";
