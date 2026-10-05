@@ -1,0 +1,40 @@
+--- EMAIL 1 (Awareness) ---
+Subject: AI automation: the gap between the pitch and the build
+
+Most AI automation advice collapses into two useless extremes — "just connect your tools" or "agents will replace your entire ops team." Neither holds up when you're actually trying to ship something reliable.
+
+A more useful frame: AI automation isn't a single thing. It's a spectrum — rule-based workflows at the foundation, model-assisted processes in the middle, autonomous agents at the far end. Most teams try to start at the far end. That's usually where the expensive failed pilots live.
+
+We wrote up the full framework, including how to pick the right layer for a given process.
+
+Worth a read if you're evaluating where to start.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 2 (Consideration, send 4 days later) ---
+Subject: Why your AI proof of concept didn't make it to production
+
+There's a pattern we see repeatedly: a promising AI prototype that never ships. Not because the model wasn't capable — because the infrastructure around it wasn't ready.
+
+The culprits are usually the same: no evaluation framework before deployment, no observability on inputs and outputs, no fallback when the model misbehaves. A model producing impressive demos but failing unpredictably in production is worse than no automation at all. It quietly erodes team trust and creates technical debt that compounds.
+
+At Proficient, our starting point is always reliability, not capability. That means building test sets from real historical data before writing production code, designing human-in-the-loop checkpoints for high-consequence workflows, and making pipelines observable from day one.
+
+The models are rarely the hard part. The engineering around them is.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 3 (Decision, send 3 days after email 2) ---
+Subject: Where's your highest-leverage automation opportunity right now?
+
+If you're weighing where to start with AI automation — or you've started and hit a wall — the bottleneck is usually not the models. It's process selection, data readiness, and the infrastructure needed to make it trustworthy in production.
+
+That's the work we do with growth-stage teams at Proficient. No generic playbooks — just a candid look at your specific workflows, where the real leverage is, and what it would actually take to build it reliably.
+
+If that conversation sounds useful, book a call with our team at proficient.tech. We'll come prepared, not with a pitch deck.
+
+— The Proficient Team
