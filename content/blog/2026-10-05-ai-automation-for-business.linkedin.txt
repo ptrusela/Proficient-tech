@@ -1,0 +1,13 @@
+Most AI automation advice will cost you money before it saves you any.
+
+The gap between vendor promises and production reality is wide. Closing it requires less focus on the models themselves and more on what surrounds them: process selection, evaluation frameworks, observable pipelines, and clear criteria for when to expand autonomy and when to hold back.
+
+The practical starting point is treating AI automation as a spectrum. Rule-based workflows handle the deterministic cases. Model-assisted workflows cut the cognitive load on classification, extraction, and drafting tasks. Autonomous agents tackle multi-step problems — but only once the underlying data and evaluation infrastructure is ready. Conflating these three layers is where most implementations get expensive.
+
+Process selection matters as much as model choice. High volume, well-defined outputs, existing data history, and tolerance for measured error rates are the signals that a workflow is worth engineering. Impressive demos that fail unpredictably in production erode trust faster than any efficiency gain can recover.
+
+For startups handling payments, the stakes are higher still. Financial workflows carry auditability and explainability requirements that need to be designed in from the start, not retrofitted when a compliance question surfaces.
+
+The full framework — including how to scale across the organization once you have proven value in one area — is at proficient.tech.
+
+#AIAutomation #TechnicalFounders #StartupGrowth #AIStrategy #PaymentInfrastructure
