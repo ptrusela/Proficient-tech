@@ -15,6 +15,135 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "work-smarter-ai-augmentation-dual-pricing",
+    title: "Work Smarter with Proficient: AI Augmentation, Payment Alignment, and Two Models for Keeping More of What You Earn",
+    excerpt:
+      "Most businesses are losing value in two places at once: technology that was not built for how they actually work, and payment processing fees they never questioned. Proficient aligns both — custom AI development that fits your operation, and a dual pricing model that lets you decide what happens to those fees. Filter up.",
+    date: "2026-10-06",
+    readTime: "7 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "Working smarter is not about adding more tools. Most businesses already have more tools than they use well. It is about aligning the tools you have to how you actually operate — and closing the gaps where value is leaking out quietly, every day, in ways that feel fixed but are not.",
+      },
+      {
+        type: "p",
+        text: "Proficient works at the intersection of two of those gaps: technology that is not fully integrated into the operation, and payment processing costs that compound against the business without anyone having made a deliberate choice to absorb them. Addressing both together is what it means to filter up — to strip away the friction, align the infrastructure, and reach operating leverage that generic software and generic processing never deliver.",
+      },
+      {
+        type: "h3",
+        text: "Technology Augmentation Through AI Development",
+      },
+      {
+        type: "p",
+        text: "AI augmentation is not a subscription. It is not a chatbot tab open next to your CRM. It is the work of identifying where your team's time is going to tasks that should be handled by connected, intelligent systems — and building those systems to the exact shape of your operation.",
+      },
+      {
+        type: "p",
+        text: "The standard version of AI adoption looks like this: a team adopts a general-purpose AI tool, uses it for writing and summarizing, and calls it done. The result is a productivity improvement for individuals, not a structural change in how the business operates. The bottlenecks move around. The reporting is still manual. The data still lives in three disconnected systems. The decision that takes 45 minutes to support still takes 45 minutes.",
+      },
+      {
+        type: "p",
+        text: "AI augmentation through Proficient starts from the bottleneck, not the tool. What decision are you making too slowly? What report requires too many manual steps? What information is available in your systems but not surfaced to the person who needs it at the moment they need it? The build connects the relevant data — from your CRM, your payment stack, your operations platform, your reconciliation files — and puts the right output in the right place without requiring human movement between systems.",
+      },
+      {
+        type: "list",
+        items: [
+          "Processing anomalies, approval rate shifts, and category drift surfaced automatically before they show up on a monthly statement",
+          "Reconciliation exceptions flagged and queued for human review without manual pass-through",
+          "Lead and account activity synthesized across CRM and communication tools without manual update",
+          "Underwriting file context pulled and formatted for review without per-file retrieval work",
+          "Operations reporting generated from live data rather than rebuilt from exports",
+        ],
+      },
+      {
+        type: "p",
+        text: "The businesses that get the most from this work are already running a real operation — they know their workflow, they know where the friction lives, and they want a technology partner who builds around that instead of asking them to change it. If that describes your team, the conversation with Proficient starts with what is slow, not with which AI model to use.",
+      },
+      {
+        type: "h3",
+        text: "Payment Processing Alignment",
+      },
+      {
+        type: "p",
+        text: "Payment processing is the most consistent operating cost most businesses have never actually evaluated. It is not like rent or payroll — it does not show up as a single line item. It arrives fragmented: interchange on one rate, processor markup on another, gateway fees on a third, monthly minimums somewhere else. Most business owners know the effective rate on their statement but could not reconstruct how it was calculated.",
+      },
+      {
+        type: "p",
+        text: "Processing alignment means building a payment structure that fits how the business actually generates revenue — the volume, the ticket size, the channel mix, the card type distribution, the chargeback exposure profile — and connecting that to an acquiring relationship where the rate reflects the actual risk of that profile, not the median risk of all merchants on a shared platform.",
+      },
+      {
+        type: "p",
+        text: "This is what a free statement audit does. Proficient reviews the actual statement — not an approximation, the real file — and produces an estimated analysis of what the business is paying, where the cost is concentrated, and what a restructured arrangement looks like. For businesses processing $50,000 or more per month, the difference between an aligned structure and a default platform arrangement is often material. For businesses in the $250,000 to $1M+ range, it is a strategic decision, not a procurement one.",
+      },
+      {
+        type: "h3",
+        text: "Two Models for What Happens to Processing Fees",
+      },
+      {
+        type: "p",
+        text: "The decision every business processing cards makes — whether deliberately or by default — is what happens to the card fee. There are two models, and they have different financial outcomes. Proficient supports both. The right choice depends on the business, the customer base, and what the revenue structure can absorb.",
+      },
+      {
+        type: "h3",
+        text: "Model One: Fees Absorbed",
+      },
+      {
+        type: "p",
+        text: "In this model, the business prices its products or services at a single price point and absorbs the card fee on every transaction. The customer sees one price. The business receives that price minus the processing cost. At 2.7 percent on a $100 transaction, the business nets $97.30. At $500,000 per month in volume, that is $13,500 per month in fees going to the processing chain instead of the business.",
+      },
+      {
+        type: "p",
+        text: "This model makes sense when the customer relationship depends on price simplicity, when the customer base is unlikely to respond well to a visible fee line, or when the business operates in a category where passing fees is not standard practice. It also makes sense when the processing cost itself has been aligned — so the 2.7 percent is not the number on the table, and the business has extracted whatever savings are available on the cost side.",
+      },
+      {
+        type: "p",
+        text: "The lever in this model is not the fee structure — it is the processing rate. A business absorbing fees should be absorbing them at the lowest defensible rate for their transaction profile. That is the conversation Proficient has when the statement audit comes back.",
+      },
+      {
+        type: "h3",
+        text: "Model Two: Dual Pricing — More Revenue Retained",
+      },
+      {
+        type: "p",
+        text: "In the dual pricing model, the business presents two prices: a card price and a cash or ACH price. The difference between the two reflects the card fee. A customer paying by bank transfer or cash pays the lower price. A customer paying by card pays the higher price. The business nets the same amount either way — but customers who choose non-card payment methods generate revenue with no processing cost taken out.",
+      },
+      {
+        type: "p",
+        text: "For businesses with any meaningful share of ACH-eligible transactions — B2B companies, service businesses, healthcare providers, recurring-billing operations — the dual pricing model changes the math. If 30 percent of volume shifts to ACH at zero processing cost, the blended fee rate on total revenue drops by roughly 30 percent of whatever the card fee was. On $500,000 per month, that can be $3,000 to $4,500 back into the business each month without changing the price a single customer pays.",
+      },
+      {
+        type: "p",
+        text: "Dual pricing is fully compliant with card network rules when disclosed correctly, and Proficient deploys it through RapidPayLink — the payment software that handles the checkout logic, the customer-facing disclosure, and the payment flow without requiring the business to build or maintain anything. The disclosure is built in. The compliance is handled. The business just retains more of what it earns.",
+      },
+      {
+        type: "p",
+        text: "A related mechanism is surcharging — passing the card fee directly to card-paying customers as a disclosed line item while keeping the advertised price intact. Surcharging is the right model for certain business types and customer relationships where dual pricing is not available or not preferred. Proficient configures either approach depending on what the business's structure and customer mix supports.",
+      },
+      {
+        type: "h3",
+        text: "The Combination: Why Technology and Payment Alignment Work Together",
+      },
+      {
+        type: "p",
+        text: "Technology augmentation and payment alignment are not separate conversations. They are the same conversation about operational leverage — about what the business is spending, where the friction is, and what it would look like if both were addressed together.",
+      },
+      {
+        type: "p",
+        text: "A business that builds an AI layer connected to its payment data can surface processing anomalies before they become chargeback trends. It can flag approval rate drops the day they happen, not when the month-end statement arrives. It can generate the reconciliation output that finance needs without the manual pass-through that currently takes hours per week. The payment infrastructure and the intelligence layer reinforce each other — and both run better when the processing relationship itself has been aligned to the business's actual profile.",
+      },
+      {
+        type: "p",
+        text: "Filter up with Proficient means removing what is extracting value quietly — processing fees absorbing margin on every transaction, technology that fits the median business instead of yours — and replacing it with infrastructure that is built around how you actually operate. That is the work. The output is a business that earns more from the revenue it is already generating, with systems that support that rather than add to the overhead.",
+      },
+      {
+        type: "p",
+        text: "If you are processing $50,000 or more per month and want to see what your statement audit looks like, or if you want to talk about where AI augmentation would close the most friction in your operation, reach out to Proficient at info@proficient.tech. The audit is free. The conversation starts with your numbers, not a pitch.",
+      },
+    ],
+  },
+  {
     slug: "proficient-internal-ai-solutions-team-workflow",
     title: "Your Team Shouldn't Adapt to AI. The AI Should Adapt to Your Team.",
     excerpt:
@@ -2789,6 +2918,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "work-smarter-ai-augmentation-dual-pricing": [
+    "proficient-internal-ai-solutions-team-workflow",
+    "rapidpaylink-eliminate-card-processing-fees",
+    "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
+  ],
   "proficient-internal-ai-solutions-team-workflow": [
     "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
     "medusa-js-payment-partner-proficient",
