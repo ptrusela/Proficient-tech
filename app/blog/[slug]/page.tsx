@@ -124,7 +124,7 @@ export default async function BlogPostPage({
                   </ul>
                 );
               }
-              return <p key={i}>{block.text}</p>;
+              return <p key={i} dangerouslySetInnerHTML={{ __html: block.text }} />;
             })}
           </div>
           {relatedPosts.length > 0 && (

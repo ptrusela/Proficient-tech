@@ -139,7 +139,7 @@ export const posts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "If you are processing $50,000 or more per month and want to see what your statement audit looks like, or if you want to talk about where AI augmentation would close the most friction in your operation, reach out to Proficient at info@proficient.tech. The audit is free. The conversation starts with your numbers, not a pitch.",
+        text: "If you are processing $50,000 or more per month and want to see what your statement audit looks like, <a href=\"https://proficient.tech/savings-audit\">submit your statement here</a> for a free audit, or reach out to Proficient at info@proficient.tech. The audit is free. The conversation starts with your numbers, not a pitch.",
       },
     ],
   },
