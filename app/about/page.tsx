@@ -6,7 +6,7 @@ import { RevealObserver } from "@/components/RevealObserver";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "Proficient was built on a belief that payment infrastructure should be a strategic asset — not a liability. Meet the founder and learn why we exist.",
+  description: "Proficient was built on a belief that payment infrastructure should be a strategic asset — not a liability. Learn why we exist.",
   alternates: { canonical: "https://proficient.tech/about" },
 };
 
@@ -87,51 +87,6 @@ export default function AboutPage() {
               <h3>Capital</h3>
               <p>Commercial financing brokered through a relationship that already knows the processing history — working capital, equipment financing, revenue-based lending, and more.</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Founder */}
-      <section className="block about-founder">
-        <div className="wrap about-founder-inner">
-          <div className="about-founder-photo reveal">
-            <img src="/assets/phillip-trusela.jpg" alt="Phillip Trusela, Founder of Proficient" />
-          </div>
-          <div className="about-founder-copy reveal">
-            <span className="eyebrow dim">Founder</span>
-            <h2>Phillip Trusela</h2>
-            <p className="about-founder-title">Founder &amp; Principal Consultant</p>
-            <p>
-              Phillip Trusela founded Proficient in 2019 after spending nearly two decades working
-              across financial services, enterprise technology, and payment processing. He started
-              his career as a Registered Representative at The Vanguard Group, where he learned how
-              institutional money moves and how investment relationships are built. From there, he
-              spent nearly four years as an Account Manager at UpCurve Cloud — a Google Premier
-              Partner — consulting businesses on cloud infrastructure and building the technology
-              advisory practice that would inform how Proficient approaches its clients today.
-            </p>
-            <p>
-              His entry into payments came through direct sales and consulting work with merchants
-              across low and high-risk categories. What he found consistently was a market full of
-              solutions that were either technically capable or relationally trustworthy — rarely
-              both. Processors who could approve the account but had no interest in understanding
-              the business. ISOs who built relationships but had no control over what happened
-              upstream. Capital providers who underwrote based on financials, with no visibility
-              into the processing infrastructure underneath.
-            </p>
-            <p>
-              Proficient was his answer to that gap. A company built at the intersection of
-              financial services, technology strategy, and payment infrastructure — with a
-              relationship-first approach that treats trust as the foundation, not a byproduct.
-            </p>
-            <a
-              href="https://www.linkedin.com/in/philiptrusela/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-ghost about-linkedin"
-            >
-              LinkedIn <span className="arr">→</span>
-            </a>
           </div>
         </div>
       </section>
