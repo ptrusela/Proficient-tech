@@ -15,6 +15,151 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "visa-compelling-evidence-3-chargeback-changes-october-2026",
+    title: "Visa Compelling Evidence 3.0 Changes on Oct 24: What Merchants Need to Know",
+    excerpt:
+      "Visa's updated Compelling Evidence 3.0 rules take effect October 24. CE 3.0 lets merchants fight CNP fraud chargebacks using prior transaction history — but only if your systems have been collecting the right data. Here is what changed, what qualifies, and what to do before the deadline.",
+    date: "2026-10-12",
+    readTime: "8 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "October 24 is the effective date for Visa's updated Compelling Evidence 3.0 framework — a significant revision to how merchants can fight card-not-present fraud chargebacks. If you process online transactions and have been hit by friendly fraud, CE 3.0 is the most important rule change Visa has made in years. If you are not ready for it, you will keep losing disputes you should be winning.",
+      },
+      {
+        type: "p",
+        text: "This post covers what CE 3.0 is, what changed, what your systems need to have in place to use it, and what the October 24 update means for merchants who are already fighting chargebacks today.",
+      },
+      {
+        type: "h3",
+        text: "What Visa Compelling Evidence 3.0 Is",
+      },
+      {
+        type: "p",
+        text: "Compelling Evidence 3.0 is Visa's framework for allowing merchants to contest Reason Code 10.4 chargebacks — Other Fraud: Card-Absent Environment — by presenting historical transaction data that shows the cardholder has successfully transacted with the merchant before, from the same device or network, without ever disputing those prior transactions.",
+      },
+      {
+        type: "p",
+        text: "Before CE 3.0, merchants fighting a CNP fraud chargeback were limited to presenting order documentation, delivery confirmation, and communication records. That evidence was often insufficient against a cardholder claiming they never authorized the transaction. CE 3.0 changes the playing field: if you can demonstrate that the same customer — same device fingerprint, same IP address, same account credentials — completed prior purchases and never disputed them, the chargeback is reclassified from a fraud dispute to a cardholder dispute. That reclassification removes it from your fraud chargeback ratio, which is what card networks use to determine whether to fine you or place you in a monitoring program.",
+      },
+      {
+        type: "p",
+        text: "That distinction matters significantly. Fraud chargebacks count against your Visa Dispute Monitoring Program (VDMP) threshold. Cardholder disputes do not. For merchants operating near those thresholds, successfully converting a 10.4 dispute under CE 3.0 can be the difference between clean standing and a monitoring program enrollment.",
+      },
+      {
+        type: "h3",
+        text: "What the October 24 Update Changes",
+      },
+      {
+        type: "p",
+        text: "The October 24 update tightens and clarifies the qualifying criteria for CE 3.0 evidence, closes loopholes that allowed marginal submissions, and adjusts the timeline requirements that govern which prior transactions can be used as evidence. Key changes:",
+      },
+      {
+        type: "list",
+        items: [
+          "Prior transaction window: the qualifying prior transactions must now fall within a defined lookback period relative to the dispute date — Visa has clarified the acceptable range and merchants using transactions outside that window will have their submissions rejected",
+          "Matching criteria enforcement: Visa is tightening which combinations of device ID, IP address, email, and account credentials satisfy the matching requirement — partial matches that were previously accepted are being scrutinized more closely",
+          "Minimum prior transaction count: two prior undisputed transactions from the same cardholder remain the minimum, but both must now satisfy the full matching criteria independently, not in combination",
+          "Evidence submission format: updated technical requirements for how CE 3.0 evidence is packaged and submitted through the Visa Resolve Online (VROL) platform",
+          "Issuer response timeline: changes to how quickly issuers must respond to a CE 3.0 challenge, giving merchants clearer resolution windows",
+        ],
+      },
+      {
+        type: "p",
+        text: "Merchants who have been submitting CE 3.0 evidence under the prior framework should review their current evidence packages against the updated criteria before October 24. Submissions that were previously accepted may not meet the stricter standards going forward.",
+      },
+      {
+        type: "h3",
+        text: "What Qualifies as Compelling Evidence Under CE 3.0",
+      },
+      {
+        type: "p",
+        text: "To use CE 3.0 against a 10.4 chargeback, you need at least two prior transactions from the same cardholder that meet all of the following conditions:",
+      },
+      {
+        type: "list",
+        items: [
+          "The prior transactions were completed, not declined or refunded",
+          "The prior transactions were never disputed by the cardholder",
+          "Each prior transaction matches the disputed transaction on at least two of the following: device ID or device fingerprint, IP address, email address or account login",
+          "The prior transactions fall within Visa's defined lookback window relative to the dispute transaction date",
+          "The merchant has documentary evidence of each qualifying prior transaction — order record, transaction ID, timestamp, and the matching data points",
+        ],
+      },
+      {
+        type: "p",
+        text: "The matching requirement is where most merchants fail. Device fingerprint and IP address data are only available if your checkout or payment flow was collecting and storing them at the time of each transaction. If you were not capturing device ID at the transaction level — or if you were capturing it but not storing it in a retrievable format tied to the transaction record — you cannot meet the CE 3.0 matching criteria, regardless of how many prior purchases the customer made.",
+      },
+      {
+        type: "h3",
+        text: "The Data Problem Most Merchants Have",
+      },
+      {
+        type: "p",
+        text: "CE 3.0 is, at its core, a data infrastructure requirement masquerading as a dispute rule. Whether a merchant can use it depends almost entirely on what data was captured and stored at checkout — not on what happened after the chargeback arrived.",
+      },
+      {
+        type: "p",
+        text: "Merchants processing through Stripe, Square, or other consumer gateways often do not have direct access to the transaction-level device and IP data that CE 3.0 requires. The gateway may collect it; the merchant may not be able to retrieve it in the format Visa requires. This is one of the structural disadvantages of consumer gateway arrangements — you do not own the data layer, and when a dispute rule change requires that data, you cannot extract it.",
+      },
+      {
+        type: "p",
+        text: "Merchants who process through infrastructure where they own the transaction record, collect device fingerprints at checkout, and store that data in a retrievable format are positioned to use CE 3.0 effectively. Merchants routing through a consumer gateway layer often are not, even if the underlying transactions would technically qualify.",
+      },
+      {
+        type: "h3",
+        text: "What to Do Before October 24",
+      },
+      {
+        type: "p",
+        text: "If you are currently fighting 10.4 chargebacks and want to use CE 3.0 after October 24, the immediate action items are:",
+      },
+      {
+        type: "list",
+        items: [
+          "Audit your transaction records — verify that you have device ID or device fingerprint, IP address, and email address stored at the transaction level for your prior purchases, not just the most recent one",
+          "Check your evidence packages — if you have open CE 3.0 submissions under the prior framework, review them against the updated matching criteria before October 24",
+          "Confirm your data retrieval path — verify that you can pull transaction-level device and IP data from your payment infrastructure on a per-transaction basis; if you cannot, you cannot build a CE 3.0 evidence package regardless of what the checkout collected",
+          "Implement device fingerprinting if you have not — for future disputes, this needs to be in place at checkout now; prior transactions cannot be reconstructed retroactively",
+          "Update your chargeback response process — CE 3.0 submissions require specific evidence formatting; ensure whoever is handling your disputes knows the October 24 changes",
+        ],
+      },
+      {
+        type: "h3",
+        text: "What CE 3.0 Does Not Cover",
+      },
+      {
+        type: "p",
+        text: "CE 3.0 applies specifically to Visa Reason Code 10.4 — Other Fraud: Card-Absent Environment. It does not apply to other fraud reason codes, to consumer dispute codes (13.x series), or to Mastercard chargebacks, which have their own evidence rules under their dispute framework.",
+      },
+      {
+        type: "p",
+        text: "It also does not apply to first-time transactions. If the disputed transaction is the customer's first purchase from your business, there are no prior transactions to use as compelling evidence, and CE 3.0 is not available as a dispute response. Merchants with high first-order fraud rates need to address that problem at the authorization layer — through velocity controls, 3DS, or risk scoring — not at the dispute layer.",
+      },
+      {
+        type: "p",
+        text: "CE 3.0 is also not a guarantee of success. Even with qualifying evidence, the issuer reviews the submission and makes the final determination. Well-prepared CE 3.0 submissions from merchants with clean data significantly improve win rates on 10.4 disputes — but the submission quality, the evidence format, and the completeness of the matching data all affect the outcome.",
+      },
+      {
+        type: "h3",
+        text: "Why This Matters for Merchants Processing Above Threshold",
+      },
+      {
+        type: "p",
+        text: "Visa's Dispute Monitoring Program places merchants in Early Warning, Standard, or High-Risk status based on monthly dispute rates. Merchants at or above 0.65 percent dispute rate (by transaction count) or $75,000 in dispute volume are in Early Warning. At 0.9 percent or $250,000, they are in Standard — which triggers fines. CE 3.0 is relevant to any merchant watching those numbers.",
+      },
+      {
+        type: "p",
+        text: "A 10.4 chargeback that is successfully challenged under CE 3.0 is reclassified. It no longer counts as a fraud chargeback in your VDMP ratio calculation. For a merchant processing $500,000 per month with a dispute rate near threshold, successfully converting even a fraction of fraud chargebacks to non-fraud disputes can move the numbers meaningfully. The mechanics of that conversion — and whether a given merchant's data infrastructure supports it — is exactly the kind of analysis that changes operating outcomes.",
+      },
+      {
+        type: "p",
+        text: "If you are processing online transactions and want to understand whether your current infrastructure supports CE 3.0 evidence collection, or if you are managing chargeback exposure and want a second opinion on your dispute rate trajectory, reach out to Proficient at <a href=\"mailto:info@proficient.tech\">info@proficient.tech</a>. The October 24 deadline is close enough that the time to assess the gap is now.",
+      },
+    ],
+  },
+  {
     slug: "work-smarter-ai-augmentation-dual-pricing",
     title: "Work Smarter with Proficient: AI Augmentation, Payment Alignment, and Two Models for Keeping More of What You Earn",
     excerpt:
@@ -2918,6 +3063,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "visa-compelling-evidence-3-chargeback-changes-october-2026": [
+    "fraud-doesnt-end-at-checkout-revenue-protection-lifecycle",
+    "protecting-your-business-proficients-holistic-view",
+    "custom-payment-system-built-around-your-business",
+  ],
   "work-smarter-ai-augmentation-dual-pricing": [
     "proficient-internal-ai-solutions-team-workflow",
     "rapidpaylink-eliminate-card-processing-fees",
