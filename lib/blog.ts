@@ -15,6 +15,161 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "genius-act-stablecoin-rules-final-january-2027",
+    title: "GENIUS Act Stablecoin Rules Are Final: What Merchants and Platforms Need Before January 18",
+    excerpt:
+      "The OCC finalized its stablecoin rule on October 21, operationalizing the GENIUS Act's federal framework for payment stablecoins. The compliance deadline is January 18. If your business issues, holds, or facilitates stablecoin transactions — or runs on infrastructure that does — here is what changes and what you need to have in place.",
+    date: "2026-10-26",
+    readTime: "9 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "The OCC published its final stablecoin rule on October 21, giving effect to the GENIUS Act's federal framework for payment stablecoins. The rule establishes who can issue a payment stablecoin in the United States, what reserve and disclosure requirements apply, and what obligations fall on the platforms and businesses that use those stablecoins in payment infrastructure. The compliance deadline is January 18.",
+      },
+      {
+        type: "p",
+        text: "Most coverage of this rule is aimed at stablecoin issuers — Circle, PayPal, the banks applying for issuer status. That is the right primary audience. But the OCC's framework also creates obligations and decisions for merchants, payment platforms, and SaaS businesses that interact with stablecoins further down the stack: through settlement infrastructure, through embedded payment products, or through third-party processors who use stablecoins as a settlement rail. Understanding where your business sits relative to the rule is the first step toward knowing what needs to change before January 18.",
+      },
+      {
+        type: "h3",
+        text: "What the GENIUS Act Established",
+      },
+      {
+        type: "p",
+        text: "The Guiding and Establishing National Innovation for US Stablecoins Act created a dual-track federal and state regulatory path for payment stablecoin issuers. At the federal level, the OCC supervises national bank-chartered issuers and federally chartered nonbank issuers. At the state level, state-chartered issuers can operate under a regime that must meet or exceed the federal floor.",
+      },
+      {
+        type: "p",
+        text: "The GENIUS Act's scope is specific: it covers payment stablecoins — digital assets denominated in dollars (or other national currencies), redeemable at par on demand, backed 1:1 by qualifying reserve assets. It explicitly excludes algorithmic stablecoins whose value is maintained by software-managed supply mechanics rather than direct asset backing. It also excludes central bank digital currencies and general-purpose digital assets that are not designed for payment use.",
+      },
+      {
+        type: "p",
+        text: "The October 21 OCC rule operationalizes that framework with the specific reserve composition requirements, audit timelines, redemption standards, and AML/KYC obligations that issuers and affiliated platforms must now meet.",
+      },
+      {
+        type: "h3",
+        text: "What the Final Rule Requires of Issuers",
+      },
+      {
+        type: "p",
+        text: "For permitted payment stablecoin issuers — the entities directly regulated — the OCC's final rule requires:",
+      },
+      {
+        type: "list",
+        items: [
+          "1:1 reserve backing at all times in qualifying assets: US coins and currency, demand deposits at FDIC-insured institutions, Treasury bills with 93 days or less to maturity, overnight reverse repurchase agreements collateralized by Treasuries, and shares in qualifying government money market funds",
+          "Monthly reserve attestation published publicly, with an annual independent audit of reserve composition",
+          "Redemption at par within one business day for retail holders, with no redemption gate or suspension permitted during normal operating conditions",
+          "Segregation of reserve assets from the issuer's general corporate assets, with clear priority of holder claims in an insolvency",
+          "Full BSA/AML program including transaction monitoring, suspicious activity reporting, and OFAC screening on all issuances and redemptions",
+          "Registration as a permitted payment stablecoin issuer before conducting any issuance activity — the rule establishes the application process and grandfathering window for existing issuers",
+        ],
+      },
+      {
+        type: "p",
+        text: "USDC (Circle), PYUSD (PayPal), and several bank-issued stablecoins already in market have stated they meet or are in the process of meeting these requirements. Issuers that cannot demonstrate compliance by January 18 must cease issuance.",
+      },
+      {
+        type: "h3",
+        text: "What Changes for Platforms That Facilitate Stablecoin Transactions",
+      },
+      {
+        type: "p",
+        text: "The OCC rule includes provisions for what it defines as stablecoin service providers — platforms and businesses that do not issue stablecoins themselves but provide custody, wallet, exchange, settlement, or transfer services for payment stablecoins on behalf of others. If your platform enables users to hold, send, receive, or spend a payment stablecoin — including as part of an embedded payment product or a checkout flow — you fall within scope.",
+      },
+      {
+        type: "p",
+        text: "The key obligations for stablecoin service providers under the final rule:",
+      },
+      {
+        type: "list",
+        items: [
+          "You may only facilitate transactions in stablecoins issued by permitted payment stablecoin issuers — facilitating transactions in a non-permitted stablecoin after January 18 creates regulatory exposure",
+          "You must implement AML/KYC obligations commensurate with the transaction volume and type — the rule specifies minimum program elements for platforms above defined volume thresholds",
+          "Customer disclosures must clearly state which stablecoin is being used, who issued it, and that the stablecoin is not FDIC-insured (the GENIUS Act explicitly prohibits implying federal deposit insurance coverage)",
+          "If you hold stablecoin balances on behalf of users, those balances must be segregated from your operational funds and held in a way that protects user claims in an insolvency",
+          "You must maintain records sufficient to reconstruct transactions and demonstrate compliance upon OCC examination",
+        ],
+      },
+      {
+        type: "p",
+        text: "Platforms that use stablecoins in their settlement or prefunding infrastructure — including the Visa Direct, Marqeta, and StraitsX arrangements discussed previously — need to verify that their stablecoin counterparty has achieved or applied for permitted issuer status before January 18. Using a non-permitted stablecoin in settlement infrastructure after the deadline is not grandfathered.",
+      },
+      {
+        type: "h3",
+        text: "What Changes for Merchants",
+      },
+      {
+        type: "p",
+        text: "Merchants who accept stablecoins directly — at checkout, through a payment link, or through a payment processor that converts stablecoin to fiat at settlement — face the narrowest set of new obligations, but they are not zero.",
+      },
+      {
+        type: "p",
+        text: "The primary merchant obligation under the OCC rule is disclosure: if you accept payment in a specific stablecoin, your checkout flow and terms must identify the stablecoin issuer and must not imply that the stablecoin is bank-guaranteed or FDIC-insured. This is a documentation change for most merchants, not an operational one.",
+      },
+      {
+        type: "p",
+        text: "The more significant merchant obligation is counterparty selection. Merchants currently accepting USDC, PYUSD, or another named stablecoin need to confirm their payment processor is routing those transactions through a permitted issuer's infrastructure. If your processor accepts stablecoins and converts them to fiat — a flow used by some high-risk merchants and international sellers — the processor's stablecoin handling must comply with the service provider requirements under the rule. Ask your processor directly whether they have reviewed the January 18 obligations.",
+      },
+      {
+        type: "p",
+        text: "Merchants who do not accept stablecoins and whose payment processor does not use stablecoins in its settlement infrastructure have no direct obligations under this rule.",
+      },
+      {
+        type: "h3",
+        text: "The Branded Stablecoin Question",
+      },
+      {
+        type: "p",
+        text: "The GENIUS Act and OCC rule have significant implications for any platform considering issuing its own branded stablecoin — a store-of-value token pegged to the dollar, used within a marketplace or ecosystem for in-platform payments, rewards, or settlement.",
+      },
+      {
+        type: "p",
+        text: "Under the final rule, issuing a branded stablecoin requires either a national bank charter, a federal nonbank permitted issuer charter through the OCC, or qualification under a state regime that meets the federal floor. There is no unregulated path for a platform stablecoin that is redeemable at par in dollars if that platform has any US users.",
+      },
+      {
+        type: "p",
+        text: "Platforms that have been exploring branded stablecoins as a payments or loyalty mechanism need to make a decision before January 18: apply for permitted issuer status, restructure the product so it does not qualify as a payment stablecoin under the rule's definition, or discontinue it. Operating a non-compliant branded stablecoin after January 18 is not a gray area under the final rule.",
+      },
+      {
+        type: "h3",
+        text: "The January 18 Checklist",
+      },
+      {
+        type: "p",
+        text: "For merchants and platforms assessing their obligations before the deadline:",
+      },
+      {
+        type: "list",
+        items: [
+          "Determine whether your business issues, holds on behalf of users, or facilitates transactions in any asset that qualifies as a payment stablecoin under the rule — 1:1 dollar-pegged, redeemable on demand, not algorithmic",
+          "If you accept stablecoins at checkout or in payment flows, confirm your processor's stablecoin counterparties have applied for or received permitted issuer status — USDC (Circle) and PYUSD (PayPal) have indicated they are pursuing compliance; verify the current status of any other stablecoin you use",
+          "Review your checkout and terms disclosures for any language that could be read as implying FDIC insurance or bank guarantee on stablecoin balances — update before January 18",
+          "If your platform holds stablecoin balances on behalf of users, assess whether your current custody and segregation setup meets the service provider requirements under the rule",
+          "If you are building a branded stablecoin or stable-value in-platform currency, get legal review of whether it falls within the rule's definition and what path forward looks like",
+          "If your payment processor uses stablecoins in settlement or prefunding, request their written confirmation of GENIUS Act compliance status before December 31 — leave time to switch processors if needed",
+        ],
+      },
+      {
+        type: "h3",
+        text: "What Regulatory Clarity Actually Means for Payment Infrastructure",
+      },
+      {
+        type: "p",
+        text: "The GENIUS Act framework and the OCC's final rule represent the end of the regulatory ambiguity that slowed institutional adoption of stablecoin infrastructure for the past several years. The issuers that meet the permitted issuer standard will now operate under a clear federal charter. The platforms and processors using those stablecoins in settlement and prefunding have a defined compliance path. The businesses that do not interact with stablecoins at all are unaffected.",
+      },
+      {
+        type: "p",
+        text: "This is a clarifying event, not a disruptive one — for businesses that were already building on compliant stablecoin infrastructure. The disruption falls on platforms that were operating in the ambiguity: branded stablecoins without a clear regulatory structure, payment processors using non-permitted stablecoins, and platforms with user-held stablecoin balances and no formal custody framework.",
+      },
+      {
+        type: "p",
+        text: "If you are unsure where your payment infrastructure sits relative to the January 18 deadline — whether your processor's stablecoin exposure creates obligations for you, whether anything in your product roadmap touches the rule's definition of a payment stablecoin, or whether the settlement infrastructure you are building on is compliant — that is the right conversation to have now. Reach out to Proficient at <a href=\"mailto:info@proficient.tech\">info@proficient.tech</a>. The window to assess and adjust before January 18 is closing.",
+      },
+    ],
+  },
+  {
     slug: "stablecoins-back-office-settlement-prefunding-occ-2026",
     title: "Stablecoins Are Not Coming to Your Checkout. They Are Already in Your Settlement Layer.",
     excerpt:
@@ -3337,6 +3492,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "genius-act-stablecoin-rules-final-january-2027": [
+    "stablecoins-back-office-settlement-prefunding-occ-2026",
+    "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
+    "custom-payment-system-built-around-your-business",
+  ],
   "stablecoins-back-office-settlement-prefunding-occ-2026": [
     "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
     "custom-payment-system-built-around-your-business",
