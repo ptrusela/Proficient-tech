@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   title: "Medusa.js Payments + Underwriting — Proficient",
   description:
     "Proficient builds direct payment integrations for Medusa.js and headless commerce platforms — with direct underwriting, merchant onboarding, and AI-driven development for every business type.",
-  alternates: { canonical: "https://proficient.tech/medusa" },
+  alternates: { canonical: "https://proficient.tech/headless" },
   openGraph: {
     title: "Medusa.js Payments + Underwriting — Proficient",
     description:
       "Direct payment integration, merchant underwriting, and custom AI development for Medusa.js and emerging headless platforms.",
-    url: "https://proficient.tech/medusa",
+    url: "https://proficient.tech/headless",
     type: "website",
   },
   twitter: {
@@ -52,7 +52,7 @@ const breadcrumbJsonLd = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Home", item: "https://proficient.tech" },
-    { "@type": "ListItem", position: 2, name: "Medusa.js", item: "https://proficient.tech/medusa" },
+    { "@type": "ListItem", position: 2, name: "Headless Commerce", item: "https://proficient.tech/headless" },
   ],
 };
 

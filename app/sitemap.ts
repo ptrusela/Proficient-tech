@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: "https://proficient.tech/medusa",
+      url: "https://proficient.tech/headless",
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
