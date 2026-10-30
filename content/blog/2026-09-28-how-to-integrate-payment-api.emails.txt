@@ -1,0 +1,42 @@
+--- EMAIL 1 (Awareness) ---
+Subject: Payment integrations that work in staging and break in production
+
+Most payment integrations look fine until they're not. A webhook that never arrives, a retry loop that double-charges a customer, a currency mismatch your CFO spots before you do.
+
+The root cause is almost never bad code. It's usually a misunderstood mental model of the payment lifecycle — specifically what happens between authorization and settlement, and what your system needs to handle in between.
+
+We wrote a practical breakdown covering the full flow: auth, error handling, webhooks, PCI scope, and the steps most teams skip before going live.
+
+Worth a read if payments are on your roadmap.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 2 (Consideration, send 4 days later) ---
+Subject: The part of payment integration that quietly causes the most damage
+
+Declined cards and validation errors are easy to handle. The problems that actually hurt growth-stage teams are subtler: a missing idempotency key that charges a customer twice during a timeout, a webhook handler that doesn't verify signatures and accepts spoofed confirmations, or an event pipeline that processes fulfillment before checking current payment state.
+
+These aren't edge cases. They're the norm in production at scale.
+
+At Proficient, we help technical teams audit and rebuild payment infrastructure before these issues compound. That means reviewing your architecture against the full payment lifecycle — not just the happy path — and identifying where your current setup will break under real load or a determined bad actor.
+
+Most teams are one chargeback spike or compliance review away from a painful rebuild.
+
+— The Proficient Team
+
+---
+
+--- EMAIL 3 (Decision, send 3 days after email 2) ---
+Subject: 30 minutes to pressure-test your payments architecture
+
+If you're building payment infrastructure for the first time, or you've inherited something that's grown brittle, it's worth having a direct conversation before you're debugging it at 2 a.m.
+
+We work with growth-stage founders and CTOs to design payment systems that handle the edge cases cleanly — idempotency, webhook reliability, PCI scope reduction, error categorization — so the foundation scales without constant firefighting.
+
+No pitch deck. Just a working session to look at where you are and what a more resilient setup would look like.
+
+Book a call at proficient.tech.
+
+— The Proficient Team

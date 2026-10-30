@@ -1,0 +1,15 @@
+Most payment integrations fail before a single line of code is written.
+
+The mental model comes first. A card payment isn't a single event — it's a lifecycle: initiation, authorization, capture, settlement, disputes. Founders who skip this step build integrations that work in staging and break in production.
+
+Idempotency keys aren't optional. A network timeout that triggers a retry without one means your customer gets charged twice. That's a chargeback, not an edge case. Generate a UUID per payment attempt, store it, and include it in every mutating API call.
+
+Webhooks need the same rigor as your API layer. Verify signatures on every inbound request. Return a 200 immediately and process in the background. Never fulfill an order from a webhook alone — always confirm state via a direct API call. Events arrive out of order more often than you'd expect.
+
+On security: if you're building your own card input form, stop. Hosted fields keep raw card data off your servers entirely, reduce your PCI scope to SAQ A, and eliminate a whole class of risk before you've written a compliance policy.
+
+The integrations that hold up under pressure were built by teams that treated error handling, observability, and security as core requirements — not final-week additions.
+
+Read the full guide at proficient.tech
+
+#PaymentInfrastructure #APIIntegration #Fintech #TechnicalFounders #Startups
