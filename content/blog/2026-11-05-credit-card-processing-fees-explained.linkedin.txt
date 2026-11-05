@@ -1,0 +1,13 @@
+Most founders treat processing fees as fixed. They're not.
+
+For a business doing $500K a year, the gap between understanding and ignoring credit card fees can exceed $15,000 annually. At $5M, it's six figures. That's not rounding error — that's a hire, a runway extension, a reinvestment.
+
+The structure is straightforward once you see it. Interchange goes to the issuing bank and is the largest component, typically 1.5–2.5% per transaction. Assessments go to the card network. Processor margins go to your payment provider — and that last piece is the only one you can actually negotiate.
+
+Where most companies leak money is in pricing model and data. If you're on flat-rate or tiered pricing above $50K monthly volume, you're almost certainly subsidising your processor's margins. If you're billing other businesses and not passing Level 2 or Level 3 data, you're leaving 30–50 basis points on the table per transaction. That's a one-time engineering fix with compounding returns.
+
+Payment infrastructure is a strategic decision, not a procurement checkbox. Read your statement, know your effective rate, and have the renegotiation conversation before another year passes.
+
+The full breakdown is at proficient.tech
+
+#Payments #Fintech #PaymentInfrastructure #CostOptimisation #StartupFinance
