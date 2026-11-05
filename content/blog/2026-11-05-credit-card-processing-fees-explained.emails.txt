@@ -1,0 +1,38 @@
+--- EMAIL 1 (Awareness) ---
+Subject: You're probably overpaying on card processing fees
+
+Every time a customer pays by card, three parties take a cut before the money reaches you: the issuing bank, the card network, and your processor. Most founders see one blended number on their statement and move on.
+
+That blended rate is hiding something. At $500K in annual revenue, the gap between an optimised setup and an unexamined one can be $15,000 a year. At $5M, it's six figures.
+
+The fees aren't all fixed. Some are set by networks, some are negotiable, and all of them respond to decisions you're already making about your tech stack.
+
+Worth knowing.
+
+— The Proficient Team
+
+--- EMAIL 2 (Consideration, send 4 days later) ---
+Subject: The one part of your processing fee you can actually negotiate
+
+Interchange — the largest slice of your processing cost — is set by the card networks. You can't negotiate it directly. But you can influence which rate category your transactions fall into, and that distinction matters more than most founders realise.
+
+Submitting Level 2 or Level 3 transaction data on B2B payments, for example, can reduce interchange by 30–50 basis points. That's often a one-time engineering change with compounding returns every month after.
+
+The processor margin, on the other hand, is fully negotiable — especially above $100K per month in volume. If you're on flat-rate or tiered pricing, you're almost certainly subsidising other merchants.
+
+At Proficient, we help growth-stage companies audit their current setup, identify which levers are worth pulling, and implement the technical changes that move effective rates in a durable way — without introducing fragility into the payment stack.
+
+— The Proficient Team
+
+--- EMAIL 3 (Decision, send 3 days after email 2) ---
+Subject: A second set of eyes on your processing setup
+
+If you haven't done a structured review of your payment costs in the last 12 months, it's likely overdue.
+
+A straightforward audit — calculating your effective rate, reviewing your pricing model, checking whether you're passing the right data for your transaction mix — typically pays for itself quickly at any meaningful processing volume.
+
+We do this regularly for growth-stage companies. No obligation, no lengthy engagement required to start the conversation.
+
+If it's worth 30 minutes, book a call with our team at proficient.tech.
+
+— The Proficient Team
