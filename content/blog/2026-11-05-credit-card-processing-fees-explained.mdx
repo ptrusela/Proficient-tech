@@ -1,0 +1,131 @@
+---
+title: "Credit Card Processing Fees Explained: What Every Founder Needs to Know"
+date: "2026-11-05"
+description: "A plain-English breakdown of credit card processing fees—interchange, assessments, processor margins, and how to stop overpaying without sacrificing reliability."
+tags: ["payments", "fintech", "cost optimization", "payment infrastructure"]
+---
+
+import { Callout } from '@/components/ui/callout'
+
+# Credit Card Processing Fees Explained: What Every Founder Needs to Know
+
+Every time a customer swipes, taps, or types a credit card number, a small but meaningful slice of that transaction disappears before the money reaches your bank account. For a startup doing $500K in annual revenue, the difference between understanding and ignoring those fees can easily be $15,000 or more per year. At $5M in revenue, you're talking six figures.
+
+Yet most founders treat processing fees as a fixed cost of doing business—something to glance at on a monthly statement and move on. That's a mistake. Credit card processing fees are negotiable, manageable, and highly dependent on decisions you make about your tech stack, pricing model, and processor relationships.
+
+This post breaks down exactly how fees work, where the money actually goes, and what levers you can pull to reduce costs without introducing fragility into your payment infrastructure.
+
+---
+
+## The Three-Party System: Who Actually Gets Paid
+
+When a card transaction happens, it doesn't flow from your customer's bank directly to yours. It travels through a network of intermediaries, each of whom takes a cut. Understanding this structure is the foundation of everything else.
+
+**The issuing bank** is the financial institution that gave your customer their credit card. When a transaction clears, the issuing bank collects the largest share of the fee—this is the interchange fee, and it goes entirely to them.
+
+**The card network** (the organization that sets the rules and routes the transaction) collects a smaller fee called an assessment or network fee. This is typically a fraction of a percent of the transaction value.
+
+**The acquiring bank and payment processor** are the entities on your side of the equation—they connect your business to the network and handle settlement. They charge a margin on top of interchange and assessments, which is where their profit comes from.
+
+When you see a quoted rate from any processor, you're usually seeing a blended or marked-up number that wraps all three of these costs into one figure. The problem is that wrapping them together makes it nearly impossible to tell how much each party is actually taking.
+
+---
+
+## Interchange Fees: The Largest Variable You Probably Can't Negotiate
+
+Interchange is set by the card networks and paid to the issuing bank. It is, by far, the largest component of your total processing cost—typically 1.5% to 2.5% of a transaction for consumer credit cards in the US.
+
+What most founders don't realize is that interchange is not a single rate. There are hundreds of interchange categories, and the rate that applies to any given transaction depends on:
+
+- **Card type**: Premium rewards cards, corporate cards, and travel cards carry higher interchange rates than standard consumer cards. The more points a customer earns, the more you pay.
+- **Transaction type**: Card-present (in-person, chip, tap) transactions typically have lower interchange than card-not-present (online, keyed) transactions because fraud risk is lower.
+- **Merchant category code (MCC)**: Your business type is assigned an MCC, and certain categories get preferential rates. Nonprofits, utilities, and government entities often qualify for lower interchange.
+- **Data quality**: Submitting richer transaction data (Level 2 or Level 3 data) can unlock lower interchange rates, particularly for B2B transactions. If you're billing other businesses and not passing enhanced data, you're almost certainly overpaying.
+
+<Callout type="insight">
+  B2B companies processing corporate or purchasing cards can reduce interchange by 30–50 basis points simply by implementing Level 2/Level 3 data enrichment. That's often a one-time engineering investment with compounding returns.
+</Callout>
+
+You cannot negotiate interchange directly—it's set by the networks. But you can influence which interchange bucket your transactions fall into through technical implementation decisions, which is where engineering meets finance in a very practical way.
+
+---
+
+## Assessment Fees: Small, Predictable, and Worth Knowing
+
+Assessment fees are charged by the card networks on top of interchange. They're relatively small—typically in the range of 0.13% to 0.15% for most transaction types—and they're not negotiable.
+
+However, they aren't always straightforward. Networks also charge additional fees that fall under the assessment umbrella, including:
+
+- **Cross-border fees**: Applied when your customer's card is issued in a different country than where you're processing. These can add 0.4% to 1.5% to international transactions.
+- **Card-not-present fees**: An additional surcharge for online and phone transactions.
+- **Network access fees**: Fixed per-transaction fees charged regardless of transaction size.
+
+For businesses with significant international volume, cross-border fees deserve serious attention. If 20% of your customers are outside your home country and you're not factoring cross-border fees into your unit economics, your actual cost of revenue is higher than your model suggests.
+
+---
+
+## Processor Margins: Where Negotiation Actually Happens
+
+The processor margin is the only part of your processing fee that is negotiable. This is the spread a payment processor adds on top of interchange and assessments to cover their operational costs and profit.
+
+How that margin is structured matters as much as the number itself. There are three common pricing models:
+
+**Flat-rate pricing** bundles interchange, assessments, and processor margin into a single percentage (often plus a small per-transaction fee). It's simple and predictable—which is why it's popular with early-stage businesses—but it means you pay the same rate on a debit card as you do on a premium rewards card, even though interchange is dramatically different for each. At lower volumes, the simplicity is worth the premium. As volume grows, you're almost always overpaying.
+
+**Tiered pricing** groups transactions into qualified, mid-qualified, and non-qualified buckets with different rates. This model is almost always unfavorable to the merchant because processors have wide discretion in how they classify transactions, and the most common transaction types often end up in higher-cost tiers.
+
+**Interchange-plus pricing** (also called pass-through pricing) charges you the actual interchange rate for each transaction plus a fixed processor margin. This is the most transparent model and, for businesses with meaningful volume, almost always the most cost-effective. You see exactly what the network charged and exactly what your processor is adding. It makes benchmarking and negotiation straightforward.
+
+For most growth-stage companies processing more than $50K per month, interchange-plus is worth pursuing even if it requires switching processors or renegotiating your contract.
+
+---
+
+## Hidden Fees and Statement Charges You Should Audit
+
+Beyond the core per-transaction costs, processors typically charge a range of additional fees that show up on monthly statements without much explanation. These aren't inherently unreasonable, but they should be understood and questioned.
+
+**Monthly or annual account fees** are fixed charges for maintaining your account. Some processors waive these at higher volume tiers—worth asking about explicitly.
+
+**PCI compliance fees** are charged to help you maintain Payment Card Industry Data Security Standard compliance. The irony is that these fees are often charged even when the processor is doing most of the compliance heavy lifting. If you're using a hosted payment page or a processor-managed vault, verify what the fee actually covers.
+
+**Chargeback fees** are charged each time a customer disputes a transaction with their bank. The fee itself (typically $15–$50) is often less painful than the operational cost of responding to disputes and the risk of elevated chargeback ratios triggering account reviews.
+
+**Minimum monthly fees** apply when your processing volume generates less than a specified amount in fees. If you're seasonal or early-stage, this can be a silent cost drain.
+
+**Early termination fees** are buried in contracts and can run into the thousands of dollars. Before signing any multi-year processing agreement, read the termination clause.
+
+<Callout type="warning">
+  Request a full fee schedule before signing with any processor, not just the headline rate. The difference between a 2.1% flat rate and a 1.8% interchange-plus arrangement with reasonable monthly fees can be substantial, but only if you do the math with your actual transaction mix.
+</Callout>
+
+---
+
+## Practical Steps to Reduce Your Processing Costs
+
+Understanding fees is only useful if it leads to action. Here's where to start:
+
+**Audit your current statement.** Calculate your effective rate by dividing total fees by total volume processed. Then break it down by card type if your processor gives you that data. This baseline tells you whether you have a problem worth solving.
+
+**Switch to interchange-plus if you haven't already.** If you're on flat-rate or tiered pricing and processing more than $50K per month, model the difference. The math is usually decisive.
+
+**Implement Level 2/Level 3 data for B2B transactions.** If a meaningful portion of your customers are businesses paying with corporate cards, this is a high-ROI engineering investment.
+
+**Negotiate your processor margin.** This is a real conversation you can have, especially once you're above $100K per month in volume. Processors have flexibility, particularly if you're willing to commit to volume or a contract term.
+
+**Review your chargeback process.** A higher-than-normal dispute rate can trigger penalty fees and jeopardize your processing relationship. Invest in pre-emptive fraud detection and clear billing descriptor practices before chargebacks become a systemic issue.
+
+**Evaluate your international strategy.** If you're growing internationally, consider whether your current processor's cross-border fees make sense or whether a local acquiring relationship in key markets would be more efficient.
+
+---
+
+## Conclusion
+
+Credit card processing fees are one of those costs that feels like plumbing—invisible until something goes wrong or someone tells you you've been overpaying for years. The fundamentals aren't complicated: interchange goes to the issuing bank, assessments go to the network, and processor margins go to your payment provider. Each layer has different characteristics, and only one is truly negotiable.
+
+The businesses that treat payment infrastructure as a strategic decision—rather than a commodity procurement—consistently end up with better rates, fewer surprises, and more resilient systems. That means choosing the right pricing model, passing the right data, and reading the fine print before it costs you.
+
+If you're spending more than a few thousand dollars a month on processing fees and haven't done a structured review in the last 12 months, that review will almost certainly pay for itself.
+
+---
+
+*At Proficient, we help growth-stage companies build payment infrastructure that's cost-efficient, reliable, and ready to scale. If you'd like a second set of eyes on your current processing setup, [reach out to our team at proficient.tech](https://proficient.tech).*
