@@ -15,6 +15,159 @@ export interface BlogPost {
 
 export const posts: BlogPost[] = [
   {
+    slug: "chatgpt-wallet-agentic-checkout-merchants-visa-adyen-mastercard",
+    title: "ChatGPT Wallet and the Agentic Checkout: What Merchants Need Before AI Agents Start Buying",
+    excerpt:
+      "OpenAI's ChatGPT Wallet turns the world's most-used AI into a payment actor. Visa, Adyen, and Mastercard have all launched or announced AI-agent payment programs in the same window. The infrastructure is arriving before the volume does. Here is what merchants need to have in place before it doesn't.",
+    date: "2026-11-20",
+    readTime: "8 min read",
+    category: "Platform",
+    body: [
+      {
+        type: "p",
+        text: "OpenAI's ChatGPT Wallet announcement changes the scale of the agentic payment conversation. It is one thing to say AI agents will eventually buy things. It is another to watch the company behind the most widely-used AI in the world add a payment credential store that lets ChatGPT act as a payment actor on behalf of hundreds of millions of users.",
+      },
+      {
+        type: "p",
+        text: "In the same window, Visa announced its Intelligent Commerce program for AI-agent payments, Adyen released its agent commerce payment infrastructure, and Mastercard continued building out Verifiable Intent — the specification that links a cardholder's authorization to an agent's purchase in a tamper-resistant record. The infrastructure layer is not waiting for the volume to justify it. The volume is coming to meet infrastructure that is already being built.",
+      },
+      {
+        type: "p",
+        text: "What most merchants have not done is prepare their payment layer for it. That gap closes either by design or by incident. This post is about closing it by design.",
+      },
+      {
+        type: "h3",
+        text: "What ChatGPT Wallet Actually Is",
+      },
+      {
+        type: "p",
+        text: "ChatGPT Wallet is OpenAI's credential store for AI-initiated payments. A user connects a payment method — card, bank account, or other instrument — and grants ChatGPT permission to use it on their behalf, within parameters the user sets. When a ChatGPT agent is instructed to complete a purchase, book a service, or pay a vendor, it draws on those stored credentials to execute the transaction without returning to the user for card details.",
+      },
+      {
+        type: "p",
+        text: "This is the same architecture as a saved wallet in any e-commerce checkout — the difference is that the entity initiating the charge is an AI agent completing a task, not a human clicking a button. The user's permission is established in advance, the agent acts within those permissions, and the merchant receives a transaction from an entity that holds a valid, authorized payment credential.",
+      },
+      {
+        type: "p",
+        text: "The significance is not technical — wallets and tokenized credentials are not new. The significance is distribution. ChatGPT has more than 500 million weekly active users as of late 2026. When a meaningful fraction of those users connect a payment method and begin delegating purchases, the volume of AI-agent transactions hitting merchant checkout flows will not ramp slowly. It will arrive in a step function, the way GPT-4 changed enterprise AI adoption overnight.",
+      },
+      {
+        type: "h3",
+        text: "Visa Intelligent Commerce: Spending Permissions for Agents",
+      },
+      {
+        type: "p",
+        text: "Visa's Intelligent Commerce program is the network-level infrastructure for AI-agent payments. It allows cardholders to issue a credential to a specific AI agent — a token with defined spending permissions — rather than granting an AI platform access to their full card number and balance.",
+      },
+      {
+        type: "p",
+        text: "The permissions a cardholder can set are specific: merchant category restrictions (this agent can only buy software and professional services), per-transaction spending limits, aggregate monthly caps, time-bounded authorization (active only during business hours), and geographic restrictions. The agent operates within those parameters. Any transaction that falls outside them is declined at the network level before it reaches the merchant.",
+      },
+      {
+        type: "p",
+        text: "For merchants, Visa Intelligent Commerce transactions look like tokenized card payments. The agent presents a network token and cryptogram; the merchant's payment infrastructure processes it the same way it would process any tokenized transaction. The difference is what the token represents — a scoped, agent-issued credential rather than a direct card token — and what that means for the evidence record if the transaction is later disputed.",
+      },
+      {
+        type: "p",
+        text: "A cardholder who disputes a Visa Intelligent Commerce transaction cannot simply claim they did not authorize it. The authorization is embedded in the credential they issued to the agent. The dispute logic shifts: the question is not whether the card was used without permission, but whether the agent acted within the scope of the permissions the cardholder granted. That is a materially different dispute to defend — and to win.",
+      },
+      {
+        type: "h3",
+        text: "Adyen Agent Commerce: Infrastructure for the Processor Layer",
+      },
+      {
+        type: "p",
+        text: "Adyen's agent commerce program is payment infrastructure for the processors and platforms sitting between AI agents and merchants. Where Visa Intelligent Commerce operates at the network credential level, Adyen's program operates at the acquiring and processing layer — giving merchants and platforms the tools to accept, route, and reconcile agent-initiated payments at scale.",
+      },
+      {
+        type: "p",
+        text: "The key capability Adyen has built for agentic commerce is off-session payment processing with full audit trail retention. An off-session payment is a charge initiated when the customer — or in this case, the agent acting for the customer — is not actively present at checkout. Subscription billing runs on off-session payments. So does recurring billing, usage-based billing, and now agentic purchasing.",
+      },
+      {
+        type: "p",
+        text: "What Adyen adds for the agent context is structured metadata capture: at the time of an agent-initiated transaction, the payment record stores the agent's identity, the authorization reference, the instruction the user gave, and the merchant interaction that triggered the charge. This is the data that matters when a dispute arrives — not three weeks after the fact, but captured in the moment, attached to the order record, retrievable in the format dispute resolution requires.",
+      },
+      {
+        type: "p",
+        text: "The infrastructure implication for merchants is straightforward: if your payment processor supports Adyen's agent commerce stack, the metadata capture is handled for you. If it does not, you are building that audit trail manually — or not at all — and your dispute position on agent-initiated chargebacks will reflect that gap.",
+      },
+      {
+        type: "h3",
+        text: "Mastercard Verifiable Intent: Closing the Authorization Gap",
+      },
+      {
+        type: "p",
+        text: "Mastercard's Verifiable Intent specification — developed with Google and covered here last month — addresses the question that tokens alone cannot answer: not whether the credential was legitimate, but what the buyer actually authorized. A network token proves the payment instrument is valid and the agent has access to it. Verifiable Intent proves the cardholder gave the agent a specific instruction that led to this specific purchase.",
+      },
+      {
+        type: "p",
+        text: "The practical value of Verifiable Intent for merchants is in dispute resolution. When a cardholder disputes an agent-initiated transaction, the standard fraud defense — this transaction matches the card, billing address, and device of the cardholder — is insufficient. The cardholder already knows it matches. Their claim is that the agent exceeded its authority or they did not intend this specific purchase. Verifiable Intent provides the merchant with a tamper-resistant record linking the cardholder's original instruction to the agent's actions to the transaction outcome. That record is what the dispute turns on.",
+      },
+      {
+        type: "p",
+        text: "Merchants who do not have a Verifiable Intent record for an agent-initiated transaction are in the same position as a card-not-present merchant with no order documentation — defending a dispute against a cardholder who may technically be correct that this was not what they intended, with nothing but the transaction itself as evidence.",
+      },
+      {
+        type: "h3",
+        text: "What the Three Programs Have in Common",
+      },
+      {
+        type: "p",
+        text: "Visa Intelligent Commerce, Adyen agent commerce, and Mastercard Verifiable Intent are solving the same problem from three different positions in the payment stack: how do you process a payment where no human is present at the moment of authorization, and preserve the evidence chain that makes the transaction defensible?",
+      },
+      {
+        type: "list",
+        items: [
+          "Visa Intelligent Commerce answers at the network credential level — the token carries the scoped permission, so the authorization record is embedded in the payment instrument itself",
+          "Adyen agent commerce answers at the processor level — the payment infrastructure captures the agent identity, instruction reference, and authorization metadata at transaction time",
+          "Mastercard Verifiable Intent answers at the evidence level — the tamper-resistant record links cardholder intent to agent action to transaction outcome in a way that survives dispute review",
+        ],
+      },
+      {
+        type: "p",
+        text: "ChatGPT Wallet is what brings the volume. These three programs are what make that volume processable without creating a chargeback crisis on the other side of it.",
+      },
+      {
+        type: "h3",
+        text: "What Merchants Need Before the Volume Arrives",
+      },
+      {
+        type: "p",
+        text: "The window between infrastructure availability and volume arrival is where preparation happens. Here is what that preparation looks like:",
+      },
+      {
+        type: "list",
+        items: [
+          "Confirm network token support with your processor. Agent-initiated payments from ChatGPT Wallet, Visa Intelligent Commerce, and similar programs will arrive as network tokens with cryptograms. If your gateway cannot accept and validate a network token and cryptogram, those transactions either fail or fall back to less secure processing paths that increase your dispute exposure.",
+          "Ask your processor about Adyen agent commerce compatibility or equivalent metadata capture. If your processor is running on Adyen's acquiring stack, ask specifically whether agent commerce metadata capture is enabled on your account. If your processor is not on Adyen, ask what structured audit trail it retains for off-session and agent-initiated transactions.",
+          "Decide where Verifiable Intent records live. When ChatGPT or another agent platform provides a Verifiable Intent reference, your order management system needs to store it attached to the order record — not in a separate log that is hard to retrieve at dispute time. This is a data architecture decision, not a payment infrastructure decision.",
+          "Set your own agent authorization thresholds. Both Visa Intelligent Commerce and Mastercard's framework allow merchants to configure when an agent purchase requires additional human confirmation. Set those thresholds based on your own risk tolerance and product category — do not inherit the defaults from a platform you have no visibility into.",
+          "Review your dispute response process for agent-initiated transactions. The evidence a dispute reviewer needs for an agent-initiated chargeback is different from a standard CNP dispute. Update your response templates and evidence collection workflow before the first agent-initiated dispute arrives, not after.",
+        ],
+      },
+      {
+        type: "h3",
+        text: "The Platform Question",
+      },
+      {
+        type: "p",
+        text: "Merchants selling through Shopify will get much of this by default through Shop Pay's integration with Mastercard Agent Pay and its Visa token infrastructure — the same way they get fraud tools and dispute support today, through a platform that handles the infrastructure so they do not have to.",
+      },
+      {
+        type: "p",
+        text: "The tradeoff is the same one it has always been: the platform owns the relationship between the agent, the buyer, and the transaction record. When an agent-initiated chargeback arrives, Shopify's dispute infrastructure is handling it on your behalf, with their evidence, against their policies. You are a beneficiary of that system, not an owner of it.",
+      },
+      {
+        type: "p",
+        text: "Merchants on open stacks — Medusa, custom commerce backends, direct API integrations — carry the responsibility and get the ownership. The token reference, the agent identity, the authorization record, and the settlement result are yours to store and yours to defend. That is a heavier infrastructure requirement. It is also the reason your dispute position can be better-informed than the platform's one-size policy, and your fraud thresholds can be calibrated to your specific category and customer mix rather than the median Shopify merchant.",
+      },
+      {
+        type: "p",
+        text: "AI agent payment volume will not arrive with advance notice. It will show up in your transaction log as off-session charges from unfamiliar credential types, and your payment infrastructure will either handle it cleanly or produce a dispute backlog that takes months to unwind. The time to make that choice is now. If you want to understand what your current payment setup supports and what it does not, reach out at <a href=\"mailto:info@proficient.tech\">info@proficient.tech</a> or <a href=\"https://proficient.tech/savings-audit\">submit your statement for a free audit</a>.",
+      },
+    ],
+  },
+  {
     slug: "mastercard-virtual-cards-bridge-ai-agents-merchants-shopify",
     title: "Mastercard Says Virtual Cards Are Only a Bridge for AI Agents. What Happens to Merchants Outside Shopify?",
     excerpt:
@@ -3715,6 +3868,11 @@ export function getAllPosts(): BlogPost[] {
 }
 
 export const relatedPostsMap: Record<string, string[]> = {
+  "chatgpt-wallet-agentic-checkout-merchants-visa-adyen-mastercard": [
+    "mastercard-virtual-cards-bridge-ai-agents-merchants-shopify",
+    "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
+    "custom-payment-system-built-around-your-business",
+  ],
   "mastercard-virtual-cards-bridge-ai-agents-merchants-shopify": [
     "future-proofing-ai-orchestration-multi-rail-payment-ecosystem",
     "stablecoin-settlement-boring-mastercard-hsbc-fsb-g20",
